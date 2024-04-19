@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>BERNIESCS</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>Baverian Church</en>
+		<de>Bayrische Kirche</de>
+    </title>
+	
+	<iconFilename>Icon_Church.dds</iconFilename>
+	
+	<description>
+        <en><![CDATA[Big baverian Church to place on a map.]]></en>
+		<de><![CDATA[Grosse bayrische Kirche für den Mapbau]]></de>
+    </description>
+	
+	<categories>
+        <category>Other</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="Baverian Church" i3dFilename="SCS_KIRCHE.i3d" />
+    </prefabs>
+</prefabDesc>

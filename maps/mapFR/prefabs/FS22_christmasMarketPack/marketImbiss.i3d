@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="5" filename="$data/maps/textures/shared/snow_specular.dds"/>
+    <File fileId="22" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="9" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="26" filename="textures/cupsPots_diffuse.dds"/>
+    <File fileId="27" filename="textures/cupsPots_normal.dds"/>
+    <File fileId="28" filename="textures/cupsPots_specular.dds"/>
+    <File fileId="14" filename="textures/foldSign01_diffuse.png"/>
+    <File fileId="15" filename="textures/foldSign01_normal.png"/>
+    <File fileId="16" filename="textures/foldSign01_specular.png"/>
+    <File fileId="35" filename="textures/food_diffuse.dds"/>
+    <File fileId="36" filename="textures/food_normal.dds"/>
+    <File fileId="37" filename="textures/food_specular.dds"/>
+    <File fileId="29" filename="textures/gardenSink01_diffuse.dds"/>
+    <File fileId="30" filename="textures/gardenSink01_normal.png"/>
+    <File fileId="31" filename="textures/gardenSink01_specular.png"/>
+    <File fileId="38" filename="textures/grill_diffuse.png"/>
+    <File fileId="39" filename="textures/grill_normal.png"/>
+    <File fileId="40" filename="textures/grill_specular.png"/>
+    <File fileId="19" filename="textures/lightBulpsColored_diffuse.dds"/>
+    <File fileId="20" filename="textures/lightBulpsColored_normal.dds"/>
+    <File fileId="21" filename="textures/lightBulpsColored_specular.dds"/>
+    <File fileId="32" filename="textures/pommesFrites_diffuse.dds"/>
+    <File fileId="33" filename="textures/pommesFrites_normal.dds"/>
+    <File fileId="34" filename="textures/pommesFrites_specular.dds"/>
+    <File fileId="23" filename="textures/signFront.dds"/>
+    <File fileId="18" filename="textures/signStanding.dds"/>
+    <File fileId="25" filename="textures/signWall.dds"/>
+    <File fileId="1" filename="textures/xmasMarket_diffuse.dds"/>
+    <File fileId="2" filename="textures/xmasMarket_normal.dds"/>
+    <File fileId="3" filename="textures/xmasMarket_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="foldingStandDecal" materialId="425">
+      <Texture fileId="18"/>
+    </Material>
+    <Material name="foldSign01_mat" materialId="426">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="gardenSink01_mat" materialId="427">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="hutMaterial" materialId="428" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mSnowSpecular" fileId="5"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+    </Material>
+    <Material name="hutRoofMaterial" materialId="429" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mSnowSpecular" fileId="5"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="icicles_mat" materialId="430" alphaBlending="true" customShaderId="9" customShaderVariation="icicle">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="lambert1" materialId="431" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1_mat" materialId="432">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+    </Material>
+    <Material name="Material" materialId="433">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="Material" materialId="434">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="Material.001" materialId="435">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="Material.001" materialId="436" customShaderId="22" customShaderVariation="customEmissiveMap">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="mEmissiveMap" fileId="19"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+    </Material>
+    <Material name="snowMaterial" materialId="437" customShaderId="9">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12" bumpDepth="0.5"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="438" specularColor="1 1 0.447059">
+      <Texture fileId="23"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="636" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="439" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="wallSignBack" materialId="440">
+      <Texture fileId="25"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="marketImbiss.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="marketStall" nodeId="490">
+        <TransformGroup name="vis" nodeId="491">
+          <Shape shapeId="1" name="hut" rotation="-90 -0 0" static="true" clipDistance="300" nodeId="492" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="roof" translation="-1.12165 3.4686 0.470106" rotation="-90 5.18178e-22 31.7" static="true" clipDistance="500" nodeId="493" materialIds="429" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="winter" nodeId="494">
+            <Shape shapeId="3" name="icicles" translation="2.43781 2.64397 -0.940518" scale="1.13832 0.963183 1.11491" clipDistance="50" nodeId="495" materialIds="430" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="icicles1" translation="-2.47581 2.64059 1.99436" scale="1.13832 0.963183 1.11491" clipDistance="50" nodeId="496" materialIds="430" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="icicles1" translation="-2.22998 2.79618 1.46258" scale="1.13832 0.963183 1.11491" clipDistance="50" nodeId="497" materialIds="430" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="snowRoof" translation="-0.05 3.36 0.65" clipDistance="500" nodeId="498" materialIds="437" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="animatedObjects" nodeId="499">
+          <Shape shapeId="5" name="doorBehind" translation="0.25 1.32827 -1.52976" kinematic="true" clipDistance="300" nodeId="500" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="doorTrigger" translation="0.977 1.42311 -1.36495" static="true" trigger="true" collisionMask="1048576" nodeId="501" materialIds="439" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="7" name="shutter" translation="0.0324571 2.7478 1.52913" rotation="180 -90 0" clipDistance="500" nodeId="502" materialIds="428" castsShadows="true" receiveShadows="true" minuteOfDayStart="1320" minuteOfDayEnd="480"/>
+          <Shape shapeId="8" name="foldSign01" translation="2.19972 -3.711e-08 1.71632" clipDistance="300" nodeId="503" materialIds="426" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="col" visibility="false" nodeId="504" materialIds="431" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="10" name="plane" translation="0.125809 0.575318 -5.543e-09" scale="0.502166 1 0.795616" clipDistance="300" nodeId="505" materialIds="425"/>
+            <Shape shapeId="11" name="plane" translation="-0.12734 0.574074 9.09809e-09" scale="0.502166 1 0.795616" clipDistance="300" nodeId="506" materialIds="425"/>
+          </Shape>
+          <Light name="light" translation="-1.538 1.144 0.024" visibility="false" nodeId="507" type="point" color="1 0.2 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+          <Shape shapeId="12" name="grillTrigger" translation="-1.14991 1.01675 -0.0587906" rotation="1.37661e-07 1.06993e-06 -2.23329e-06" static="true" trigger="true" collisionMask="1048576" nodeId="508" materialIds="439" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="illum" nodeId="509">
+          <Shape shapeId="13" name="lightCentral" translation="0 3.37979 0" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="510" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-6.22792e-05 -0.000241408 0.00436179" rotation="90 -0 0" scale="0.01 0.01 0.01" nodeId="511" type="point" color="1 0.7 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="5"/>
+            <Light name="light" translation="-6.22792e-05 0.0158756 0.00538492" rotation="90 -0 0" scale="0.01 0.01 0.01" nodeId="512" type="point" color="1 0.7 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="5"/>
+          </Shape>
+          <Shape shapeId="14" name="lampHolders" translation="0 1.5139 3.34932" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="513" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="15" name="lightBulps" translation="0 1.5139 3.34932" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="514" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="0.00161983 0.0040677 0.0260205" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="515" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.00920412 0.0040677 0.0212181" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="516" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.0168768 0.0040677 0.0163614" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="517" type="point" color="0.5 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.025 0.0040677 0.0114213" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="518" type="point" color="0.3 0.3 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+          </Shape>
+          <Shape shapeId="14" name="lampHolders.001" translation="0.0228184 1.5321 2.3904" rotation="90 8.65142e-06 180" scale="100 100 100" clipDistance="300" nodeId="519" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="15" name="lightBulps.001" translation="0.0290709 1.53227 2.53696" rotation="90 -8.65142e-06 180" scale="100 100 100" clipDistance="300" nodeId="520" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="0.00162034 0.0040559 0.0258368" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="521" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.009 0.00405589 0.0210344" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="522" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.017281 0.00405589 0.0161777" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="523" type="point" color="0.5 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.025 0.00405589 0.0112376" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="524" type="point" color="0.3 0.3 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+          </Shape>
+          <Shape shapeId="16" name="lampHolders.002" translation="0.571687 3.60897 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="525" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="lightBulps.002" translation="0.576255 3.54577 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="526" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00111454 -3.53842e-05 0.000115991" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="527" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+          <Shape shapeId="16" name="lampHolders.003" translation="-0.591623 3.60897 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="528" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="lightBulps.003" translation="-0.587439 3.54577 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="529" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00111454 -0.000108179 0.000115991" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="530" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+          <Shape shapeId="16" name="lampHolders.004" translation="-1.7777 2.88127 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="531" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="lightBulps.004" translation="-1.77192 2.80905 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="532" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00113213 -4.72423e-05 8.74959e-05" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="533" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+          <Shape shapeId="16" name="lampHolders.005" translation="1.75721 2.88127 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="534" materialIds="428" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="lightBulps.005" translation="1.76071 2.80905 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="535" materialIds="436" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00113213 -2.89939e-05 8.74922e-05" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="536" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="areas" nodeId="537">
+          <TransformGroup name="start" translation="-2.996 0 -2.97593" nodeId="538">
+            <TransformGroup name="width" translation="5.98522 0 0" nodeId="539"/>
+            <TransformGroup name="height" translation="0 0 9.92326" nodeId="540"/>
+          </TransformGroup>
+          <TransformGroup name="startTest" translation="-2.46868 0 -1.996" nodeId="541">
+            <TransformGroup name="width" translation="5.14743 4.5 4.788" nodeId="542"/>
+          </TransformGroup>
+          <TransformGroup name="startIndoor" translation="-2.40108 0 -1.98329" nodeId="543">
+            <TransformGroup name="width" translation="5.03872 0 0" nodeId="544"/>
+            <TransformGroup name="height" translation="0 0 7.99618" nodeId="545"/>
+          </TransformGroup>
+          <TransformGroup name="startTestAi" translation="-2.46868 0 -1.996" nodeId="546">
+            <TransformGroup name="width" translation="5.14743 0 4.788" nodeId="547"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="decoration" nodeId="548">
+          <Shape shapeId="18" name="sign" translation="0 3.17181 1.50994" rotation="90 -0 0" scale="1.5 1 0.75" clipDistance="300" nodeId="549" materialIds="438"/>
+          <Shape shapeId="18" name="signBack" translation="0 3.06872 -1.43209" rotation="90 -0 0" scale="1.8 1 0.9" clipDistance="300" nodeId="550" materialIds="440"/>
+          <TransformGroup name="bottlesWine" translation="0.344069 0.920045 0" nodeId="551">
+            <Shape shapeId="19" name="bottleWine" translation="-1.847 1.35935 -1.3652" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="552" materialIds="435" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="bottleWine" translation="-1.71086 1.35935 -1.3652" rotation="90 -79.9002 180" scale="100 100 100" clipDistance="300" nodeId="553" materialIds="435" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="bottleWine" translation="-1.577 1.35935 -1.3652" rotation="-90 -85.7762 -8.33965e-06" scale="100 100 100" clipDistance="300" nodeId="554" materialIds="435" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="bottleWine" translation="-1.43936 1.35935 -1.3652" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="555" materialIds="435" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="bottleWine" translation="-1.21689 1.35935 -1.3736" rotation="-90 -69.3099 -1.14845e-05" scale="100 100 100" clipDistance="300" nodeId="556" materialIds="435" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="bottleWine" translation="-1.07548 1.35935 -1.35667" rotation="90 -85.3519 180" scale="100 100 100" clipDistance="300" nodeId="557" materialIds="435" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="20" name="gardenSink01" translation="-0.830985 1.25602 -1.44025" rotation="-2.31618e-15 -0 0" static="true" clipDistance="300" nodeId="558" materialIds="427" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="21" name="pommesFrites" translation="-1.56292 1.08717 -0.524609" rotation="-90 -32.897 0" scale="100 100 100" clipDistance="300" nodeId="559" materialIds="434" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="snacksFront" translation="-1.842 1.45174 1.13248" nodeId="560">
+            <Shape shapeId="22" name="ChiosBlau" translation="0 0.0275743 -8.94613e-10" rotation="-90 42.0786 -2.04977e-06" scale="3 3 3" clipDistance="300" nodeId="561" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="BestSnack" translation="-0.0195161 -0.00887638 0.0620796" rotation="-90 31.4981 -1.47259e-06" scale="3 3 3" clipDistance="300" nodeId="562" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="ChipsRot" translation="1.14141e-10 0.0231774 -0.0663932" rotation="-90 38.8717 -1.85392e-06" scale="3 3 3" clipDistance="300" nodeId="563" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="CrispySnack" translation="-0.0178992 6.39037e-09 0.146614" rotation="-90 33.6626 -1.58136e-06" scale="3 3 3" clipDistance="300" nodeId="564" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="26" name="SpicySnack" translation="-0.0317856 -0.0106367 0.204506" rotation="-90 28.6053 -1.3093e-06" scale="3 3 3" clipDistance="300" nodeId="565" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="bottleMayonnaise" translation="3.50758 0.0212052 0.0879301" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="566" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="28" name="bottleMustard" translation="3.42487 0.0208013 -0.0201179" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="567" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="29" name="bottleKetchup" translation="3.58167 0.0216765 0.205589" rotation="90 -0 180" scale="100 100 100" clipDistance="300" nodeId="568" materialIds="433" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="snacksBehind" translation="-0.556 1.85834 -1.32707" rotation="-1.36604e-05 -90 0" nodeId="569">
+            <Shape shapeId="26" name="SpicySnack" translation="-0.0317856 -0.0106367 1.28985" rotation="-90 90 -1.3093e-06" scale="3 3 3" clipDistance="300" nodeId="570" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="26" name="SpicySnack" translation="-0.0317856 -0.0106367 1.16577" rotation="90 84.7048 180" scale="3 3 3" clipDistance="300" nodeId="571" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="26" name="SpicySnack" translation="0.00258117 -0.0106367 1.00625" rotation="-90 90 -1.3093e-06" scale="3 3 3" clipDistance="300" nodeId="572" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="CrispySnack" translation="-0.0178992 -0.00468713 0.699217" rotation="-90 75.6076 -1.00112e-05" scale="3 3 3" clipDistance="300" nodeId="573" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="CrispySnack" translation="-0.0178992 -0.00464058 0.542279" rotation="90 85.4851 180" scale="3 3 3" clipDistance="300" nodeId="574" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="CrispySnack" translation="-0.0178993 -0.00992602 0.850819" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="575" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="BestSnack" translation="0.000409608 -0.00555637 0.383985" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="576" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="BestSnack" translation="0.0141459 -0.00553386 0.25898" rotation="90 80.3136 -180" scale="3 3 3" clipDistance="300" nodeId="577" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="BestSnack" translation="0.0156021 -0.00887632 0.113904" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="578" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="ChiosBlau" translation="-0.0913983 0.0275743 -0.0119587" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="579" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="ChiosBlau" translation="-0.049636 0.0275743 -0.116513" rotation="90 78.6839 -180" scale="3 3 3" clipDistance="300" nodeId="580" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="ChiosBlau" translation="-0.0246854 0.0275743 -0.247854" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="581" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="ChipsRot" translation="6.88945e-09 0.0231774 -0.355864" rotation="90 80.5225 -180" scale="3 3 3" clipDistance="300" nodeId="582" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="ChipsRot" translation="-0.0653705 0.0231774 -0.450453" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="583" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="ChipsRot" translation="-1.06271e-09 0.0231774 -0.537789" rotation="-90 90 0" scale="3 3 3" clipDistance="300" nodeId="584" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="plate" translation="-0.0424093 -0.573475 0.855096" rotation="-89.9999 82.3528 0.000101741" scale="100 100 100" clipDistance="300" nodeId="585" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="plate" translation="-0.0424093 -0.561166 0.855096" rotation="-89.9999 82.3528 0.000111052" scale="100 100 100" clipDistance="300" nodeId="586" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="plate" translation="-0.0424093 -0.545727 0.855096" rotation="-89.9999 82.3528 0.000111052" scale="100 100 100" clipDistance="300" nodeId="587" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="29" name="bottleKetchup" translation="-0.00951707 0.435503 -0.514747" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="588" materialIds="433" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="31" name="pommes" translation="-0.549907 1.39004 1.2903" rotation="3.04215e-07 13.6319 0" dynamic="true" clipDistance="300" nodeId="589" materialIds="439" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="32" name="pommesFritesVis" clipDistance="300" nodeId="590" materialIds="434" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="31" name="pommes" translation="0.992005 1.39004 1.33862" rotation="0 -30.1726 0" dynamic="true" clipDistance="300" nodeId="591" materialIds="439" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="33" name="pommesFritesVis" clipDistance="300" nodeId="592" materialIds="434" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="34" name="snack" translation="0.118786 1.39004 1.22968" rotation="6.85081e-07 64.4182 0" dynamic="true" clipDistance="300" nodeId="593" materialIds="439" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="35" name="ChiosBlau" clipDistance="300" nodeId="594" materialIds="433" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <TransformGroup name="grill" nodeId="595">
+            <Shape shapeId="36" name="grill" translation="-1.582 3.38853e-09 0.0519748" rotation="1.36604e-05 90 0" static="true" clipDistance="300" nodeId="596" materialIds="431" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="37" name="grill_vis" rotation="1.29946e-06 0 1.52408e-05" clipDistance="300" nodeId="597" materialIds="432" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="38" name="sausageRed" translation="-1.61762 1.10538 0.334228" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="598" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.60035 1.10538 0.295258" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="599" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.60035 1.10538 0.295258" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="600" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.59651 1.10538 0.250028" rotation="90 -81.844 -180" scale="100 132.427 100" clipDistance="300" nodeId="601" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.59004 1.10538 0.21005" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="602" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.6001 1.10538 0.168385" rotation="90 -87.3374 -180" scale="100 132.427 100" clipDistance="300" nodeId="603" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.61191 1.10538 0.127113" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="604" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.61289 1.10538 0.0833621" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="605" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="38" name="sausageRed" translation="-1.6093 1.10538 0.0410185" rotation="90 -85.1423 -180" scale="100 132.427 100" clipDistance="300" nodeId="606" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.58448 1.10236 -0.0293838" rotation="-90 -90 0" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="607" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.59525 1.10236 -0.0661646" rotation="-90 -87.4697 1.47158e-05" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="608" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.58702 1.10236 -0.11087" rotation="-90 -90 0" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="609" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.58702 1.10236 -0.153651" rotation="90 -88.8549 -180" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="610" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.59975 1.10236 -0.196928" rotation="-90 -90 0" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="611" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.5846 1.10236 -0.240159" rotation="-90 -87.7844 1.38123e-05" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="612" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="39" name="sausageWhite" translation="-1.5846 1.10236 -0.28466" rotation="-90 -90 0" scale="109.329 94.7891 112.951" clipDistance="300" nodeId="613" materialIds="433" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79036 1.30199 0.371365" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="614" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79036 1.30199 0.326832" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="615" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79036 1.30199 0.285565" rotation="90 -87.0357 180" scale="100 100 100" clipDistance="300" nodeId="616" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79036 1.30199 0.242379" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="617" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79972 1.30199 0.207319" rotation="-90 -87.2873 -1.40635e-05" scale="100 100 100" clipDistance="300" nodeId="618" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79133 1.30199 0.15855" rotation="-90 -90 0" scale="100 100 100" clipDistance="300" nodeId="619" materialIds="433" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="sausageWiener01" translation="-1.79133 1.30199 0.117006" rotation="90 -84.3736 180" scale="100 100 100" clipDistance="300" nodeId="620" materialIds="433" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="31" name="sausageWhiteColi" translation="-0.969 1.39004 1.29768" rotation="2.95655e-07 -0.452939 0" dynamic="true" clipDistance="300" nodeId="621" materialIds="439" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="41" name="sausageWhitePlate" clipDistance="300" nodeId="622" materialIds="433,433" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="42" name="sausageRedColi" translation="-0.242 1.39004 0.975036" rotation="2.95655e-07 -0.452939 0" dynamic="true" clipDistance="300" nodeId="623" materialIds="439" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="43" name="sausageRedPlate" clipDistance="300" nodeId="624" materialIds="433,433" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="44" name="sausageWienerColi" translation="0.476 1.39767 1.09638" rotation="2.95655e-07 -0.452939 0" dynamic="true" clipDistance="300" nodeId="625" materialIds="439" nonRenderable="true" distanceBlending="false">
+            <Shape shapeId="45" name="sausageWienerPlate" clipDistance="300" nodeId="626" materialIds="433,433" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="gameplay" translation="0 0 5.40481" scale="0.327767 1 1" nodeId="627">
+          <TransformGroup name="IN" scale="1.20791 1 1" nodeId="628">
+            <TransformGroup name="unloadingStation" nodeId="629">
+              <TransformGroup name="unloadingTriggers" nodeId="630">
+                <Shape shapeId="46" name="exactFillRootNode" translation="0 -0.45 0" static="true" collisionMask="1073741824" nodeId="631" materialIds="431" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <Shape shapeId="47" name="baleTrigger" translation="0 -0.45 0" static="true" trigger="true" collisionMask="16781312" nodeId="632" materialIds="431" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="aiUnloadingNode" translation="-0.0299828 0.369631 0.0654453" rotation="0 -90 0" scale="1 1 2.52581" nodeId="633"/>
+            <TransformGroup name="triggerMarker" translation="0 0 0.013" scale="2.52581 1 1" nodeId="634"/>
+            <Shape shapeId="48" name="aiSpline" translation="2.21521 0 0.021" scale="2.52581 1 1" visibility="false" nodeId="635"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

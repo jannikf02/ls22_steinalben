@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="placeable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_fence</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>store_fairyLights.dds</image>
+
+        <price>10</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>fences</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+
+
+        <brush>
+            <type>fence</type>
+            <category>decoration</category>
+            <tab>fences</tab>
+            <parameters>
+                <parameter isFilename="true">fenceFairyLightsSingleton.xml</parameter>
+                <parameter>false</parameter> <!-- is gate -->
+            </parameters>
+        </brush>
+
+        <storeIconRendering>
+            <settings centerIcon="true"/>
+            <objectBundle>
+                <object filename="fenceFairyLights.i3d">
+                    <!-- poles -->
+                    <node node="0>0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="0>0" translation="4 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="0>0" translation="8 0 0" rotation="0 90 0" scale="1 1 1"/>
+
+                    <!-- panels -->
+                    <node node="1>0" translation="0 0 0" rotation="0 90 0" scale="1 1 1"/>
+                    <node node="1>0" translation="4 0 0" rotation="0 90 0" scale="1 1 1"/>
+
+                </object>
+            </objectBundle>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <!-- Used only for store icon generation and store item. Does not use actual i3d in-game. -->
+    <base>
+        <filename></filename>
+    </base>
+
+
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas/>
+</placeable>

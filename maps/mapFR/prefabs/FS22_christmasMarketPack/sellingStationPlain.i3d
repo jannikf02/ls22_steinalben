@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationFarmersMarket" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="12" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="118" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="24" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="362">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationPlain.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sellingStationShop" lockedgroup="true" translation="0 0 -2.04415e-07" rotation="0 -90 0" nodeId="107">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5.02697 0 7.3687" rotation="0 90 0" nodeId="108">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="13.6939 0 15.1572" nodeId="109"/>
+        </TransformGroup>
+        <Shape shapeId="1" name="unloadTriggerGrain" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="110" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="unloadTriggerGrainMarker" translation="0 -0.5 0" nodeId="111"/>
+        </Shape>
+        <Shape shapeId="2" name="unloadTriggerProducts" translation="-0.0598059 0 -5.05692e-16" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="112" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="unloadTriggerProductsMarker" translation="0.0316408 -0.5 0" nodeId="113"/>
+        </Shape>
+        <Shape shapeId="3" name="baleTrigger" translation="-0.0522788 0 -5.05692e-16" kinematic="true" trigger="true" collisionMask="16777216" nodeId="114" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="teleportNode" translation="2.87428 0 -2.13823" rotation="0 -50.0406 0" nodeId="115"/>
+        <TransformGroup name="aiNodeGrain" nodeId="116"/>
+        <Shape shapeId="4" name="aiSplineGrain" translation="0 0 2.23145" rotation="0 90 0" visibility="false" nodeId="117"/>
+        <TransformGroup name="aiNodeProducts" translation="0.0577835 0 -0.211184" nodeId="119"/>
+        <Shape shapeId="5" name="aiSplineProducts" translation="-0.133981 0 2.23145" rotation="0 90 0" visibility="false" nodeId="120"/>
+        <TransformGroup name="warningStripes" translation="2.04415e-07 0 -1.78706e-14" rotation="-0 90 0" nodeId="366">
+          <Shape shapeId="6" name="warningStripesCorner2" translation="-4.504 0 2.414" rotation="180 -0 180" clipDistance="200" nodeId="367" materialIds="362" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="7" name="warningStripesCorner1" translation="-4.504 0 -2.414" clipDistance="200" nodeId="368" materialIds="362" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="6" name="warningStripesCorner2" translation="4.504 0 -2.414" clipDistance="200" nodeId="369" materialIds="362" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="7" name="warningStripesCorner1" translation="4.504 0 2.414" rotation="180 -5.00896e-06 180" clipDistance="200" nodeId="370" materialIds="362" receiveShadows="true" decalLayer="1"/>
+        </TransformGroup>
+        <TransformGroup name="areas" translation="1.9508e-07 0 2.23145" rotation="-0 90 0" nodeId="122">
+          <TransformGroup name="testAreas" nodeId="123">
+            <TransformGroup name="Area1Start" translation="-2.34694 0 -2.367" nodeId="124">
+              <TransformGroup name="Area1End" translation="8.93488 0 4.77895" nodeId="125"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="clearAreas" nodeId="126">
+            <TransformGroup name="Area1Start" translation="-2.7591 0 -3.032" nodeId="127">
+              <TransformGroup name="Area1Width" translation="0 0 5.99415" nodeId="128"/>
+              <TransformGroup name="Area1Height" translation="9.98014 0 0" nodeId="129"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" nodeId="130">
+            <TransformGroup name="Area1Start" translation="-2.7591 0 -3.032" nodeId="357">
+              <TransformGroup name="Area1Width" translation="0 0 5.99415" nodeId="358"/>
+              <TransformGroup name="Area1Height" translation="9.98014 0 0" nodeId="359"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" nodeId="134">
+            <TransformGroup name="Area1Start" translation="-2.7591 0 -3.032" nodeId="354">
+              <TransformGroup name="Area1Width" translation="0 0 5.99415" nodeId="355"/>
+              <TransformGroup name="Area1Height" translation="9.98014 0 0" nodeId="356"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="138">
+            <TransformGroup name="Area1Start" translation="-2.34694 0 -2.367" nodeId="360">
+              <TransformGroup name="Area1End" translation="8.93488 0 4.77895" nodeId="361"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipCollision" nodeId="141">
+            <Shape shapeId="8" name="tipCollision" translation="1.82792 0 0" scale="2.73438 1 1" visibility="false" static="true" collisionMask="524288" clipDistance="300" nodeId="142" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="9" name="infoTrigger" translation="-0.117389 2.077 0.0724735" rotation="-0 90 0" scale="8.9944 5.4016 5.32721" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="143" materialIds="24" nonRenderable="true" distanceBlending="false"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

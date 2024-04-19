@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+<name>
+        <en>Imbiss Standing Table</en>
+        <de>Imbiss Stehtisch</de>
+</name>
+
+<functions>
+<function>
+        <en>Imbiss Standing Table, can be moved after placing.</en>
+        <de>Imbiss Stehtisch, kann nach dem Platzieren umgestellt werden.</de>
+</function>
+</functions>
+
+        <image>store_standingTable.dds</image>
+        <price>50</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>gardenSheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>decoration</category>
+            <tab>uncategorized</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>3072</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>512</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>standingTable.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas/>
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas/>
+
+    <leveling requireLeveling="false" />
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas/>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <i3dMappings>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|0|0" />
+    </i3dMappings>
+
+</placeable>

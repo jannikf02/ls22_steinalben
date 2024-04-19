@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="77">
+    <author>OmaTana</author>
+    <version>1.1.0.0</version>
+	<iconFilename>icon_christmasMarketPack.dds</iconFilename>
+    <title>
+        <en>Christmas Market</en>
+        <de>Weihnachtsmarkt</de>
+    </title>
+    <description>
+<en><![CDATA[To create a Christmas spirit mood, you can use this mod to set up a Christmas market on your map.
+There are four different market stalls, each of which is available as a selling station or purely as a decorative object.
+There is also an open seating pavilion with bench tables, single bench tables and bar tables.
+The bar tables can be lifted and placed freely.
+If you want to set up a decorative Christmas market where you can sell your goods centrally, you can place the attached universal selling station in front of the Christmas market.
+
+Facts and prices:
+- Gingerbread selling station: $1,000, 4 slots, sales products: wheat, barley, oats, flour, sugar beets, sugar cane, sugar, eggs, water, honey, raisins, various oils, butter, chocolate.
+- Drinks selling station: $1,000, 4 slots, sales products: sugar, sugar beet, sugar beet schnitzel, sugar cane, water, grapes, grape juice, honey.
+- Snack selling station: $1,000, 5 slots, products for sale: water, potatoes, sunflower seeds, tomatoes, lettuce, bread, honey, sugar, flour, various oils, raisins, butter, eggs, strawberries, grape juice, chocolate, cake, muesli , Cheese
+- Wooden toy selling station: $1,000, 4 slots, sales products: wood.
+- Universal selling station: $100, 1 slot, sales products: all bulk goods, products and liquids.
+- Decoration stands: $200, 4 - 5 slots.
+- Shelter: $200, 3 slots.
+- Standing table: $50, 3 slots.
+- Bank table: $50, 1 slot.
+- 3 light chain elements: $10 - $200, 1 slot each.
+- Fairy lights as fence: $10, 1 slot
+
+Changelog 1.1.0.0:
+Added fairy lights with fence function.
+]]>
+</en>
+<de><![CDATA[Um vorweihnachtliche Stimmung aufkommen zu lassen, könnt Ihr mit diesem Mod einen Weihnachtsmarkt auf Eurer Karte aufbauen.
+Es gibt vier verschiedene Marktstände, die jeweils als Verkaufsstation oder reines Deko-Objekt verfügbar sind.
+Außerdem gibt es einen offenen Sitzpavillon mit Banktischen, einzelne Banktische und Stehtische. 
+Die Stehtische können hochgehoben und frei platziert werden.
+Wer einen dekorativen Weihnachtsmarkt aufbauen will, bei dem man zentral seine Waren verkaufen kann, kann die beigefügte universelle Verkaufstation vor den Weihnachtsmarkt setzen.
+
+Fakten und Preise:
+- Lebkuchen-Verkaufsstand: 1.000 €, 4 Slots, Verkaufsprodukte: Weizen, Gerste, Hafer, Mehl, Zuckerrüben, Zuckerrohr, Zucker, Eier, Wasser, Honig, Rosinen, versch. Öle, Butter, Schokolade.
+- Getränke-Verkaufsstand: 1.000 €, 4 Slots, Verkaufsprodukte: Zucker, Zuckerrüben, Zuckerrüben-Schnitzel, Zuckerrohr, Wasser, Weintrauben, Traubensaft, Honig.
+- Imbiss-Verkaufsstand: 1.000 €, 5 Slots, Verkaufsprodukte: Wasser, Kartoffeln, Sonnenblumenkerne, Tomaten, Salat, Brot, Honig, Zucker, Mehl, versch. Öle, Rosinen, Butter, Eier, Erdbeeren, Traubensaft, Schokolade, Kuchen, Müsli, Käse
+- Holzspielzeug-Verkaufsstand: 1.000 €, 4 Slots, Verkaufsprodukte: Holz.
+- Universelle Verkaufstation: 100 €, 1 Slot, Verkaufsprodukte: Alle Schüttgüter, Produkte und Flüssigkeiten.
+- Dekostände: 200 €, 4 - 5 Slots.
+- Unterstand: 200 €, 3 Slots.
+- Stehtisch: 50 €, 3 Slots.
+- Banktisch: 50 €, 1 Slot.
+- 3 Lichter-Ketten Elemente: 10 € - 200 €, je 1 Slot.
+- Lichter-Ketten als Zaun: 10 €, 1 Slot.
+
+Changelog 1.1.0.0:
+Lichterketten mit Zaun-Funktion hinzugefügt.
+
+]]>
+</de></description>
+    <multiplayer supported="true"/>    
+	
+	<storeItems>
+        <storeItem rootNode="placeable" xmlFilename="marketGingerbreadSellingPoint.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketBeveragesSellingPoint.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketImbissSellingPoint.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketToysSellingPoint.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="sellingStationPlain.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketGingerbreadDecoration.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketBeveragesDecoration.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketImbissDecoration.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="marketToysDecoration.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="shed.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="standingTable.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="picnicBench.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="fairyLights.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="fairyLightsOnePost.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="fairyLightsPost.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="fenceFairyLights.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="fenceFairyLightsSingleton.xml"/>
+
+    </storeItems>
+
+<l10n>
+
+<text name="l10nXmasMusicPlay">
+<en>Play music</en>
+<de>Musik abspielen</de>
+</text>
+
+<text name="l10nXmasMusicPlayAgain">
+<en>Play music again</en>
+<de>Musik noch mal abspielen</de>
+</text>
+
+<text name="l10nPour">
+<en>Pour beverage</en>
+<de>Eingießen</de>
+</text>
+
+<text name="l10nPourAgain">
+<en>Pour beverage again</en>
+<de>Wieder eingießen</de>
+</text>
+
+<text name="l10nGrill">
+<en>Grill</en>
+<de>Grillen</de>
+</text>
+
+<text name="l10nGrillAgain">
+<en>Grill again</en>
+<de>Nochmal grillen</de>
+</text>
+
+</l10n>
+
+
+</modDesc>

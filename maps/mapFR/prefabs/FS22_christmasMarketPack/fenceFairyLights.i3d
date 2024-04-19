@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fenceFairyLights.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="7" filename="textures/lightBulpsColored_diffuse.dds"/>
+    <File fileId="8" filename="textures/lightBulpsColored_normal.dds"/>
+    <File fileId="9" filename="textures/lightBulpsColored_specular.dds"/>
+    <File fileId="1" filename="textures/wood_diffuse.dds"/>
+    <File fileId="2" filename="textures/wood_normal.dds"/>
+    <File fileId="3" filename="textures/wood_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lightBulps" materialId="63177" customShaderId="10" customShaderVariation="customEmissiveMap">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="mEmissiveMap" fileId="7"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="63199" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="wood" materialId="63178" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fenceFairyLights.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="poles" nodeId="63183">
+        <TransformGroup name="pole" nodeId="63194">
+          <Shape shapeId="1" name="post" translation="0 0.00748164 0" clipDistance="300" nodeId="63184" materialIds="63178" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="coli" static="true" nodeId="63198" materialIds="63199" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="panels" nodeId="63185">
+        <TransformGroup name="lamps" nodeId="63195">
+          <Shape shapeId="3" name="lamps" clipDistance="300" nodeId="63186" materialIds="63177,63177" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="illum" nodeId="63187">
+            <Shape shapeId="4" name="lightBulps" clipDistance="300" nodeId="63188" materialIds="63177" castsShadows="true" receiveShadows="true"/>
+            <Light name="light" nodeId="63189" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+            <Light name="light" nodeId="63190" type="point" color="0.3 0.3 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+            <Light name="light" nodeId="63191" type="point" color="0.5 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+            <Light name="light" clipDistance="300" nodeId="63192" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

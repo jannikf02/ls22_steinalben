@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="5" filename="$data/maps/textures/shared/snow_specular.dds"/>
+    <File fileId="20" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="9" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="14" filename="textures/cupsPots_diffuse.dds"/>
+    <File fileId="15" filename="textures/cupsPots_normal.dds"/>
+    <File fileId="16" filename="textures/cupsPots_specular.dds"/>
+    <File fileId="17" filename="textures/lightBulpsColored_diffuse.dds"/>
+    <File fileId="18" filename="textures/lightBulpsColored_normal.dds"/>
+    <File fileId="19" filename="textures/lightBulpsColored_specular.dds"/>
+    <File fileId="21" filename="textures/signWine_diffuse.dds"/>
+    <File fileId="1" filename="textures/xmasMarket_diffuse.dds"/>
+    <File fileId="2" filename="textures/xmasMarket_normal.dds"/>
+    <File fileId="3" filename="textures/xmasMarket_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hutMaterial" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mSnowSpecular" fileId="5"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+    </Material>
+    <Material name="hutRoofMaterial" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mSnowSpecular" fileId="5"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="icicles_mat" materialId="6" alphaBlending="true" customShaderId="9" customShaderVariation="icicle">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Material.001" materialId="8">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="Material.001" materialId="9" customShaderId="20" customShaderVariation="customEmissiveMap">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="mEmissiveMap" fileId="17"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+    </Material>
+    <Material name="snowMaterial" materialId="10" customShaderId="9">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12" bumpDepth="0.5"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="11" specularColor="1 1 0.494118">
+      <Texture fileId="21"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="12" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="223" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="marketBeverages.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="marketStall" nodeId="59">
+        <TransformGroup name="vis" nodeId="60">
+          <Shape shapeId="1" name="hut" rotation="-90 -0 0" static="true" clipDistance="300" nodeId="61" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="roof" translation="-1.12165 3.4686 0.470106" rotation="-90 5.18178e-22 31.7" static="true" clipDistance="500" nodeId="62" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="winter" nodeId="63">
+            <Shape shapeId="3" name="icicles" translation="2.43781 2.64397 -0.940518" scale="1.13832 0.963183 1.11491" clipDistance="50" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="icicles1" translation="-2.47581 2.64059 1.99436" scale="1.13832 0.963183 1.11491" clipDistance="50" nodeId="65" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="icicles1" translation="-2.22998 2.79618 1.46258" scale="1.13832 0.963183 1.11491" clipDistance="50" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="snowRoof" translation="-0.05 3.36 0.65" clipDistance="500" nodeId="67" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="animatedObjects" nodeId="68">
+          <Shape shapeId="5" name="doorBehind" translation="0.25 1.32827 -1.52976" kinematic="true" clipDistance="300" nodeId="69" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="doorTrigger" translation="0.977 1.42311 -1.36495" static="true" trigger="true" collisionMask="1048576" nodeId="70" materialIds="12" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="7" name="potSilver" translation="-1.639 1.61952 1.142" rotation="-90 19.0851 -3.17219e-06" nodeId="72" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="8" name="mugGreenEmpty" translation="0.0032 -0.000244015 -0.002" rotation="1.44967e-06 8.4044e-06 -102.126" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+              <Shape shapeId="9" name="winePlane" rotation="0 3.00701e-07 0" visibility="false" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="10" name="wineStream" translation="0.000167364 0.00102698 -8.79336e-05" rotation="-5.13091e-07 -1.20008e-07 -19.0851" visibility="false" nodeId="75" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="11" name="winePotTrigger" translation="0.004 -0.00579624 -0.00602772" rotation="90 -1.20008e-07 -19.0851" static="true" trigger="true" collisionMask="1048576" nodeId="76" materialIds="12" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="12" name="potBronze" translation="1.575 1.61085 1.27522" rotation="90 25.4051 -180" nodeId="77" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="13" name="mugYellowEmpty" translation="0.00310183 -0.000109874 -0.00190694" rotation="8.11725e-06 -1.19161e-05 -130.141" nodeId="78" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+              <Shape shapeId="14" name="metPlane" rotation="90 -2.17598e-05 -24.4537" nodeId="79" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="15" name="metStream" translation="0.00599142 0.00134116 0.000217821" rotation="5.267e-06 -2.92468e-05 -154.595" visibility="false" nodeId="80" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="16" name="metPotTrigger" translation="0.002 0.00417303 -0.00594097" rotation="90 -2.92468e-05 -154.595" static="true" trigger="true" collisionMask="1048576" nodeId="81" materialIds="12" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="17" name="shutter" translation="0.0324571 2.7478 1.52913" rotation="-180 -90 0" clipDistance="500" nodeId="71" materialIds="4" castsShadows="true" receiveShadows="true" minuteOfDayStart="1320" minuteOfDayEnd="480"/>
+        </TransformGroup>
+        <TransformGroup name="illum" nodeId="82">
+          <Shape shapeId="18" name="lightCentral" translation="0 3.37979 0" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="83" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-6.22792e-05 -0.000241408 0.00436179" rotation="90 -0 0" scale="0.01 0.01 0.01" nodeId="84" type="point" color="1 0.7 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="5"/>
+            <Light name="light" translation="-6.22792e-05 0.0158756 0.00538492" rotation="90 -0 0" scale="0.01 0.01 0.01" nodeId="85" type="point" color="1 0.7 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="5"/>
+          </Shape>
+          <Shape shapeId="19" name="lampHolders" translation="0 1.5139 3.34932" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="86" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="lightBulps" translation="0 1.5139 3.34932" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="87" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="0.00161983 0.0040677 0.0260205" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="88" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.00920412 0.0040677 0.0212181" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="89" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.0168768 0.0040677 0.0163614" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="90" type="point" color="0.5 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.025 0.0040677 0.0114213" rotation="90 9.57054e-21 -2.18948e-13" scale="0.01 0.01 0.01" nodeId="91" type="point" color="0.3 0.3 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+          </Shape>
+          <Shape shapeId="19" name="lampHolders.001" translation="0.0228184 1.5321 2.3904" rotation="90 8.65142e-06 180" scale="100 100 100" clipDistance="300" nodeId="92" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="lightBulps.001" translation="0.0290709 1.53227 2.53696" rotation="90 -8.65142e-06 180" scale="100 100 100" clipDistance="300" nodeId="93" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="0.00162034 0.0040559 0.0258368" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="94" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.009 0.00405589 0.0210344" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="95" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.017281 0.00405589 0.0161777" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="96" type="point" color="0.5 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+            <Light name="light" translation="0.025 0.00405589 0.0112376" rotation="90 5.00896e-06 180" scale="0.01 0.01 0.01" nodeId="97" type="point" color="0.3 0.3 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1"/>
+          </Shape>
+          <Shape shapeId="21" name="lampHolders.002" translation="0.571687 3.60897 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="98" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="lightBulps.002" translation="0.576255 3.54577 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="99" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00111454 -3.53842e-05 0.000115991" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="100" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+          <Shape shapeId="21" name="lampHolders.003" translation="-0.591623 3.60897 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="101" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="lightBulps.003" translation="-0.587439 3.54577 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="102" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00111454 -0.000108179 0.000115991" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="103" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+          <Shape shapeId="21" name="lampHolders.004" translation="-1.7777 2.88127 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="104" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="lightBulps.004" translation="-1.77192 2.80905 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="105" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00113213 -4.72423e-05 8.74959e-05" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="106" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+          <Shape shapeId="21" name="lampHolders.005" translation="1.75721 2.88127 2.23037" rotation="-90 -0 0" scale="100 100 100" clipDistance="300" nodeId="107" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="lightBulps.005" translation="1.76071 2.80905 2.23008" rotation="-8.0292e-06 58.3115 90" scale="100 100 100" clipDistance="300" nodeId="108" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Light name="light" translation="-0.00113213 -2.89939e-05 8.74922e-05" rotation="58.3115 4.34838e-06 -90" scale="0.01 0.01 0.01" nodeId="109" type="point" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="areas" nodeId="110">
+          <TransformGroup name="start" translation="-2.996 0 -2.97593" nodeId="111">
+            <TransformGroup name="width" translation="5.98522 0 0" nodeId="112"/>
+            <TransformGroup name="height" translation="0 0 9.92326" nodeId="113"/>
+          </TransformGroup>
+          <TransformGroup name="startTest" translation="-2.46868 0 -1.996" nodeId="114">
+            <TransformGroup name="width" translation="5.14743 4.5 4.788" nodeId="115"/>
+          </TransformGroup>
+          <TransformGroup name="startIndoor" translation="-2.40108 0 -1.98329" nodeId="116">
+            <TransformGroup name="width" translation="5.03872 0 0" nodeId="117"/>
+            <TransformGroup name="height" translation="0 0 7.99618" nodeId="118"/>
+          </TransformGroup>
+          <TransformGroup name="startTestAi" translation="-2.46868 0 -1.996" nodeId="119">
+            <TransformGroup name="width" translation="5.14743 0 4.788" nodeId="120"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="decoration" nodeId="121">
+          <Shape shapeId="23" name="sign" translation="0 3.17181 1.50994" rotation="90 -0 0" scale="1.5 1 0.75" nodeId="122" materialIds="11" distanceBlending="false"/>
+          <TransformGroup name="tetraPacks" nodeId="123">
+            <Shape shapeId="24" name="tetraPack" translation="-0.564812 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="124" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-0.736625 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="125" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-0.898226 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="126" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-1.05692 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="127" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-1.21442 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="128" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-1.37068 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="129" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-1.5214 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="130" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-1.68581 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="131" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-1.84376 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="132" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-0.201966 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="133" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="24" name="tetraPack" translation="-0.0464415 1.88098 -1.3235" rotation="-90 90 0" scale="100 100 100" nodeId="134" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="bottlesWine" nodeId="135">
+            <Shape shapeId="25" name="bottleWine" translation="-1.847 1.35935 -1.3652" rotation="-90 -90 0" scale="100 100 100" nodeId="136" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="25" name="bottleWine" translation="-1.71086 1.35935 -1.3652" rotation="90 -79.9002 180" scale="100 100 100" nodeId="137" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="25" name="bottleWine" translation="-1.577 1.35935 -1.3652" rotation="-90 -85.7762 -8.33965e-06" scale="100 100 100" nodeId="138" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="25" name="bottleWine" translation="-1.43936 1.35935 -1.3652" rotation="-90 -90 0" scale="100 100 100" nodeId="139" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="25" name="bottleWine" translation="-1.3093 1.35935 -1.3652" rotation="-90 -84.8089 -8.19603e-06" scale="100 100 100" nodeId="140" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="25" name="bottleWine" translation="-1.18045 1.35935 -1.3652" rotation="90 -85.3519 180" scale="100 100 100" nodeId="141" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="bottlesMet" nodeId="142">
+            <Shape shapeId="26" name="bottleMet" translation="-0.909385 1.36605 -1.32627" rotation="-90 -79.8093 -1.6437e-05" scale="100 100 100" nodeId="143" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="26" name="bottleMet" translation="-0.773415 1.36605 -1.32627" rotation="-90 -90 0" scale="100 100 100" nodeId="144" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="26" name="bottleMet" translation="-0.636001 1.36605 -1.32627" rotation="-90 -77.0328 -3.70689e-06" scale="100 100 100" nodeId="145" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="26" name="bottleMet" translation="-0.50453 1.36605 -1.32627" rotation="90 -77.3003 180" scale="100 100 100" nodeId="146" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="26" name="bottleMet" translation="-0.374346 1.36605 -1.32627" rotation="-90 -90 0" scale="100 100 100" nodeId="147" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="26" name="bottleMet" translation="-0.243 1.36605 -1.32627" rotation="-90 -84.0031 -1.61687e-05" scale="100 100 100" nodeId="148" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="26" name="bottleMet" translation="-0.104199 1.36605 -1.32627" rotation="90 -86.3471 180" scale="100 100 100" nodeId="149" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="mugsWithCollision" nodeId="150">
+            <Shape shapeId="27" name="mugGreenCollision" translation="-1.037 1.42032 1.43649" rotation="0 -16.4086 0" dynamic="true" nodeId="151" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="28" name="mugGreenFull" translation="-0.145 0.182587 -0.00122643" rotation="-90 -90 0" nodeId="152" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="29" name="mugGreenCollision" translation="-0.818 1.42032 1.43649" rotation="0 16.083 0" dynamic="true" nodeId="153" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="30" name="mugGreenFull" translation="-0.151 0.182587 -0.00106812" rotation="-90 -90 0" nodeId="154" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="31" name="mugGreenCollision" translation="-0.622 1.42032 1.43649" dynamic="true" nodeId="155" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="32" name="mugGreenFull" translation="-0.146 0.182587 0" rotation="-90 -90 0" nodeId="156" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="33" name="mugRedCollision" translation="-0.417 1.42032 1.43649" rotation="0 18.2949 0" dynamic="true" nodeId="157" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="34" name="mugRedFull" translation="-0.0922952 0.188239 -0.0014534" rotation="-90 -90 0" nodeId="158" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="35" name="mugRedCollision" translation="-0.226 1.42032 1.43649" rotation="0 -11.4662 0" dynamic="true" nodeId="159" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="36" name="mugRedFull" translation="-0.0917325 0.188239 0.000736237" rotation="-90 -90 0" nodeId="160" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="31" name="mugRedCollision" translation="-0.053 1.42032 1.43649" dynamic="true" nodeId="161" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="37" name="mugRedFull" translation="-0.0908746 0.188239 0" rotation="-90 -90 0" nodeId="162" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="38" name="mugYellowCollision" translation="0.454 1.42032 1.43649" rotation="0 -27.3916 0" dynamic="true" nodeId="163" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="39" name="mugYellowFull" translation="8.12381e-09 0.185851 3.55103e-16" rotation="-90 -90 0" nodeId="164" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="40" name="mugYellowCollision" translation="0.684 1.42032 1.43649" rotation="0 26.2977 0" dynamic="true" nodeId="165" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="41" name="mugYellowFull" translation="8.12381e-09 0.185851 3.55103e-16" rotation="-90 -90 0" nodeId="166" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="31" name="mugYellowCollision" translation="0.947 1.42032 1.43649" dynamic="true" nodeId="167" materialIds="12" nonRenderable="true" distanceBlending="false">
+              <Shape shapeId="42" name="mugYellowFull" translation="8.12381e-09 0.185851 3.55103e-16" rotation="-90 -90 0" nodeId="168" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="mugsEmptyTable" nodeId="169">
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-0.907 1.41953 0.983906" rotation="-90 -83.0409 2.78673e-06" scale="100 100 100" nodeId="170" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-0.74464 1.41953 0.983906" rotation="90 -81.8688 -180" scale="100 100 100" nodeId="171" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-0.74464 1.41953 1.12504" rotation="-90 -90 0" scale="100 100 100" nodeId="172" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-0.88292 1.41953 1.12504" rotation="-90 -82.4699 1.03261e-05" scale="100 100 100" nodeId="173" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.06722 1.41953 1.12504" rotation="-90 -90 0" scale="100 100 100" nodeId="174" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.06732 1.41953 0.983906" rotation="90 -86.575 -180" scale="100 100 100" nodeId="175" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.331634 1.42119 0.948282" rotation="90 -85.7295 -180" scale="100 100 100" nodeId="176" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.161363 1.42119 0.948282" rotation="-90 -86.0923 -5.78277e-06" scale="100 100 100" nodeId="177" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.161 1.42119 1.09568" rotation="-90 -83.5109 -8.50153e-06" scale="100 100 100" nodeId="178" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.330304 1.42119 1.09568" rotation="-90 -90 0" scale="100 100 100" nodeId="179" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.487916 1.42119 1.09568" rotation="-90 -90 0" scale="100 100 100" nodeId="180" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.49 1.42119 0.948282" rotation="-90 -86.4898 -6.59919e-06" scale="100 100 100" nodeId="181" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.566444 1.41776 0.965062" rotation="-90 -90 0" scale="100 100 100" nodeId="182" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.740123 1.41776 0.965062" rotation="90 -83.9866 180" scale="100 100 100" nodeId="183" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.740123 1.41776 1.12121" rotation="-90 -90 0" scale="100 100 100" nodeId="184" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.549315 1.41776 1.12121" rotation="-90 -90 0" scale="100 100 100" nodeId="185" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.387013 1.41776 1.12121" rotation="-90 -77.3276 -1.66681e-05" scale="100 100 100" nodeId="186" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.393 1.41776 0.965062" rotation="-90 -90 0" scale="100 100 100" nodeId="187" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.901366 1.41776 0.965062" rotation="-90 -90 0" scale="100 100 100" nodeId="188" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="1.05317 1.42015 0.965062" rotation="-90 -90 0" scale="100 100 100" nodeId="189" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="1.05317 1.42015 1.12088" rotation="-90 -90 0" scale="100 100 100" nodeId="190" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="0.900174 1.42015 1.12088" rotation="90 -82.1097 180" scale="100 100 100" nodeId="191" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="mugsShelf" nodeId="192">
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.83633 2.24768 -1.31247" rotation="-90 -90 0" scale="100 100 100" nodeId="193" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.70063 2.24768 -1.31247" rotation="-90 -90 0" scale="100 100 100" nodeId="194" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.5568 2.24768 -1.31247" rotation="-90 -90 0" scale="100 100 100" nodeId="195" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.42115 2.24768 -1.31247" rotation="-90 -90 0" scale="100 100 100" nodeId="196" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.48882 2.35579 -1.31247" rotation="-90 -90 0" scale="100 100 100" nodeId="197" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.63077 2.35579 -1.31247" rotation="-90 -90 0" scale="100 100 100" nodeId="198" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="43" name="mugGreenEmpty" translation="-1.76555 2.35579 -1.31247" rotation="-90 -84.3742 -1.60517e-06" scale="100 100 100" nodeId="199" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-1.22185 2.24915 -1.32503" rotation="90 -86.2585 180" scale="100 100 100" nodeId="200" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-1.07866 2.24915 -1.32503" rotation="-90 -90 0" scale="100 100 100" nodeId="201" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.938738 2.24915 -1.32503" rotation="-90 -77.3491 -1.82243e-05" scale="100 100 100" nodeId="202" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.805418 2.24915 -1.32503" rotation="-90 -90 0" scale="100 100 100" nodeId="203" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-0.872281 2.35787 -1.32503" rotation="90 -80.4603 180" scale="100 100 100" nodeId="204" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-1.01042 2.35787 -1.32503" rotation="-90 -90 0" scale="100 100 100" nodeId="205" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="44" name="mugRedEmpty" translation="-1.14791 2.35787 -1.32503" rotation="-90 -84.6731 -8.49481e-06" scale="100 100 100" nodeId="206" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.594345 2.24234 -1.35099" rotation="-90 -60.0677 -2.75462e-05" scale="100 100 100" nodeId="207" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.480644 2.24234 -1.35575" rotation="-90 -90 0" scale="100 100 100" nodeId="208" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.338055 2.24234 -1.35575" rotation="-90 -73.1327 -1.69026e-05" scale="100 100 100" nodeId="209" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.193338 2.24234 -1.35575" rotation="-90 -90 0" scale="100 100 100" nodeId="210" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.274885 2.3524 -1.35575" rotation="90 -82.7205 180" scale="100 100 100" nodeId="211" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.408186 2.3524 -1.35575" rotation="-90 -90 0" scale="100 100 100" nodeId="212" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            <Shape shapeId="45" name="mugYellowEmpty" translation="-0.553488 2.3524 -1.35575" rotation="-90 -77.4288 -1.82031e-05" scale="100 100 100" nodeId="213" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="gameplay" translation="0 0 5.40481" scale="0.327767 1 1" nodeId="214">
+          <TransformGroup name="IN" scale="1.20791 1 1" nodeId="215">
+            <TransformGroup name="unloadingStation" nodeId="216">
+              <TransformGroup name="unloadingTriggers" nodeId="217">
+                <Shape shapeId="46" name="exactFillRootNode" translation="0 -0.45 0" static="true" collisionMask="1073741824" nodeId="218" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <Shape shapeId="47" name="baleTrigger" translation="0 -0.45 0" static="true" trigger="true" collisionMask="16781312" nodeId="219" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="aiUnloadingNode" translation="-0.0299828 0.369631 0.0654453" rotation="0 -90 0" scale="1 1 2.52581" nodeId="220"/>
+            <TransformGroup name="triggerMarker" translation="0 0 0.013" scale="2.52581 1 1" nodeId="221"/>
+            <Shape shapeId="48" name="aiSpline" translation="2.21521 0 0.021" scale="2.52581 1 1" visibility="false" nodeId="222"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

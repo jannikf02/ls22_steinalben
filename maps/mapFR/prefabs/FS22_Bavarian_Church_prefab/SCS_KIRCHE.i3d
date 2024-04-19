@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="A_ECPORT" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapAlpine/textures/cheeseFactory01_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/mapAlpine/textures/cheeseFactory01_normal.dds"/>
+    <File fileId="3" filename="$data/maps/mapAlpine/textures/cheeseFactory01_specular.dds"/>
+    <File fileId="19" filename="$data/maps/mapAlpine/textures/townHouse04_06_diffuse.dds"/>
+    <File fileId="20" filename="$data/maps/mapAlpine/textures/townHouse04_06_normal.dds"/>
+    <File fileId="21" filename="$data/maps/mapAlpine/textures/townHouse04_06_specular.dds"/>
+    <File fileId="14" filename="$data/maps/mapUS/textures/concreteUS02_normal.dds"/>
+    <File fileId="15" filename="$data/maps/mapUS/textures/concreteUS02_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="17" filename="$data/shared/default_normal.dds"/>
+    <File fileId="12" filename="textures/BLACK.dds"/>
+    <File fileId="9" filename="textures/DACH_ROT.dds"/>
+    <File fileId="10" filename="textures/DACH_ROT_NRM.dds"/>
+    <File fileId="11" filename="textures/DACH_ROT_SPEC.dds"/>
+    <File fileId="5" filename="textures/SCS_KIRCHE_AO.dds"/>
+    <File fileId="22" filename="textures/X_GLAS_UNDURCHSICHTIG.dds"/>
+    <File fileId="23" filename="textures/X_GLAS_UNDURCHSICHTIG_SPEC.dds"/>
+    <File fileId="24" filename="textures/X_KIRCHE_UHR.dds"/>
+    <File fileId="13" filename="textures/X_MAUER_GELB.dds"/>
+    <File fileId="16" filename="textures/X_METALL_D.dds"/>
+    <File fileId="18" filename="textures/X_METALL_D_SPEC.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cheeseFactory" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+    </Material>
+    <Material name="default" materialId="151" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="SCS_DACH_ROT." materialId="5" customShaderId="4">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mDirtDiffuse" fileId="12"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="SCS_GLAS_UNDURCHSICHTIG" materialId="6" customShaderId="4">
+      <Texture fileId="22"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+    </Material>
+    <Material name="SCS_KIRCHE_UHR" materialId="7" specularColor="0.494118 1 0">
+      <Texture fileId="24"/>
+      <Normalmap fileId="17"/>
+    </Material>
+    <Material name="SCS_MAUER_GELB" materialId="8" customShaderId="4">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+    </Material>
+    <Material name="SCS_METALL_D" materialId="9" customShaderId="4">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="townHouse04_06" materialId="10" customShaderId="4">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="SCS_KIRCHE.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="SCS_Bavarian_Church" nodeId="149">
+        <TransformGroup name="SCS_KIRCHE" scale="1.087 1 1" clipDistance="400" nodeId="36">
+          <Shape shapeId="1" name="Plane.004" rotation="-6.83019e-06 -0 0" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="Plane.005" rotation="-6.83019e-06 -0 0" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="Plane.009" rotation="-6.83019e-06 -0 0" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Plane.003" rotation="-6.83019e-06 -0 0" nodeId="40" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="Plane.007" rotation="-6.83019e-06 -0 0" nodeId="41" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Plane.008" rotation="-6.83019e-06 -0 0" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="Plane.010" rotation="-6.83019e-06 -0 0" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Colli" scale="1.087 1 1" nodeId="150">
+          <Shape shapeId="8" name="Cube.003" rotation="-6.83019e-06 -0 0" static="true" nodeId="154" materialIds="151" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

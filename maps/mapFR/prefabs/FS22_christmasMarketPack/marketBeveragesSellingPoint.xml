@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<storeData>
+<name>
+        <en>Beverages Stall Selling Station</en>
+        <de>Getränke-Stand Verkaufsstation</de>
+</name>
+
+<functions>
+<function>
+        <en>Christmas market stall for beverages as selling station.</en>
+        <de>Weihnachtsmarkt Stand für Getränke als Verkaufsstation.</de>
+</function>
+</functions>
+
+<image>store_marketBeverages.dds</image>
+<lifetime>1000</lifetime>
+<price>1000</price>
+<rotation>0</rotation>
+<brand>NONE</brand>
+<species>placeable</species>
+<category>sellingPoints</category>
+<brush>
+	<type>placeable</type>
+    <category>production</category>
+    <tab>sellingPoints</tab>
+</brush>
+        <vertexBufferMemoryUsage>379904</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>78336</indexBufferMemoryUsage>
+        <textureMemoryUsage>3997696</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+</storeData>
+
+<base>
+	<filename>marketBeverages.i3d</filename>
+    <canBeRenamed>true</canBeRenamed>
+</base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="0>3|1" endNode="0>3|1|0" />
+        </testAreas>
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+
+<clearAreas> 
+        <clearArea startNode="0>3|0" widthNode="0>3|0|0" heightNode="0>3|0|1"/>
+</clearAreas>
+
+<leveling maxEdgeAngle="30" maxSlope="30" maxSmoothDistance="8" requireLeveling="true">
+<levelAreas> 
+    <levelArea startNode="0>3|0" widthNode="0>3|0|0" heightNode="0>3|0|1"/>
+</levelAreas>
+</leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="0>3|2" widthNode="0>3|2|0" heightNode="0>3|2|1" />
+    </indoorAreas>
+
+    <ai>
+        <splines>
+            <spline node="0>5|0|3" />
+        </splines>
+        <updateAreas>
+            <updateArea startNode="0>3|3" endNode="0>3|3|0" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="0>5|0|2" teleportNode="0>5|0|2" />
+    </hotspots>
+
+
+    <sellingStation appearsOnStats="true" litersForFullPriceDrop="1000" fullPriceRecoverHours="24">
+        <unloadTrigger exactFillRootNode="0>5|0|0|0|0" aiNode="0>5|0|1" fillTypes="sugarBeet SUGARBEET_CUT sugarCane water grape grapejuice honey sugar"/>
+
+        <fillType name="sugarBeet"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sugarCane"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARBEET_CUT"      priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+       	<fillType name="water"              priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="grape"           	priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="grapejuice"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="honey"              priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="sugar"              priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+
+
+    <triggerMarkers>
+        <triggerMarker node="0>5|0|2" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <animatedObjects>
+        <animatedObject saveId="door" >
+            <animation duration="1.5">
+                <part node="0>1|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 175 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0>1|1" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/backDoorLoop.wav" loops="0" linkNode="0>1|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gateOpened.wav" linkNode="0>1|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gateClosed.wav" linkNode="0>1|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+
+
+  <animatedObject saveId="winePot" >
+   <controls triggerNode="1|2|2" posAction="ACTIVATE_HANDTOOL" posText="l10nPour" negText="l10nPourAgain" />
+   <sounds>
+    <moving file="waterFill.ogg" loops="0" linkNode="1|2|1" volume="3.8" radius="25" innerRadius="10" fadeOut="0.25"/>
+   </sounds>
+   <animation duration="5">
+    <part node="1|2|1">
+     <keyFrame time="0.0" visibility="false"/>
+     <keyFrame time="0.01" visibility="true"/>
+     <keyFrame time="0.9" visibility="true"/>
+     <keyFrame time="1" visibility="false" />
+    </part>
+    <part node="1|2|0|0">
+     <keyFrame time="0.0" visibility="false" translation="0 0 0"/>
+     <keyFrame time="0.2" visibility="true" translation="0 0 0"/>
+     <keyFrame time="1" visibility="true" translation="0 0 0.0008" />
+    </part>
+   </animation>
+  </animatedObject>
+
+  <animatedObject saveId="metPot" >
+   <controls triggerNode="1|3|2" posAction="ACTIVATE_HANDTOOL" posText="l10nPour" negText="l10nPourAgain" />
+   <sounds>
+    <moving file="waterFill.ogg" loops="0" linkNode="1|3|1" volume="3.8" radius="25" innerRadius="10" fadeOut="0.25"/>
+   </sounds>
+   <animation duration="5">
+    <part node="1|3|1">
+     <keyFrame time="0.0" visibility="false"/>
+     <keyFrame time="0.01" visibility="true"/>
+     <keyFrame time="0.9" visibility="true"/>
+     <keyFrame time="1" visibility="false" />
+    </part>
+    <part node="1|3|0|0">
+     <keyFrame time="0.0" visibility="false" translation="0 0 0"/>
+     <keyFrame time="0.2" visibility="true" translation="0 0 0"/>
+     <keyFrame time="1" visibility="true" translation="0 0 0.09" />
+    </part>
+   </animation>
+  </animatedObject>
+  </animatedObjects>
+
+
+
+
+</placeable>
+

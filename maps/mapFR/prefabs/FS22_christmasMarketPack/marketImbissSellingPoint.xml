@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<storeData>
+<name>
+        <en>Imbiss Booth Selling Station</en>
+        <de>Imbiss-Bude Verkaufsstation</de>
+</name>
+
+<functions>
+<function>
+        <en>Imbiss booth for french fries and sausages as selling station.</en>
+        <de>Imbissbude für Pommes Frites und Würstchen als Verkaufsstation.</de>
+</function>
+</functions>
+
+<image>store_marketImbiss.dds</image>
+<lifetime>1000</lifetime>
+<price>1000</price>
+<rotation>0</rotation>
+<brand>NONE</brand>
+<species>placeable</species>
+<category>sellingPoints</category>
+<brush>
+	<type>placeable</type>
+    <category>production</category>
+    <tab>sellingPoints</tab>
+</brush>
+        <vertexBufferMemoryUsage>801536</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>127488</indexBufferMemoryUsage>
+        <textureMemoryUsage>7012352</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+</storeData>
+
+<base>
+	<filename>marketImbiss.i3d</filename>
+    <canBeRenamed>true</canBeRenamed>
+</base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="0>3|1" endNode="0>3|1|0" />
+        </testAreas>
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+
+<clearAreas> 
+        <clearArea startNode="0>3|0" widthNode="0>3|0|0" heightNode="0>3|0|1"/>
+</clearAreas>
+
+<leveling maxEdgeAngle="30" maxSlope="30" maxSmoothDistance="8" requireLeveling="true">
+<levelAreas> 
+    <levelArea startNode="0>3|0" widthNode="0>3|0|0" heightNode="0>3|0|1"/>
+</levelAreas>
+</leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="0>3|2" widthNode="0>3|2|0" heightNode="0>3|2|1" />
+    </indoorAreas>
+
+    <ai>
+        <splines>
+            <spline node="0>5|0|3" />
+        </splines>
+        <updateAreas>
+            <updateArea startNode="0>3|3" endNode="0>3|3|0" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="0>5|0|2" teleportNode="0>5|0|2" />
+    </hotspots>
+
+
+    <sellingStation appearsOnStats="true" litersForFullPriceDrop="1000" fullPriceRecoverHours="24">
+        <unloadTrigger exactFillRootNode="0>5|0|0|0|0" aiNode="0>5|0|1" fillTypes="water potato sunflower tomato bread honey flour sugar CANOLA_OIL SUNFLOWER_OIL raisins OLIVE_OIL butter egg lettuce STRAWBERRY grapeJuice chocolate cake cereal cheese"/>
+
+       	<fillType name="water"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="potato"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sunflower"      priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="tomato"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="bread"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="honey"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="flour"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="sugar"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="CANOLA_OIL"     priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="SUNFLOWER_OIL"  priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="raisins"        priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="OLIVE_OIL"      priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="butter"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="egg"            priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="lettuce"        priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="STRAWBERRY"   priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="grapeJuice"     priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="chocolate"      priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="cake"           priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="cereal"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="cheese"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+
+    </sellingStation>
+
+    <triggerMarkers>
+        <triggerMarker node="0>5|0|2" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <animatedObjects>
+        <animatedObject saveId="door" >
+            <animation duration="1.5">
+                <part node="0>1|0">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 175 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0>1|1" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/backDoorLoop.wav" loops="0" linkNode="0>1|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gateOpened.wav" linkNode="0>1|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gateClosed.wav" linkNode="0>1|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+
+        <animatedObject saveId="grill" >
+            <animation duration="30">
+                <part node="1|4">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="0.01" visibility="true"/>
+                </part>
+            </animation>
+            <controls triggerNode="1|5" posAction="ACTIVATE_HANDTOOL" posText="l10nGrill" negText="l10nGrillAgain" />
+            <sounds>
+                <moving file="frizzle.ogg" loops="0" linkNode="1|4" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+
+
+  </animatedObjects>
+
+
+
+
+</placeable>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+        <en>Selling Station Plain</en>
+        <de>Verkaufsstation</de>
+		</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>store_sellingStationPlain.dds</image>
+        <price>100</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>sellingPoints</tab>
+        </brush>
+        <vertexBufferMemoryUsage>15616</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1792</indexBufferMemoryUsage>
+        <textureMemoryUsage>720896</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>sellingStationPlain.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+
+    <sellingStation appearsOnStats="true" litersForFullPriceDrop="200000" fullPriceRecoverHours="48" supportsExtension="false">
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypeCategories="TRAINWAGON BULK PRODUCT LIQUID PIECE">
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+        </unloadTrigger>
+
+        <fillTypeCategory name="bulk"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="trainwagon"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="product"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="liquid"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="piece"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+
+        <sounds>
+            <idle template="farmersMarket"/>
+        </sounds>
+    </sellingStation>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="farmersMarket" node="0>" />
+        <i3dMapping id="clearArea1Start" node="0>10|1|0" />
+        <i3dMapping id="clearArea1Width" node="0>10|1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>10|1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>10|2|0" />
+        <i3dMapping id="levelArea1Width" node="0>10|2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>10|2|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>10|3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>10|3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>10|3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>10|0|0" />
+        <i3dMapping id="testArea1End" node="0>10|0|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>10|4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>10|4|0|0" />
+        <i3dMapping id="infoTrigger" node="0>11" />
+        <i3dMapping id="unloadTrigger" node="0>1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>1|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5" />
+        <i3dMapping id="baleTrigger" node="0>3" />
+        <i3dMapping id="teleportNode" node="0>4" />
+        <i3dMapping id="warningStripes" node="0>9" />
+
+
+    </i3dMappings>
+</placeable>

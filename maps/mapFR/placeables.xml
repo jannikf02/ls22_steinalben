@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeables>
     <placeable mapBoundId="sellingPointKiebitzMarkt" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationKiebitzMarkt.xml" position="-272.824 18.669 111.494" rotation="0 -19.864 0" />  
-    <placeable mapBoundId="sellingPointLidl" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationLidl.xml" position="-883.219 100.163 -698.4" rotation="0 270 0" />  
-    <placeable mapBoundId="sellingPointAldi" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationAldi.xml" position="-868.431 100.163 -678.661" rotation="0 90 0" />  
+    <placeable mapBoundId="sellingPointLidl" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationLidl.xml" position="-883.219 100.163 -698.4" rotation="0 0 0" />  
+    <placeable mapBoundId="sellingPointAldi" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationAldi.xml" position="-868.431 100.163 -678.661" rotation="0 0 0" />  
+    <placeable mapBoundId="sellingPointChristmas" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationChristmasMarket.xml" position="-928.044 100.163 -884.094" rotation="0 0 0" />  
+    <placeable mapBoundId="sellingPointMuehle" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationMuehle.xml" position="-299.079 20.665 -971.858" rotation="0 0 0" />  
+    <placeable mapBoundId="gasStationTown" filename="data/placeables/mapAlpine/gasStation/gasStationTown.xml" position="-925.463 106.904 -693.098" rotation="0 90 0" />
 </placeables>
  

@@ -29,5 +29,8 @@
         <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationKiebitzMarkt.xml"/>
         <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationAldi.xml"/>
         <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationLidl.xml"/>
+        <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationChristmasMarket.xml"/>
+        <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationMuehle.xml"/>
+        <storeItem xmlFilename="$data/placeables/mapAlpine/gasStation/gasStationTown.xml"/>
     </storeItems>
 </modDesc>

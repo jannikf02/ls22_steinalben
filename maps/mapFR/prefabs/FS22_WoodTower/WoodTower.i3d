@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gardenShed01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="Textures/diffuseMap.dds"/>
+    <File fileId="7" filename="Textures/normalMap.dds"/>
+    <File fileId="8" filename="Textures/specularmap.dds"/>
+    <File fileId="1" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="9" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="4" filename="$data/shaders/snowHeapShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Snow_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="watchtower" materialId="5" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="WoodTower.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="WoodTower" nodeId="9">
+        <TransformGroup name="clearAreas" nodeId="10">
+          <TransformGroup name="clearArea1Start" translation="2.72483 0.02129 -2.52428" nodeId="11">
+            <TransformGroup name="clearArea1Width" translation="0 0 5.08518" nodeId="12"/>
+            <TransformGroup name="clearArea1Height" translation="-5.61741 0 0" nodeId="13"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="14">
+          <TransformGroup name="levelArea1Start" translation="2.42598 0.02129 -2.31639" nodeId="15">
+            <TransformGroup name="levelArea1Width" translation="0 0 4.86039" nodeId="16"/>
+            <TransformGroup name="levelArea1Height" translation="-5.07201 0 0" nodeId="17"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="18">
+          <TransformGroup name="testArea1Start" translation="2.43669 -0.25 -2.5235" nodeId="19">
+            <TransformGroup name="testArea1End" translation="-4.71452 3.03694 4.67791" nodeId="20"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="21">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2.37877 0 -2.44436" nodeId="22">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.56903 0 4.84303" nodeId="23"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="24">
+          <TransformGroup name="winter" nodeId="25">
+            <Shape shapeId="1" name="Snow" translation="0.00039959 7.8473 -0.00989546" rotation="16.6727 -0 0" scale="0.756834 1 0.375335" clipDistance="300" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+          </TransformGroup>
+          <Shape shapeId="2" name="woddTower" clipDistance="300" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" nodeId="28">
+          <Shape shapeId="2" name="woddTower" static="true" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="37">
+          <TransformGroup name="indoorAreas1Start" translation="2.72483 0.02129 -2.52428" nodeId="38">
+            <TransformGroup name="indoorAreas1Width" translation="0 0 5.08518" nodeId="39"/>
+            <TransformGroup name="indoorAreas1Height" translation="-5.61741 0 0" nodeId="40"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

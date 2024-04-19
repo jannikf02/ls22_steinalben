@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="textures/wood_diffuse.dds"/>
+    <File fileId="3" filename="textures/wood_normal.dds"/>
+    <File fileId="4" filename="textures/wood_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="255" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Material" materialId="246">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="247" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="picnicBench.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="picnicBench" nodeId="258">
+        <TransformGroup name="areas" nodeId="259">
+          <TransformGroup name="testAreas" nodeId="260">
+            <TransformGroup name="Area1Start" translation="-1.19742 0 -1.00906" nodeId="261">
+              <TransformGroup name="Area1End" translation="1.98379 0.7 1.875" nodeId="262"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="clearAreas" nodeId="263">
+            <TransformGroup name="Area1Start" translation="-1.5562 0 -1.369" nodeId="264">
+              <TransformGroup name="Area1Width" translation="0 0 2.64769" nodeId="265"/>
+              <TransformGroup name="Area1Height" translation="2.6541 0 0" nodeId="266"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" nodeId="267">
+            <TransformGroup name="Area1Start" translation="-1.5562 0 -1.369" nodeId="290">
+              <TransformGroup name="Area1Width" translation="0 0 2.64769" nodeId="291"/>
+              <TransformGroup name="Area1Height" translation="2.6541 0 0" nodeId="292"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" nodeId="271">
+            <TransformGroup name="Area1Start" translation="-1.5562 0 -1.369" nodeId="287">
+              <TransformGroup name="Area1Width" translation="0 0 2.64769" nodeId="288"/>
+              <TransformGroup name="Area1Height" translation="2.6541 0 0" nodeId="289"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="275">
+            <TransformGroup name="Area1Start" translation="-1.19742 0 -1.00906" nodeId="285">
+              <TransformGroup name="Area1End" translation="1.98379 0 1.87453" nodeId="286"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipCollision" nodeId="278">
+            <Shape shapeId="1" name="tipCollision" translation="-0.205182 0 0" visibility="false" static="true" collisionMask="524288" clipDistance="300" nodeId="279" materialIds="255" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="280">
+          <Shape shapeId="2" name="picnicBench" clipDistance="300" nodeId="251" materialIds="246" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="coli" translation="-0.211 0.402152 0.00892903" static="true" nodeId="252" materialIds="247" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

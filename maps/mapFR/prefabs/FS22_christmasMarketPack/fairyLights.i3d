@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="9" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="textures/lightBulpsColored_diffuse.dds"/>
+    <File fileId="3" filename="textures/lightBulpsColored_normal.dds"/>
+    <File fileId="4" filename="textures/lightBulpsColored_specular.dds"/>
+    <File fileId="6" filename="textures/wood_diffuse.dds"/>
+    <File fileId="7" filename="textures/wood_normal.dds"/>
+    <File fileId="8" filename="textures/wood_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="126" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lightBulps" materialId="127" customShaderId="5" customShaderVariation="customEmissiveMap">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mEmissiveMap" fileId="2"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+    </Material>
+    <Material name="wood" materialId="128" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fairyLights.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="fairyLights" nodeId="135">
+        <TransformGroup name="areas" nodeId="136">
+          <TransformGroup name="testAreas" nodeId="137">
+            <TransformGroup name="Area1Start" translation="-4.10953 0 -0.094" nodeId="138">
+              <TransformGroup name="Area1End" translation="4.21471 3 0.152" nodeId="139"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="clearAreas" nodeId="140">
+            <TransformGroup name="Area1Start" translation="-4.46622 0 -0.467484" nodeId="141">
+              <TransformGroup name="Area1Width" translation="0 0 0.847423" nodeId="142"/>
+              <TransformGroup name="Area1Height" translation="4.74601 0 0" nodeId="143"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" nodeId="144">
+            <TransformGroup name="Area1Start" translation="-4.46622 0 -0.467484" nodeId="145">
+              <TransformGroup name="Area1Width" translation="0 0 0.847423" nodeId="146"/>
+              <TransformGroup name="Area1Height" translation="4.74601 0 0" nodeId="147"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" nodeId="148">
+            <TransformGroup name="Area1Start" translation="-4.46622 0 -0.467484" nodeId="149">
+              <TransformGroup name="Area1Width" translation="0 0 0.847423" nodeId="150"/>
+              <TransformGroup name="Area1Height" translation="4.74601 0 0" nodeId="151"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="152">
+            <TransformGroup name="Area1Start" translation="-4.10953 0 -0.094" nodeId="153">
+              <TransformGroup name="Area1End" translation="4.21471 0 0.152334" nodeId="154"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipCollision" nodeId="155">
+            <Shape shapeId="1" name="tipCollision" translation="-2.15554 0 -7.60956e-17" visibility="false" static="true" collisionMask="524288" clipDistance="300" nodeId="156" materialIds="126" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="vis" nodeId="157">
+          <Shape shapeId="2" name="lampHolders" translation="-1.991 3.722 0.000848834" rotation="3.30638e-06 -31.5 -1.53475e-06" clipDistance="300" nodeId="158" materialIds="127,127" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="post" translation="0 0.00748164 0" rotation="-90 -0 0" static="true" clipDistance="300" nodeId="159" materialIds="128" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="post02" translation="-4 0.00748164 0" rotation="-90 -0 0" static="true" clipDistance="300" nodeId="160" materialIds="128" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="illum" translation="0 0.9 0" nodeId="161">
+          <Shape shapeId="5" name="lightBulps" translation="-2 2.72274 -4.17233e-07" rotation="-90 5.18178e-22 31.4973" clipDistance="300" nodeId="162" materialIds="127" castsShadows="true" receiveShadows="true"/>
+          <Light name="light" translation="-0.439292 2.80184 0" nodeId="163" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+          <Light name="light" translation="-1.3539 2.6935 0" nodeId="164" type="point" color="0.3 0.3 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+          <Light name="light" translation="-2.28261 2.6935 0" nodeId="165" type="point" color="0.5 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+          <Light name="light" translation="-3.20466 2.76696 0" clipDistance="300" nodeId="166" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="3"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
