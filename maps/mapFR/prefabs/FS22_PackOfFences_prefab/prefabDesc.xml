@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>Fudzo</author>
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Pack Of Fences</en>
+        <de>Packung Zäune</de>
+        <pl>Paczka Ogrodzeń</pl> 
+		<fr>Pack De Clôtures</fr>
+    </title>
+	
+	<iconFilename>icon.dds</iconFilename>
+	
+    <description>
+		<en><![CDATA[Pack of 8 different fences. Perfect for your map!]]></en>
+		<de><![CDATA[Packung mit 8 verschiedenen Zäunen. Perfekt für Ihre Karte!]]></de>
+		<pl><![CDATA[Paczka 8 różnych ogrodzeń. Idealne na twoją mapę!]]></pl>
+		<fr><![CDATA[Pack de 8 clôtures différentes. Parfait pour votre carte!]]></fr>
+    </description>
+	
+	<categories>
+        <category>others</category>
+    </categories>
+
+	<prefabs>
+		<prefab name="Pack Of Fences" i3dFilename="packoffences_prefab.i3d" />
+    </prefabs>
+</prefabDesc>

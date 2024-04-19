@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="house5.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="21" filename="textures/01_specular.dds"/>
+    <File fileId="26" filename="textures/03_specular.dds"/>
+    <File fileId="22" filename="textures/Kable_diffuse.dds"/>
+    <File fileId="19" filename="textures/SzpakowoNumerki_diffuse.dds"/>
+    <File fileId="20" filename="textures/SzpakowoNumerki_normal.dds"/>
+    <File fileId="8" filename="textures/dom21Detal_diffuse.dds"/>
+    <File fileId="9" filename="textures/dom21Detal_normal.dds"/>
+    <File fileId="10" filename="textures/dom21Detal_specular.dds"/>
+    <File fileId="15" filename="textures/dom21_diffuse.dds"/>
+    <File fileId="18" filename="textures/dom21_height.dds"/>
+    <File fileId="12" filename="textures/dom21_mask.dds"/>
+    <File fileId="16" filename="textures/dom21_normal.dds"/>
+    <File fileId="17" filename="textures/dom21_specular.dds"/>
+    <File fileId="25" filename="textures/lampColor1.dds"/>
+    <File fileId="28" filename="textures/oknoGlow_diffuse.dds"/>
+    <File fileId="1" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="11" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="27" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="23" filename="$data/shared/default_normal.dds"/>
+    <File fileId="24" filename="$data/shared/default_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dom21_Mat" materialId="5" customShaderId="11" customShaderVariation="customParallax">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16" bumpDepth="0.3"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="mMaskMap" fileId="12"/>
+      <Custommap name="mParallaxMap" fileId="18"/>
+      <CustomParameter name="dirtMossMix" value="0.42 0.13 0 0"/>
+    </Material>
+    <Material name="dom21Detal_Mat" materialId="6" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="mMaskMap" fileId="12"/>
+      <CustomParameter name="dirtMossMix" value="0.38 0.43 0 0"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="7" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="lampColor_Mat" materialId="8" alphaBlending="true" customShaderId="27" customShaderVariation="baseMap_colorScale_blink">
+      <Texture fileId="25"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="26"/>
+      <CustomParameter name="blinkOffset" value="1 1 1 0"/>
+      <CustomParameter name="blinkSpeed" value="5 0 0 0"/>
+    </Material>
+    <Material name="lampColory_Mat" materialId="9" alphaBlending="true" customShaderId="27" customShaderVariation="baseMap_colorScale_blink">
+      <Texture fileId="25"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="26"/>
+      <CustomParameter name="blinkSpeed" value="5 0 0 0"/>
+    </Material>
+    <Material name="snow_Mat" materialId="11" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="SzpakowoKabel_mat" materialId="106">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="SzpakowoNumery_mat" materialId="12">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="SzpakowoOknoNoc_mat" materialId="13" customShaderId="27">
+      <Texture fileId="28"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="house5.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="StaticHouse" lockedgroup="true" clipDistance="600" nodeId="25">
+        <TransformGroup name="clearAreas" translation="-7.17319 0 -3.48652" nodeId="26">
+          <TransformGroup name="clearArea1Start" translation="-2.30292 0 -4.43391" nodeId="27">
+            <TransformGroup name="clearArea1Width" translation="12.7344 -1.43051e-06 0" nodeId="28"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 13.7878" nodeId="29"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="30">
+          <TransformGroup name="levelArea1Start" translation="-9.74309 -9.53674e-07 -8.18188" nodeId="31">
+            <TransformGroup name="levelArea1Width" translation="0 0 14.0216" nodeId="32"/>
+            <TransformGroup name="levelArea1Height" translation="13.1935 0 -4.54747e-15" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="34">
+          <TransformGroup name="testArea1Start" translation="-9.06044 -9.53674e-07 -7.71775" nodeId="35">
+            <TransformGroup name="testArea1End" translation="12.1232 3.10403 13.3146" nodeId="36"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreaStart" translation="-8.97768 0 -7.56025" nodeId="37">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd" translation="12.075 4.55657 12.482" nodeId="38"/>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="39">
+          <TransformGroup name="indoorArea1Start" translation="-3.45048 0 -1.84066" nodeId="40">
+            <TransformGroup name="indoorArea1Width" translation="2.6446 0 0" nodeId="41"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 4.18034" nodeId="42"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visual" nodeId="43">
+          <TransformGroup name="dom21" lockedgroup="true" translation="0 2.17596 0" scale="0.95 0.95 0.95" clipDistance="500" nodeId="44">
+            <Shape shapeId="1" name="dom21_snow" translation="-3.44088 -1.71346 -0.627313" nodeId="45" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="dom21_occluder" translation="-3.44088 -1.71346 -0.627313" nodeId="46" materialIds="7" nonRenderable="true" occluder="true"/>
+            <Shape shapeId="3" name="dom21_collision" translation="-3.44088 -1.71346 -0.627313" static="true" nodeId="47" materialIds="7" nonRenderable="true"/>
+            <Shape shapeId="4" name="dom21_detal" translation="-3.44088 -1.71346 -0.627313" clipDistance="400" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="dom21" translation="-3.44088 -1.71346 -0.627313" clipDistance="500" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="Numer_Szpakowo_21" translation="1.58255 1.1497 -5.74019" rotation="90 90 0" scale="1 1 1.11646" clipDistance="70" nodeId="50" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="lampki" translation="1.7212 4.16434 0.41649" nodeId="51" weatherRequiredMask="1024">
+            <TransformGroup name="SwiateczneLampki1" translation="-1.19209e-07 -4.76837e-07 4.44665" scale="0.5 0.5 0.5" clipDistance="150" nodeId="52">
+              <Shape shapeId="7" name="kabelek" translation="-9.53674e-07 0 7.45058e-09" clipDistance="150" nodeId="113" materialIds="106" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="lampki1" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="54" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="lampki2" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="55" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="SwiateczneLampki1" translation="-1.19209e-07 -4.76837e-07 2.69928" scale="0.5 0.5 0.5" clipDistance="150" nodeId="56">
+              <Shape shapeId="7" name="kabelek" translation="-9.53674e-07 0 7.45058e-09" clipDistance="150" nodeId="112" materialIds="106" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="lampki1" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="58" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="lampki2" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="59" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="SwiateczneLampki1" translation="-1.19209e-07 -4.76837e-07 0.902032" scale="0.5 0.5 0.5" clipDistance="150" nodeId="60">
+              <Shape shapeId="7" name="kabelek" translation="-9.53674e-07 0 7.45058e-09" clipDistance="150" nodeId="111" materialIds="106" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="lampki1" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="62" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="lampki2" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="63" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="SwiateczneLampki1" translation="-1.19209e-07 -4.76837e-07 -0.904505" scale="0.5 0.5 0.5" clipDistance="150" nodeId="64">
+              <Shape shapeId="7" name="kabelek" translation="-9.53674e-07 0 7.45058e-09" clipDistance="150" nodeId="110" materialIds="106" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="lampki1" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="66" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="lampki2" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="SwiateczneLampki1" translation="-1.19209e-07 -4.76837e-07 -2.70218" scale="0.5 0.5 0.5" clipDistance="150" nodeId="68">
+              <Shape shapeId="7" name="kabelek" translation="-9.53674e-07 0 7.45058e-09" clipDistance="150" nodeId="114" materialIds="106" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="lampki1" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="70" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="lampki2" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="71" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="SwiateczneLampki1" translation="-1.19209e-07 -4.76837e-07 -4.44127" scale="0.5 0.5 0.5" clipDistance="150" nodeId="72">
+              <Shape shapeId="7" name="kabelek" translation="-9.53674e-07 0 7.45058e-09" clipDistance="150" nodeId="115" materialIds="106" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="lampki1" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="lampki2" translation="-9.53674e-07 0 7.45058e-09" clipDistance="100" nodeId="75" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="lampki_light" translation="1.62485 4.17642 -0.561573" nodeId="76" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024">
+            <Light name="light" translation="0.0274209 0.0217094 4.78387" rotation="-90 90 0" nodeId="77" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 4.04531" rotation="-90 90 0" nodeId="78" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 3.39923" rotation="-90 90 0" nodeId="79" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 1.93551" rotation="-90 90 0" nodeId="80" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 0.603647" rotation="-90 90 0" nodeId="81" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 -0.717039" rotation="-90 90 0" nodeId="82" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 -2.0267" rotation="-90 90 0" nodeId="83" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 -3.37017" rotation="-90 90 0" nodeId="84" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="0.0274209 0.0217094 -4.66607" rotation="-90 90 0" nodeId="85" type="spot" color="0.1 0.6 0.8" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 5.43614" rotation="-90 90 0" nodeId="86" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 2.653" rotation="-90 90 0" nodeId="87" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 1.2774" rotation="-90 90 0" nodeId="88" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 -0.0684331" rotation="-90 90 0" nodeId="89" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 -1.3608" rotation="-90 90 0" nodeId="90" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 -2.6745" rotation="-90 90 0" nodeId="91" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 -3.9826" rotation="-90 90 0" nodeId="92" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+            <Light name="light" translation="-0.0243738 -0.0192971 -5.26779" rotation="-90 90 0" nodeId="93" type="spot" color="0.1 1 0.1" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="80" dropOff="5"/>
+          </TransformGroup>
+          <TransformGroup name="window_night" translation="-2.9566 3.17719 -3.23139" nodeId="94" minuteOfDayStart="1240" minuteOfDayEnd="200">
+            <Shape shapeId="10" name="SzpakowoOknoNoc" lockedgroup="true" translation="4.2582 -0.512755 -0.194448" rotation="2.56367e-07 -0 -1.63247e-08" scale="1 1.33161 1.29745" clipDistance="500" nodeId="95" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="SzpakowoOknoNoc" lockedgroup="true" translation="-0.30306 2.05655 -2.83002" rotation="1.76748e-07 90 0" scale="1 1.33161 1.29745" clipDistance="500" nodeId="96" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="SzpakowoOknoNoc" lockedgroup="true" translation="-4.83426 -0.529289 5.35018" rotation="180 0 -180" scale="1 1.33161 0.816017" clipDistance="500" nodeId="97" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="SzpakowoOknoNoc" lockedgroup="true" translation="-4.83426 -0.529289 4.55966" rotation="180 0 -180" scale="1 1.33161 0.816017" clipDistance="500" nodeId="98" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="SzpakowoOknoNoc" lockedgroup="true" translation="1.99293 -0.502127 -2.79101" rotation="1.76748e-07 90 0" scale="1 1.33161 0.730661" clipDistance="500" nodeId="99" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="SzpakowoOknoNoc" lockedgroup="true" translation="2.5366 -0.502127 -2.79101" rotation="1.76748e-07 90 0" scale="1 1.33161 0.730661" clipDistance="500" nodeId="100" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Light name="SzpakowoOknoNoc_light" translation="-5.21349 -0.559056 4.96424" rotation="0 10 0" nodeId="101" type="point" color="0.8 0.8 0.4" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+            <Light name="SzpakowoOknoNoc_light" translation="-0.304105 2.10445 -3.0057" nodeId="102" type="point" color="0.8 0.8 0.4" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+            <Light name="SzpakowoOknoNoc_light" translation="4.40779 -0.517711 -0.193728" nodeId="103" type="point" color="0.8 0.8 0.4" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+            <Light name="SzpakowoOknoNoc_light" translation="2.29366 -0.508646 -3.06817" nodeId="104" type="point" color="0.8 0.8 0.4" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

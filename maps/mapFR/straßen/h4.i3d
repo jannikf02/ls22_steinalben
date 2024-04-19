@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="h4.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="../Prefab22_Stra__enBauPack/textures/a/spline.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grau" materialId="1416139" diffuseColor="0.164706 0.164706 0.164706 1">
+    </Material>
+    <Material name="schild" materialId="1416288" specularColor="0.0941177 1 0.0941177">
+      <Texture fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="h4.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Hermersberg_4" nodeId="1516149">
+        <Shape shapeId="1" name="Spline_23" translation="-768.299 99.93 -636.33" rotation="-0 90 0" static="true" nodeId="1516151" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-698.509 100.103 -636.33" rotation="-0 90 0" static="true" nodeId="1516152" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-683.055 101.5 -662.064" rotation="-0 180 0" static="true" nodeId="1516153" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-681.838 100.38 -776.857" rotation="-0 180 0" static="true" nodeId="1516154" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

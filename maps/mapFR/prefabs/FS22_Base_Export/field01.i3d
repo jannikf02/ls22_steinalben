@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="field01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="field01" nodeId="71459">
+        <TransformGroup name="fieldDimensions" nodeId="71460">
+          <TransformGroup name="corner01_1" translation="-295.034 10.3169 -1000.54" nodeId="71461">
+            <TransformGroup name="corner01_2" translation="-185.618 -0.0367889 -0.483065" nodeId="71462"/>
+            <TransformGroup name="corner01_3" translation="-158.456 -0.0601349 86.4839" nodeId="71463"/>
+          </TransformGroup>
+          <TransformGroup name="corner01_1" translation="-480.459 10.2802 -1000.93" nodeId="71464">
+            <TransformGroup name="corner01_2" translation="0.239807 -0.0363007 86.5984" nodeId="71465"/>
+            <TransformGroup name="corner01_3" translation="29.2823 -0.0217438 86.8907" nodeId="71466"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="fieldMapIndicator" translation="-396.124 10.2802 -963.583" nodeId="71467"/>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="71459">
+      <Attribute name="fieldAngle" type="integer" value="0"/>
+      <Attribute name="fieldDimensionIndex" type="integer" value="0"/>
+      <Attribute name="fieldGrassMission" type="boolean" value="true"/>
+      <Attribute name="nameIndicatorIndex" type="integer" value="1"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

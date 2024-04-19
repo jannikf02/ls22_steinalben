@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- <placeable> --> <!-- FS19-22 Obsolete -->
+<placeable type="workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd"> <!-- FS19-22 -->
+    <storeData>
+<!--         <name>$l10n_corrugatedShed</name> --> <!-- FS19-22 Obsolete -->
+<!--         <functions>
+            <function>$l10n_function_corrugatedShed</function>
+        </functions> -->
+        <name>$l10n_function_workshop</name>
+        <functions>
+            <function>$l10n_function_garage</function>  <!-- FS19-22 -->
+        </functions>
+        <image>OldShop_Store.png</image>
+        <price>25000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>AOK</brand>
+        <species>placeable</species>
+<!--         <category>sheds</category> -->
+        <category>placeableMisc</category>
+        <brush> <!-- FS19-22 -->
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+        <canBeSold>true</canBeSold> <!-- FS19-22 -->
+        <showInStore>true</showInStore> <!-- FS19-22 -->
+        <vertexBufferMemoryUsage>178668</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>11052</indexBufferMemoryUsage>
+        <textureMemoryUsage>11184928</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>OldShop.i3d</filename> <!-- FS19-22 -->
+    </base>
+
+    <placeableType>workshop</placeableType>
+	
+    <placement useRandomYRotation="false" useManualYRotation="true" > <!-- FS19-22 -->
+        <testAreas>
+            <testArea startNode="14|0" endNode="14|0|0" /> <!-- Put new nodes in GE -->
+        </testAreas>
+    </placement>
+
+    <indoorAreas> <!-- FS19-22 -->
+        <indoorArea startNode="0|0" widthNode="0|1" heightNode="0|2"/> <!-- Use same notes as clearArea -->
+    </indoorAreas>
+	
+<!-- FS19-22 Obsolete -->
+    <!-- <filename>OldShop.i3d</filename> -->
+    <!-- <placement testSizeX="6" testSizeZ="10" sizeX="8" sizeZ="12" useRandomYRotation="false" useManualYRotation="true" /> -->
+<!-- FS19-22 Obsolete -->
+
+    <clearAreas>
+        <clearArea startNode="0|0" widthNode="0|1" heightNode="0|2"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20" >
+        <levelAreas>
+            <levelArea startNode="0|0" widthNode="0|1" heightNode="0|2" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+	
+    <tipOcclusionUpdateAreas> <!-- FS19-22 Nodes Need to be added to GE -->
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" /> 
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas> <!-- FS19-22 Nodes Need to be added to GE Same as above-->
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" /> 
+        </updateAreas>
+    </ai>	
+	
+<!-- FS19-22 Obsolete -->	
+<!--   <sellingPoint playerTriggerNode="10|0|1" iconNode="10|0|1|0" sellTriggerNode="10|0|0" ownWorkshop="true" /> -->
+	
+    <triggerMarkers> <!-- FS19-22 -->
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" />
+    </triggerMarkers>
+
+    <hotspots> <!-- FS19-22 -->
+        <hotspot type="SHOP" linkNode="vehicleTrigger" />
+    </hotspots>
+
+    <workshop> <!-- FS19-22 -->
+        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>	
+	
+	<animatedObjects> 
+		
+		<animatedObject saveId="rollup_door1" >
+            <animation duration="5">
+	            <part node="2|0|0|0"> <!-- panel 1 -->
+					<keyFrame time="0" translation="0 0.15 0" />
+					<keyFrame time="0.6" translation="0 3.15 0" />
+					<keyFrame time="0.8" translation="0 4.15 0" rotation="-14.04 0 0"/>
+					<keyFrame time="1" translation="0 4.511 -0.186" rotation="-14.04 0 0"/>
+				</part>	
+
+				<part node="2|0|0|1"> <!-- panel 2 -->
+					<keyFrame time="0" translation="0 1.15 0" />
+					<keyFrame time="0.4" translation="0 3.15 0" />
+                    <keyFrame time="0.6" translation="0 4.15 0" rotation="-14.03 0 0"/>
+					<keyFrame time="0.8" translation="0 4.895 -0.186" rotation="-14.03 0 0"/>
+				</part>
+				
+				<part node="2|0|0|2"> <!-- panel 3 -->
+					<keyFrame time="0" translation="0 2.15 0" />
+					<keyFrame time="0.2" translation="0 3.15 0" />
+                    <keyFrame time="0.4" translation="0 4.15 0" rotation="-14.02 0 0"/>
+					<keyFrame time="0.6" translation="0 4.895 -0.186" rotation="-14.02 0 0"/>
+				</part>
+				
+				<part node="2|0|0|3"> <!-- panel 4 -->
+					<keyFrame time="0" translation="0 3.15 0" />
+                    <keyFrame time="0.2" translation="0 4.15 0" rotation="-14.01 0 0"/>
+					<keyFrame time="0.4" translation="0 4.895 -0.186" rotation="-14.01 0 0"/>
+				</part>
+				
+				<part node="2|0|0|4"> <!-- panel 5 -->
+					<keyFrame time="0" translation="0 4.15 0" rotation="-14 0 0"/>
+					<keyFrame time="0.2" translation="0 4.895 -0.186" rotation="-14 0 0"/>
+				</part>
+				
+				<part node="2|0|1"> <!-- drum -->
+					<keyFrame time="0" rotation="0 0 0"/>
+					<keyFrame time=".1" rotation="-15 0 0"/>
+					<keyFrame time=".2" rotation="-30 0 0"/>
+					<keyFrame time=".3" rotation="-45 0 0"/>
+					<keyFrame time=".4" rotation="-60 0 0"/>
+					<keyFrame time=".5" rotation="-75 0 0"/>
+					<keyFrame time=".6" rotation="-90 0 0"/>
+					<keyFrame time=".7" rotation="-105 0 0"/>
+					<keyFrame time=".8" rotation="-115 0 0"/>
+					<keyFrame time=".9" rotation="-130 0 0"/>
+					<keyFrame time="1" rotation="-145 0 0"/>
+				</part>
+            </animation>
+			
+            <controls triggerNode="2|0|3" posAction="ACTIVATE_HANDTOOL" posText="Open Garage Door" negText="Close Garage Door"/>
+			
+			<sounds>
+                <moving file="sounds/OpenElectricDoorSound.wav" loops="0" linkNode="2" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+		</animatedObject>
+		
+		<animatedObject saveId="rollup_door2" >
+            <animation duration="5">
+	            <part node="2|1|0|0"> <!-- panel 1 -->
+					<keyFrame time="0" translation="0 0.15 0" />
+					<keyFrame time="0.6" translation="0 3.15 0" />
+					<keyFrame time="0.8" translation="0 4.15 0" rotation="-14.04 0 0"/>
+					<keyFrame time="1" translation="0 4.511 -0.186" rotation="-14.04 0 0"/>
+				</part>	
+
+				<part node="2|1|0|1"> <!-- panel 2 -->
+					<keyFrame time="0" translation="0 1.15 0" />
+					<keyFrame time="0.4" translation="0 3.15 0" />
+                    <keyFrame time="0.6" translation="0 4.15 0" rotation="-14.03 0 0"/>
+					<keyFrame time="0.8" translation="0 4.895 -0.186" rotation="-14.03 0 0"/>
+				</part>
+				
+				<part node="2|1|0|2"> <!-- panel 3 -->
+					<keyFrame time="0" translation="0 2.15 0" />
+					<keyFrame time="0.2" translation="0 3.15 0" />
+                    <keyFrame time="0.4" translation="0 4.15 0" rotation="-14.02 0 0"/>
+					<keyFrame time="0.6" translation="0 4.895 -0.186" rotation="-14.02 0 0"/>
+				</part>
+				
+				<part node="2|1|0|3"> <!-- panel 4 -->
+					<keyFrame time="0" translation="0 3.15 0" />
+                    <keyFrame time="0.2" translation="0 4.15 0" rotation="-14.01 0 0"/>
+					<keyFrame time="0.4" translation="0 4.895 -0.186" rotation="-14.01 0 0"/>
+				</part>
+				
+				<part node="2|1|0|4"> <!-- panel 5 -->
+					<keyFrame time="0" translation="0 4.15 0" rotation="-14 0 0"/>
+					<keyFrame time="0.2" translation="0 4.895 -0.186" rotation="-14 0 0"/>
+				</part>
+				
+				<part node="2|1|1"> <!-- drum -->
+					<keyFrame time="0" rotation="0 0 0"/>
+					<keyFrame time=".1" rotation="-15 0 0"/>
+					<keyFrame time=".2" rotation="-30 0 0"/>
+					<keyFrame time=".3" rotation="-45 0 0"/>
+					<keyFrame time=".4" rotation="-60 0 0"/>
+					<keyFrame time=".5" rotation="-75 0 0"/>
+					<keyFrame time=".6" rotation="-90 0 0"/>
+					<keyFrame time=".7" rotation="-105 0 0"/>
+					<keyFrame time=".8" rotation="-115 0 0"/>
+					<keyFrame time=".9" rotation="-130 0 0"/>
+					<keyFrame time="1" rotation="-145 0 0"/>
+				</part>
+            </animation>
+			
+            <controls triggerNode="2|1|3" posAction="ACTIVATE_HANDTOOL" posText="Open Garage Door" negText="Close Garage Door"/>
+			
+			<sounds>
+                <moving file="sounds/OpenElectricDoorSound.wav" loops="0" linkNode="2" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+		</animatedObject>
+
+		<animatedObject saveId="rollup_door3" >
+            <animation duration="5">
+	            <part node="2|2|0|0"> <!-- panel 1 -->
+					<keyFrame time="0" translation="0 0.15 0" />
+					<keyFrame time="0.6" translation="0 3.15 0" />
+					<keyFrame time="0.8" translation="0 4.15 0" rotation="-14.04 0 0"/>
+					<keyFrame time="1" translation="0 4.511 -0.186" rotation="-14.04 0 0"/>
+				</part>	
+
+				<part node="2|2|0|1"> <!-- panel 2 -->
+					<keyFrame time="0" translation="0 1.15 0" />
+					<keyFrame time="0.4" translation="0 3.15 0" />
+                    <keyFrame time="0.6" translation="0 4.15 0" rotation="-14.03 0 0"/>
+					<keyFrame time="0.8" translation="0 4.895 -0.186" rotation="-14.03 0 0"/>
+				</part>
+				
+				<part node="2|2|0|2"> <!-- panel 3 -->
+					<keyFrame time="0" translation="0 2.15 0" />
+					<keyFrame time="0.2" translation="0 3.15 0" />
+                    <keyFrame time="0.4" translation="0 4.15 0" rotation="-14.02 0 0"/>
+					<keyFrame time="0.6" translation="0 4.895 -0.186" rotation="-14.02 0 0"/>
+				</part>
+				
+				<part node="2|2|0|3"> <!-- panel 4 -->
+					<keyFrame time="0" translation="0 3.15 0" />
+                    <keyFrame time="0.2" translation="0 4.15 0" rotation="-14.01 0 0"/>
+					<keyFrame time="0.4" translation="0 4.895 -0.186" rotation="-14.01 0 0"/>
+				</part>
+				
+				<part node="2|2|0|4"> <!-- panel 5 -->
+					<keyFrame time="0" translation="0 4.15 0" rotation="-14 0 0"/>
+					<keyFrame time="0.2" translation="0 4.895 -0.186" rotation="-14 0 0"/>
+				</part>
+				
+				<part node="2|2|1"> <!-- drum -->
+					<keyFrame time="0" rotation="0 0 0"/>
+					<keyFrame time=".1" rotation="-15 0 0"/>
+					<keyFrame time=".2" rotation="-30 0 0"/>
+					<keyFrame time=".3" rotation="-45 0 0"/>
+					<keyFrame time=".4" rotation="-60 0 0"/>
+					<keyFrame time=".5" rotation="-75 0 0"/>
+					<keyFrame time=".6" rotation="-90 0 0"/>
+					<keyFrame time=".7" rotation="-105 0 0"/>
+					<keyFrame time=".8" rotation="-115 0 0"/>
+					<keyFrame time=".9" rotation="-130 0 0"/>
+					<keyFrame time="1" rotation="-145 0 0"/>
+				</part>
+            </animation>
+			
+            <controls triggerNode="2|2|3" posAction="ACTIVATE_HANDTOOL" posText="Open Garage Door" negText="Close Garage Door"/>
+			
+			<sounds>
+                <moving file="sounds/OpenElectricDoorSound.wav" loops="0" linkNode="2" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+		</animatedObject>
+		
+		<animatedObject saveId="rollup_door4" >
+            <animation duration="5">
+	            <part node="2|3|0|0"> <!-- panel 1 -->
+					<keyFrame time="0" translation="0 0.15 0" />
+					<keyFrame time="0.6" translation="0 3.15 0" />
+					<keyFrame time="0.8" translation="0 4.15 0" rotation="-14.04 0 0"/>
+					<keyFrame time="1" translation="0 4.511 -0.186" rotation="-14.04 0 0"/>
+				</part>	
+
+				<part node="2|3|0|1"> <!-- panel 2 -->
+					<keyFrame time="0" translation="0 1.15 0" />
+					<keyFrame time="0.4" translation="0 3.15 0" />
+                    <keyFrame time="0.6" translation="0 4.15 0" rotation="-14.03 0 0"/>
+					<keyFrame time="0.8" translation="0 4.895 -0.186" rotation="-14.03 0 0"/>
+				</part>
+				
+				<part node="2|3|0|2"> <!-- panel 3 -->
+					<keyFrame time="0" translation="0 2.15 0" />
+					<keyFrame time="0.2" translation="0 3.15 0" />
+                    <keyFrame time="0.4" translation="0 4.15 0" rotation="-14.02 0 0"/>
+					<keyFrame time="0.6" translation="0 4.895 -0.186" rotation="-14.02 0 0"/>
+				</part>
+				
+				<part node="2|3|0|3"> <!-- panel 4 -->
+					<keyFrame time="0" translation="0 3.15 0" />
+                    <keyFrame time="0.2" translation="0 4.15 0" rotation="-14.01 0 0"/>
+					<keyFrame time="0.4" translation="0 4.895 -0.186" rotation="-14.01 0 0"/>
+				</part>
+				
+				<part node="2|3|0|4"> <!-- panel 5 -->
+					<keyFrame time="0" translation="0 4.15 0" rotation="-14 0 0"/>
+					<keyFrame time="0.2" translation="0 4.895 -0.186" rotation="-14 0 0"/>
+				</part>
+				
+				<part node="2|3|1"> <!-- drum -->
+					<keyFrame time="0" rotation="0 0 0"/>
+					<keyFrame time=".1" rotation="-15 0 0"/>
+					<keyFrame time=".2" rotation="-30 0 0"/>
+					<keyFrame time=".3" rotation="-45 0 0"/>
+					<keyFrame time=".4" rotation="-60 0 0"/>
+					<keyFrame time=".5" rotation="-75 0 0"/>
+					<keyFrame time=".6" rotation="-90 0 0"/>
+					<keyFrame time=".7" rotation="-105 0 0"/>
+					<keyFrame time=".8" rotation="-115 0 0"/>
+					<keyFrame time=".9" rotation="-130 0 0"/>
+					<keyFrame time="1" rotation="-145 0 0"/>
+				</part>
+            </animation>
+			
+            <controls triggerNode="2|3|3" posAction="ACTIVATE_HANDTOOL" posText="Open Garage Door" negText="Close Garage Door"/>
+			
+			<sounds>
+                <moving file="sounds/OpenElectricDoorSound.wav" loops="0" linkNode="2" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+		</animatedObject>
+
+
+<!-- FS 22 Obsolete - These animatedObjects "index" call for FS19 AnimatedMapObject.onCreate and AnimatedObject.lua - Update to not use -->
+		
+<!--     <animatedObject index="3|0"> 
+      <controls posAction="ACTIVATE_HANDTOOL" triggerNode="3|0|0" posText="OpenDoor" negText="CloseDoor" />
+      <sounds>
+        <moving file="sounds/doorwalkin.wav" loops="0" linkNode="0" volume=".5" radius="25" innerRadius="3" fadeOu="0.25" />
+      </sounds>
+      <animation initialTime="0" duration="2">
+        <part node="3|0|1">
+
+          <keyFrame time="0" rotation="0 0 0" />
+          <keyFrame time="1" rotation="0 90 0" />
+        </part>
+      </animation>
+    </animatedObject> -->
+	
+<!--     <animatedObject index="3|1"> 
+      <controls posAction="ACTIVATE_HANDTOOL" triggerNode="3|1|0" posText="OpenDoor" negText="CloseDoor" />
+      <sounds>
+        <moving file="sounds/doorwalkin.wav" loops="0" linkNode="0" volume=".5" radius="25" innerRadius="3" fadeOu="0.25" />
+      </sounds>
+      <animation initialTime="0" duration="2">
+        <part node="3|1|1">
+
+          <keyFrame time="0" rotation="0 0 0" />
+          <keyFrame time="1" rotation="0 110 0" />
+        </part>
+      </animation>
+    </animatedObject> -->
+
+<!-- FS 22 Obsolete - These animatedObjects "index" call for FS19 AnimatedMapObject.onCreate and AnimatedObject.lua - Update to not use -->
+
+	    <animatedObject saveId="Door_1" >
+            <animation duration="1">
+                <part node="3|0|1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 95 0"/>
+                </part>
+            </animation>
+			<controls triggerNode="3|0|0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+            <sounds>
+                <moving file="sounds/doorwalkin.wav" loops="1" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+		</animatedObject>
+		
+	
+	
+	    <animatedObject saveId="Door_2" >
+            <animation duration="1">
+                <part node="3|1|1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 95 0"/>
+                </part>
+            </animation>
+			<controls triggerNode="3|1|0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+            <sounds>
+                <moving file="sounds/doorwalkin.wav" loops="1" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+		</animatedObject>
+
+
+
+    <animatedObject saveId="lift1">
+      <animation duration="7">
+        <part node="6|0|0|1"> <!--group4-->
+          <Keyframe time="0" translation="0 0 0" rotation="0 0 0" />
+          <Keyframe time="0.5" translation="-0.013 0 -0.321" rotation="0 40 0" />
+        </part>
+        <part node="6|0|0|2"> <!--group5-->
+          <Keyframe time="0" translation="0 0 0" rotation="0 0 0" />
+          <Keyframe time="0.5" translation="-0.013 0 0.321" rotation="0 -40 0" />
+        </part>
+        <part node="6|0|1|1"> <!--group6-->
+          <Keyframe time="0" translation="0 0 0" rotation="0 0 0" />
+          <Keyframe time="0.5" translation="0.013 0 -0.321" rotation="0 -40 0" />
+        </part>
+        <part node="6|0|1|2"> <!--group7-->
+          <Keyframe time="0" translation="0 0 0" rotation="0 0 0" />
+          <Keyframe time="0.5" translation="0.013 0 0.321" rotation="0 40 0" />
+        </part>
+        <part node="6|0|0"> <!--group1  Also Height is middle number of time 1 tranlation-->
+          <Keyframe time="0.5" translation="-0.908 -0.582 0" rotation="0 0 0" />
+          <Keyframe time="1" translation="-0.908 1.1 0" rotation="0 0 0" />
+        </part>
+        <part node="6|0|1"> <!--group2  Also Height is middle number of time 1 tranlation-->
+          <Keyframe time="0.5" translation="0.777 -0.582 0" rotation="0 0 0" />
+          <Keyframe time="1" translation="0.777 1.1 0" rotation="0 0 0" />
+        </part>
+      </animation>
+      <controls triggerNode="6|0|3" posAction="ACTIVATE_HANDTOOL" posText="Raise" negText="Lower" /> <!--liftTrigger-->
+      <sounds>
+        <start file="$data/sounds/vehicles/shared/attach_01.wav" linkNode="6|0|3" volume="0.8" radius="25" innerRadius="3" /> <!--liftTrigger-->
+        <moving file="$data/sounds/vehicles/hydraulic/hydraulic_loop_01.wav" loops="0" linkNode="6|0|3" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25" /> <!--liftTrigger-->
+        <posEnd file="$data/sounds/vehicles/shared/attach_01.wav" linkNode="6|0|3" volume="0.8" radius="25" innerRadius="3" /> <!--liftTrigger-->
+        <negEnd file="$data/sounds/vehicles/shared/attach_01.wav" linkNode="6|0|3" volume="0.8" radius="25" innerRadius="3" /> <!--liftTrigger-->
+      </sounds>
+    </animatedObject>
+
+	
+		<animatedObject saveId="ShopLightSwitch">
+			<controls posAction="ACTIVATE_HANDTOOL" triggerNode="8|0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds>
+						<moving file="sounds/switch.wav" loops="0" linkNode="8|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+			<animation initialTime="0" duration="0.01">
+				<part node="8|1">
+					<keyFrame time="0.00" translation="-0.365 -2.69 -7.021" rotation="0 0 0"/><!-- light switch flick -->
+					<keyFrame time="1" translation="-0.365 -2.69 -7.021" rotation="0 0 180" />
+				</part>
+				<part node="8|3|0"> <!--index of TG with realLights and emmisive shape-->
+					<keyFrame time="0.5" visibility="false" />
+					<keyFrame time="0.55" visibility="true" />
+				</part>
+				<part node="8|4|0"> <!--index of TG with realLights and emmisive shape-->
+					<keyFrame time="0.5" visibility="false" />
+					<keyFrame time="0.55" visibility="true" />
+				</part>
+				<part node="8|5|0"> <!--index of TG with realLights and emmisive shape-->
+					<keyFrame time="0.5" visibility="false" />
+					<keyFrame time="0.55" visibility="true" />
+				</part>
+            </animation>
+    </animatedObject>
+
+	</animatedObjects>
+	
+<!--     <dayNightObjects>  
+        <dayNightObject node="9|0|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|0|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|1|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|1|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|2|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|2|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|3|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|3|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|4|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|4|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|5|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|5|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|6|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|6|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="9|7|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="9|7|0|1" visibleDay="false" visibleNight="true" />
+    </dayNightObjects> -->  <!-- Obsolete for FS 22 -->
+	
+	<lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <lightShape node="9|0|0" />
+		<lightShape node="9|0|1" />
+		<lightShape node="9|0|2" />
+		<lightShape node="9|0|3" />
+		<lightShape node="9|0|4" />
+		<lightShape node="9|0|5" />
+		<lightShape node="9|0|6" />
+		<lightShape node="9|0|7" />
+
+    </lights>
+	
+<!-- 	<tipOcclusionUpdateArea sizeX="12" sizeZ="16" /> --> <!-- FS22 Obsolete -->
+
+<!-- The following are all added to work with the fs22 udpates -->
+    <i3dMappings>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>13|0" /> <!-- FS19-22 nodes need to be added into GE -->
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>13|0|0" /> <!-- FS19-22 nodes need to be added into GE -->
+        <i3dMapping id="markerWrench" node="0>10|2|0" />
+        <i3dMapping id="vehicleTrigger" node="0>10|1" />
+        <i3dMapping id="playerTrigger" node="0>10|2" />
+    </i3dMappings>
+	
+	
+</placeable>

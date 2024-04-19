@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="62"> <!-- 19-22 update -->
+    <author>OK USED MODS</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Old Shop - OK USED MODS</en>
+		<de>Old Shop - OK USED MODS</de>
+    </title>
+    <description>
+        <en>
+            <![CDATA[Old shop to work on vehicles and equipment.]]>
+        </en>
+        <de>
+            <![CDATA[Old shop to work on vehicles and equipment.]]>
+        </de>
+        <fr>
+            <![CDATA[Old shop to work on vehicles and equipment.]]>
+        </fr>
+    </description>
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true" />
+	
+	<brands>
+		<brand name="AOK" title="A-OK Construction" image="brand_AOK.dds"/>
+	</brands>
+    
+    <storeItems>
+        <storeItem xmlFilename="OldShop.xml"/> 
+    </storeItems>
+	
+	<l10n>
+		<text name="function_corrugatedShed">
+            <en>Old Shop - OK USED MODS</en>
+            <de>Old Shop - OK USED MODS</de>
+        </text>
+		<text name="corrugatedShed">
+            <en>Old Shop - OK USED MODS</en>
+            <de>Old Shop - OK USED MODS</de>
+        </text>
+	</l10n>
+</modDesc>

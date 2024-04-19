@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="79">
+    <author>Rajot GPLAY</author>
+    <version>1.0.0.0</version>
+	<title>
+        <en>Large Package Of Houses</en>
+        <de>Ein Großes Häuserpaket</de>
+        <fr>Un Grand Ensemble De Maisons</fr>
+        <es>Un Gran Paquete De Casas.</es>
+        <pl>Duża Paczka Domów</pl>
+    </title>
+    <description>
+<en><![CDATA[
+A house you can build on your farm.
+It is distinguished by the fact that it is a semi-detached house, inspired by the climate from Eastern Europe.
+The house also has a Christmas decoration
+
+Price: 110,000 $
+
+Additionally, the package includes 10 static houses used to decorate the map.
+]]></en>
+
+<de><![CDATA[
+Ein Haus, das Sie auf Ihrem Bauernhof bauen können.
+Es zeichnet sich dadurch aus, dass es sich um eine Doppelhaushälfte handelt, inspiriert vom Klima Osteuropas.
+Das Haus hat auch eine Weihnachtsdekoration
+
+Preis: 110.000 €
+
+Darüber hinaus enthält das Paket 10 statische Häuser, die zur Dekoration der Karte verwendet werden.
+]]></de>
+
+<fr><![CDATA[
+Une maison que vous pouvez construire sur votre ferme.
+Elle se distingue par le fait qu'il s'agit d'une maison jumelée, inspirée du climat de l'Europe de l'Est.
+La maison a aussi une décoration de Noël
+
+Prix : 110 000 €
+
+De plus, le package comprend 10 maisons statiques utilisées pour décorer la carte.
+]]></fr>
+
+<es><![CDATA[
+Una casa que puedes construir en tu granja.
+Se distingue por ser una casa adosada, inspirada en el clima de Europa del Este.
+La casa también tiene una decoración navideña.
+
+Precio: 110 000 €
+
+Además, el paquete incluye 10 casas estáticas que se utilizan para decorar el mapa.
+]]></es>
+
+<pl><![CDATA[
+Dom który możesz wybudować na swojej farmie.
+Wyróżnia się tym, że jest to bliźniak, inspirowany klimatem ze wschodniej Europy.
+Dom posiada również bożonarodzeniowy wystrój
+
+Cena: 110 000 zł
+
+Dodatkowo w paczce znajduje się 10 statycznych domów służących do dekoracji mapy.
+]]></pl>
+	</description>
+
+    <iconFilename>icon_BigFarmHousePack.png</iconFilename>
+	<multiplayer supported="true" />
+    <storeItems>
+        <storeItem xmlFilename="DoubleHouse.xml"/>
+        <storeItem xmlFilename="house1.xml"/>
+        <storeItem xmlFilename="house2.xml"/>
+        <storeItem xmlFilename="house3.xml"/>
+        <storeItem xmlFilename="house4.xml"/>
+        <storeItem xmlFilename="house5.xml"/>
+        <storeItem xmlFilename="house6.xml"/>
+        <storeItem xmlFilename="house7.xml"/>
+        <storeItem xmlFilename="house8.xml"/>
+        <storeItem xmlFilename="house9.xml"/>
+        <storeItem xmlFilename="house10.xml"/>
+    </storeItems>
+	
+	<l10n>
+        <text name="function_farmhouse">
+            <en>Put this on your farm so you can get some sleep and skip time.</en>
+            <de>Stellen Sie dies auf Ihre Farm, damit Sie etwas schlafen und die Zeit überspringen können.</de>
+            <es>Pon esto en tu granja para que puedas dormir un poco y saltarte el tiempo.</es>
+            <fr>Mettez ceci sur votre ferme afin que vous puissiez dormir un peu et sauter du temps.</fr>
+            <pl>Umieść to na swojej farmie, abyś mógł się trochę przespać i pominąć czas.</pl>
+        </text>
+    </l10n>
+	
+</modDesc>

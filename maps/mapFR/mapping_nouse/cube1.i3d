@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cube1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/str/fahrbahn_82.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="UnnamedMaterial" materialId="62389">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cube1.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="cube2" translation="121.724 18.3706 254.712" rotation="-1.60956 15.9111 -5.85236" scale="4.47318 1 2.59152" nodeId="65236" materialIds="62389" distanceBlending="false"/>
+  </Scene>
+
+</i3D>

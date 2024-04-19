@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>The Lort</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+		<de>Alpines Haus</de>
+		<en>Alpine House</en>
+		<fr>Maison Alpine</fr>
+	</title>
+	
+<description>
+<de>
+<![CDATA[Alpines Haus aus dem Basegame mit verschiedenen Texturen zur dekoration deiner Karte.]]></de>
+<en>
+<![CDATA[Alpine house from the base game with different textures to decorate your map.]]></en>
+<fr>
+<![CDATA[Maison alpine du jeu de base avec différentes textures pour décorer votre carte.]]></fr>
+</description>
+
+	<categories>
+        <category>Buildings</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="Alpine House01" i3dFilename="alpineHouse.i3d" />
+		<prefab name="Alpine House02" i3dFilename="alpineHouse02.i3d" />
+		<prefab name="Alpine House03" i3dFilename="alpineHouse03.i3d" />
+		<prefab name="Alpine House04" i3dFilename="alpineHouse04.i3d" />
+    </prefabs>
+	
+	<iconFilename>icon_alpineHouse.dds</iconFilename>
+	
+</prefabDesc>

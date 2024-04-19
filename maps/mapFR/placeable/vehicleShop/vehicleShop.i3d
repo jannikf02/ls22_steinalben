@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="vehicleShop.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/assets/marker/markerIcons_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="203" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="markerIcons_mat" materialId="222" alphaBlending="true" customShaderId="3" customShaderVariation="additive_billboard_pulsating">
+      <Emissivemap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="vehicleShop.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="vehicleShop" nodeId="71693">
+        <TransformGroup name="storeSpawnPlace1Start" translation="42.5 10.28 -83" rotation="0 180 0" nodeId="71694">
+          <TransformGroup name="storeSpawnPlace1End" translation="50 0 0" nodeId="71695"/>
+        </TransformGroup>
+        <Shape shapeId="1" name="vehicleShopTrigger" translation="10.6111 10.3 -72.6425" rotation="0 180 0" static="true" trigger="true" collisionMask="3145728" nodeId="71696" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="markerIconMoney" nodeId="71697">
+            <Shape shapeId="2" name="iconMoney" translation="0 1 0" clipDistance="300" nodeId="71698" materialIds="222" castsShadows="true" receiveShadows="true"/>
+            <Light name="pointLight7" translation="0 1 0" clipDistance="100" nodeId="71699" type="point" color="0 0.35 0.9" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+          </TransformGroup>
+          <TransformGroup name="vehicleShopPlayerSpawn" translation="3 0 -1.5" rotation="0 60 0" nodeId="71700"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="71694">
+      <Attribute name="onCreate" type="scriptCallback" value="BaseMission.onCreateStoreSpawnPlace"/>
+      <Attribute name="yOffset" type="float" value="0.1"/>
+    </UserAttribute>
+    <UserAttribute nodeId="71696">
+      <Attribute name="onCreate" type="scriptCallback" value="ShopTrigger.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

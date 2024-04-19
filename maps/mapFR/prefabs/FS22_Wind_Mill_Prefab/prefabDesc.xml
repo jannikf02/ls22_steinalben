@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>The Lort</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+		<de>Windmühle Prefab</de>
+		<en>Windmill Prefab</en>
+		<fr>Moulin Á Vent Préfabriqué</fr>
+	</title>
+	
+<description>
+<de>
+<![CDATA[Windmühle zur dekoration deiner Karte.]]></de>
+<en>
+<![CDATA[Windmill to decorate your map.]]></en>
+<fr>
+<![CDATA[Moulin à vent pour décorer votre carte.]]></fr>
+</description>
+
+	<categories>
+        <category>Buildings</category>
+		<category>Industry</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="Windmill Prefab" i3dFilename="windMill.i3d" />
+    </prefabs>
+	
+	<iconFilename>icon_windMill.dds</iconFilename>
+	
+</prefabDesc>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Outbuilding2.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="18" filename="$data/maps/mapAlpine/textures/buildingsWindows01_diffuse.dds"/>
+    <File fileId="19" filename="$data/maps/mapAlpine/textures/buildingsWindows01_normal.dds"/>
+    <File fileId="20" filename="$data/maps/mapAlpine/textures/buildingsWindows01_specular.dds"/>
+    <File fileId="21" filename="$data/maps/mapAlpine/textures/doorsSET_diffuse.dds"/>
+    <File fileId="22" filename="$data/maps/mapAlpine/textures/doorsSET_normal.dds"/>
+    <File fileId="23" filename="$data/maps/mapAlpine/textures/doorsSET_specular.dds"/>
+    <File fileId="27" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="28" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="29" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="25" filename="textures/GalvanizedSteel_normal.dds"/>
+    <File fileId="26" filename="textures/GalvanizedSteel_specular.dds"/>
+    <File fileId="9" filename="textures/beton_height.dds"/>
+    <File fileId="3" filename="textures/beton_specular.dds"/>
+    <File fileId="12" filename="textures/material_specular.dds"/>
+    <File fileId="17" filename="textures/papa01_height.dds"/>
+    <File fileId="16" filename="textures/papa_specular.dds"/>
+    <File fileId="24" filename="textures/GalvanizedSteel_diffuse.dds"/>
+    <File fileId="1" filename="textures/beton_diffuse.dds"/>
+    <File fileId="2" filename="textures/beton_normal.dds"/>
+    <File fileId="10" filename="textures/dach_diffuse.dds"/>
+    <File fileId="11" filename="textures/metal01_normal.dds"/>
+    <File fileId="14" filename="textures/papa01_diffuse.dds"/>
+    <File fileId="15" filename="textures/papa01_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Nebengelass2Dach_mat" materialId="5" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="mParallaxMap" fileId="17"/>
+    </Material>
+    <Material name="Nebengelass2Dachkante_mat" materialId="6" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="Nebengelass2Dachrinne_mat" materialId="7" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="Nebengelass2Fenster_mat" materialId="8" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+    </Material>
+    <Material name="Nebengelass2Tuer_mat" materialId="9" customShaderId="4">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="Nebengelass2Wand_mat" materialId="10" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+    </Material>
+    <Material name="Occluder_mat" materialId="11" diffuseColor="0 0.8 0.00784314 1">
+    </Material>
+    <Material name="Snow_mat" materialId="12" customShaderId="29">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="8"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Outbuilding2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Outbuilding2" clipDistance="600" nodeId="18" lodDistance="0 100" lodBlending="false">
+        <Shape shapeId="1" name="LOD0" clipDistance="150" nodeId="19" materialIds="10,6,5,8,9,7" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="Winter" nodeId="20">
+            <Shape shapeId="2" name="Snow" translation="0.000252105 3.18482 -0.00149544" nodeId="21" materialIds="12"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="3" name="LOD1" static="true" clipDistance="600" nodeId="22" materialIds="10,6,5,8,9,7"/>
+        <Shape shapeId="4" name="OccluderMesh" nodeId="23" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

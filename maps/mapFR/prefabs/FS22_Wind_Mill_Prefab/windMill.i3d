@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="windTurbine" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="textures/windmillWheelAlpha_diffuse.png"/>
+    <File fileId="5" filename="textures/windmillWheelAlpha_normal.png"/>
+    <File fileId="1" filename="textures/windmill_diffuse.png"/>
+    <File fileId="2" filename="textures/windmill_normal.png"/>
+    <File fileId="3" filename="textures/windmill_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="windmill_mat" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="windmillWheelAlpha_mat" materialId="5" specularColor="0.027451 1 0.027451" alphaBlending="true">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="windMill.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="windMill" nodeId="12">
+        <TransformGroup name="windmillLODs" translation="2.38419e-07 -9.53674e-07 0" clipDistance="500" nodeId="13">
+          <TransformGroup name="windmillLODs" clipDistance="500" nodeId="14" lodDistance="0 75 150">
+            <Shape shapeId="1" name="windmill_lod0" static="true" clipDistance="400" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="windmill_lod1" clipDistance="400" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="windmill_lod2" clipDistance="400" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="windTurbine" translation="2.9 14.6 0" rotation="0 -90 15" nodeId="18">
+            <Shape shapeId="4" name="rotor" clipDistance="400" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="windmillWheelAlpha" clipDistance="400" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

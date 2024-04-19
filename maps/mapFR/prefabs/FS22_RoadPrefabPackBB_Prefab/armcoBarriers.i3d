@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="roadKit22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="textures/armco_normal.dds"/>
+    <File fileId="3" filename="textures/armco_specular.dds"/>
+    <File fileId="9" filename="textures/concrete_diffuse.dds"/>
+    <File fileId="10" filename="textures/concrete_normal.dds"/>
+    <File fileId="11" filename="textures/concrete_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="armco_mat" materialId="4" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0.3 0 0"/>
+      <CustomParameter name="dirtColor" value="0.1 0.1 0.05 0"/>
+      <CustomParameter name="colorMat0" value="0.25 0.28 0.3 4"/>
+      <CustomParameter name="colorMat1" value="0 0 0 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="armcoCOL_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="concrete_mat" materialId="6">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="armcoBarriers.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="ArmcoBarriers" nodeId="30">
+        <TransformGroup name="armcoBarrierEndLeft" translation="-2.5 0 -1" nodeId="31">
+          <Shape shapeId="1" name="armcoPost" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="armcoPostCOL" static="true" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="3" name="armcoBarrier2_5m" translation="0 0.400002 0" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="armcoBarrierCOL" static="true" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="5" name="armcoBarrierEndLeft" translation="-0.05 0.400002 0" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="6" name="armcoBarrierEndLeftCOL" static="true" nodeId="37" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="7" name="bolt" translation="0 0.555 0" clipDistance="50" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="armcoBarrierMiddle" translation="0 0 -1" nodeId="39">
+          <Shape shapeId="1" name="armcoPost" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="armcoPostCOL" static="true" nodeId="41" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="3" name="armcoBarrier2_5m" translation="0 0.400002 0" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="armcoBarrierCOL" static="true" nodeId="43" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="7" name="bolt" translation="0 0.555 0" clipDistance="50" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="armcoBarrierEndRight" translation="2.5 0 -1" nodeId="45">
+          <Shape shapeId="1" name="armcoPostStart" nodeId="46" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="armcoPostCOL" static="true" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="1" name="armcoPostEnd" translation="2.5 0 0" nodeId="48" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="armcoPostCOL" static="true" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="8" name="armcoBarrier2_5mEnd" translation="0 0.400002 0" nodeId="50" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="armcoBarrierEndCOL" static="true" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="10" name="armcoBarrierEndRight" translation="2.54 0.400002 0" nodeId="52" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="armcoBarrierEndRightCOL" static="true" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="7" name="boltStart" translation="0 0.555 0" clipDistance="50" nodeId="54" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="boltEnd" translation="2.5 0.555 0" clipDistance="50" nodeId="55" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="armcoBarrierSlopedEndLeft" nodeId="56">
+          <Shape shapeId="12" name="armcoPostSlopedEnd" translation="-1.7 0 -0.007" nodeId="57" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="13" name="armcoPostSlopedEndCOL" static="true" nodeId="58" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="14" name="armcoBarrierSlopedEndLeft" nodeId="59" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="15" name="armcoBarrierSlopedEndLeftCOL" translation="0 0.4 0" static="true" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="16" name="boltSlopedEnd" translation="-1.7 0.399 0" clipDistance="50" nodeId="61" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="concreteBlock" translation="-2.5 0 0" static="true" nodeId="62" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="18" name="concreteBlockCOL" static="true" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="armcoBarrierMiddleEnd" nodeId="64">
+          <Shape shapeId="1" name="armcoPost" nodeId="65" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="armcoPostCOL" static="true" nodeId="66" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="7" name="boltStart" translation="0 0.555 0" clipDistance="50" nodeId="67" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="armcoBarrier2_5mEnd" translation="0 0.400002 0" nodeId="68" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="armcoBarrierEndCOL" static="true" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="7" name="boltEnd" translation="2.5 0.555 0" clipDistance="50" nodeId="70" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="armcoBarrierSlopedEndRight" translation="2.5 0 0" nodeId="71">
+          <Shape shapeId="12" name="armcoPostSlopedEnd" translation="1.7 0 -0.007" nodeId="72" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="13" name="armcoPostSlopedEndCOL" static="true" nodeId="73" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="19" name="armcoBarrierSlopedEndRight" nodeId="74" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="20" name="armcoBarrierSlopedEndRightCOL" translation="0 0.4 0" static="true" nodeId="75" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="16" name="boltSlopedEnd" translation="1.7 0.399 0" clipDistance="50" nodeId="76" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="21" name="concreteBlock" translation="2.5 0 0" static="true" nodeId="77" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="22" name="concreteBlockCOL" static="true" nodeId="78" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="1" name="armcoPost" nodeId="79" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="armcoPostCOL" static="true" nodeId="80" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

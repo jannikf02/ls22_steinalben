@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>H3LLRVIZ3R</author>
+    <version>1.0.0.0</version>
+	<title>
+        <en>Outbuilding GDR Package</en>
+		<de>Nebengelass DDR Paket</de>
+		<fr>Ensemble DDR Annexe</fr>
+    </title>
+<description>
+<en><![CDATA[A set of decorative objects for your maps.]]></en>
+<de><![CDATA[Ein Set aus Deko  Objekten für eure Maps.]]></de>
+<fr><![CDATA[Un ensemble d'objets de décoration pour vos cartes.]]></fr>
+</description>
+	<categories>
+        <category>Other</category>
+        <category>Static</category>
+    </categories>
+	<iconFilename>icon_Outbuilding.dds</iconFilename>
+	<prefabs>
+		<prefab name="Outbuilding1" i3dFilename="Outbuilding1.i3d" />
+		<prefab name="Outbuilding2" i3dFilename="Outbuilding2.i3d" />
+    </prefabs>
+</prefabDesc>

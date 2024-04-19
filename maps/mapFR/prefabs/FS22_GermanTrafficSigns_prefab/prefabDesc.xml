@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>Raabiboy</author>
+    <version>1.0.0.1</version>
+	<title>
+        <en>German Traffic Signs</en>
+	<de>Deutsche Verkehrszeichen</de>
+    </title>
+	<description>
+		<en><![CDATA[This pack contains various German traffic signs that you can incorporate into your map to make it look more beautiful and realistic.
+Changelog 1.0.0.1:
+- Added various new traffic signs]]></en>
+		<de><![CDATA[In diesem Pack sind verschiedene deutsche Verkehrszeichen enthalten, die Sie auf Ihrer Karte verwenden können, um sie schöner und realistischer wirken zu lassen.
+Changelog 1.0.0.1:
+- Verschiedene neue Verkehrszeichen hinzugefügt]]></de>
+    </description>
+	<iconFilename>icon.dds</iconFilename>
+	<categories>
+		<category>sign</category>
+	</categories>
+	<prefabs>
+		<prefab name="FS22_GermanTrafficSigns_prefab" i3dFilename="germanTrafficSigns.i3d"/>
+	</prefabs>
+</prefabDesc>

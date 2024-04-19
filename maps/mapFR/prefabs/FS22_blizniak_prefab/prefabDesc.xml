@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+
+    <author>MłodySZY</author>
+
+    <version>1.0.0.0</version>
+
+	<title>
+        <en>Semi-Detached House</en>
+		<de>Zwei-Familienhaus</de>
+		<pl>Dom W Zabudowie Bliźniaczej</pl>
+		<fr>Maison Bi-Familiale</fr>
+    </title>
+	
+	<description>
+		<en><![CDATA[A semi-detached building that you can use to decorate your map..]]></en>
+		<de><![CDATA[Ein halb freistehendes Gebäude, das Sie zur Dekoration Ihrer Karte verwenden können..]]></de>
+        <pl><![CDATA[Budynek w zabudowie bliźniaczej, który możesz użyć do udekorowania swojej mapy.]]></pl>
+        <fr><![CDATA[Un bâtiment mitoyen que vous pouvez utiliser pour décorer votre carte..]]></fr>
+    </description>
+
+	<categories>
+        <category>Static</category>
+    </categories>
+
+	<prefabs>
+		<prefab name="FS22_blizniak_prefab" i3dFilename="blizniak.i3d" />
+    </prefabs>
+</prefabDesc>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>Dusty</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Hedges Different Sizes</en>
+        <de>Hecken Verschiedene Größen</de>
+    </title>
+    <description>	
+<en><![CDATA[Here for download is a hedges prefab package.
+Included are:
+1 m | Corner
+1-4 m | Grade
+
+With the hedges you can beautify your map.]]>
+</en>
+<de><![CDATA[Hier zum Download gibt es ein vorgefertigtes Heckenpaket.
+Enthalten sind:
+1 m | Ecke
+1-4 m | Steigung
+
+Mit den Hecken können Sie Ihre Karte verschönern.]]>
+</de>
+    </description>
+    <categories>
+        <category>other</category>
+        <category>decoration</category>
+		<category>static</category>
+    </categories>
+	<iconFilename>icon.dds</iconFilename>
+    <prefabs>
+		<prefab name="hedge_prefab" i3dFilename="hedge_prefab.i3d" />
+    </prefabs>
+</prefabDesc>

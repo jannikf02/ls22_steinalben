@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gasStationProps.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/maps/mapAlpine/textures/props/airConditionerSet01Transparent_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapAlpine/textures/props/airConditionerSet01Transparent_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapAlpine/textures/props/airConditionerSet01Transparent_specular.png"/>
+    <File fileId="11" filename="$data/maps/mapAlpine/textures/props/airConditionerSet01_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/mapAlpine/textures/props/airConditionerSet01_normal.png"/>
+    <File fileId="13" filename="$data/maps/mapAlpine/textures/props/airConditionerSet01_specular.png"/>
+    <File fileId="5" filename="$data/maps/mapAlpine/textures/props/gasPump01Decal_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapAlpine/textures/props/gasPump01_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapAlpine/textures/props/gasPump01_normal.png"/>
+    <File fileId="4" filename="$data/maps/mapAlpine/textures/props/gasPump01_specular.png"/>
+    <File fileId="7" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="10" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+    <File fileId="8" filename="$data/shared/default_specular.png"/>
+    <File fileId="9" filename="$data/shared/window_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="airConditionerSet01_mat" materialId="17">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="airConditionerSet01Transparent_mat" materialId="18" alphaBlending="true" customShaderId="7">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="gasPump01_mat" materialId="151">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="gasPump01Decal_mat" materialId="152" alphaBlending="true" customShaderId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="lambert1" materialId="203" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="window_mat" materialId="376" alphaBlending="true" customShaderId="10">
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="8"/>
+      <Emissivemap fileId="9"/>
+      <CustomParameter name="lightControl" value="1.5 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gasStationProps.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="props" translation="-555.189 10.302 -482.773" rotation="0 0 1.33264e-05" nodeId="14760">
+        <Shape shapeId="1" name="gasPump01" translation="-13.6412 0.0784425 -9.94971" rotation="-0 90 0" static="true" density="0.0001" nodeId="14761" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14762" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14763" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14764">
+              <TransformGroup name="selfIllum" nodeId="14765">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14766" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14767" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14768" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-13.6412 0.0784425 -5.26473" rotation="-0 90 0" static="true" density="0.0001" nodeId="14769" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14770" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14771" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14772">
+              <TransformGroup name="selfIllum" nodeId="14773">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14774" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14775" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14776" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-14.4868 0.0784426 -5.26473" rotation="-1.00179e-05 -90 0" static="true" density="0.0001" nodeId="14777" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14778" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14779" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14780">
+              <TransformGroup name="selfIllum" nodeId="14781">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14782" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14783" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14784" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-13.6412 0.0784425 0.107076" rotation="-0 90 0" static="true" density="0.0001" nodeId="14785" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14786" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14787" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14788">
+              <TransformGroup name="selfIllum" nodeId="14789">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14790" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14791" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14792" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-14.4868 0.0784426 0.107076" rotation="-1.00179e-05 -90 0" static="true" density="0.0001" nodeId="14793" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14794" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14795" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14796">
+              <TransformGroup name="selfIllum" nodeId="14797">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14798" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14799" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14800" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-13.6412 0.0784425 4.79205" rotation="-0 90 0" static="true" density="0.0001" nodeId="14801" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14802" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14803" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14804">
+              <TransformGroup name="selfIllum" nodeId="14805">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14806" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14807" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14808" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-14.4868 0.0784426 4.79205" rotation="-1.00179e-05 -90 0" static="true" density="0.0001" nodeId="14809" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14810" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14811" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14812">
+              <TransformGroup name="selfIllum" nodeId="14813">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14814" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14815" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14816" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="1" name="gasPump01" translation="-14.4868 0.0784426 -9.94971" rotation="-1.00179e-05 -90 0" static="true" density="0.0001" nodeId="14817" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="gasPump01Vis" clipDistance="120" nodeId="14818" materialIds="151" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="decals" clipDistance="30" nodeId="14819" materialIds="152" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="illum" nodeId="14820">
+              <TransformGroup name="selfIllum" nodeId="14821">
+                <Shape shapeId="4" name="selfIllum" clipDistance="30" nodeId="14822" materialIds="376" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="14823" weatherRequiredMask="64">
+                <Light name="pointLight1" translation="0.0166167 1.43882 0.156584" clipDistance="75" nodeId="14824" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="2"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <Shape shapeId="5" name="airConditioner01" translation="7.0033 2.64392 1.49023" rotation="1.33264e-05 90 0" scale="1.29648 1.29648 1.29648" static="true" nodeId="14825" materialIds="203" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="airConditioner01Vis" translation="0 0 0.155588" clipDistance="60" nodeId="14826" materialIds="17" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="airConditioner01Transparent" clipDistance="30" nodeId="14827" materialIds="18" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="airConditioner01Fan" translation="-0.127224 0.0904741 0.0709861" clipDistance="30" nodeId="14828" materialIds="17" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="14826">
+      <Attribute name="MaxHandle" type="integer" value="1228"/>
+    </UserAttribute>
+    <UserAttribute nodeId="14827">
+      <Attribute name="MaxHandle" type="integer" value="1276"/>
+    </UserAttribute>
+    <UserAttribute nodeId="14828">
+      <Attribute name="MaxHandle" type="integer" value="1239"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

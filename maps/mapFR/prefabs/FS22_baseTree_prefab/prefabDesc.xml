@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>Actinium</author>
+    <version>1.0.0.0</version>
+	
+<title>
+	<en>Base Tree Pack</en>
+	<de>Basis-Baum-Pack</de>
+</title>
+	
+	<iconFilename>icon_treePack.dds</iconFilename>
+	
+<description>
+<en><![CDATA[All individual trees from the base game map as a prefab to decorate your map and forestry.]]></en>
+<de><![CDATA[Alle einzelnen Bäume aus der Basisspielkarte als Prefab zum Ausschmücken der Karte und der Forstwirtschaft.]]></de>
+</description>
+	
+	<categories>
+        <category>nature</category>
+    </categories>
+
+	<prefabs>
+		<prefab name="Base Tree Pack" i3dFilename="baseTreePack.i3d" />
+    </prefabs>
+</prefabDesc>

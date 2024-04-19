@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>wtorek</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>Small Simple Shed Prefab</en>
+		<de>Kleiner Einfacher Schuppen</de>
+		<fr>Petit Hangar Simple Préfabriqué</fr>
+    </title>
+	
+	<iconFilename>icon_SmallSimpleShed.dds</iconFilename>
+	
+	<description>
+        <en><![CDATA[It is a small simple shed with a roof and an entrance on one side. It is built of wooden posts, brick walls and metal sheet as a roof.]]></en>
+		<de><![CDATA[Es handelt sich um einen einfachen Schuppen mit Dach und einem Eingang auf einer Seite. Es besteht aus Holzpfosten, Ziegelwänden und Blech als Dach.]]></de>
+		<fr><![CDATA[C'est un petit cabanon simple avec un toit et une entrée d'un côté. Il est construit avec des poteaux en bois, des murs en briques et des tôles comme toit.]]></fr>
+    </description>
+	
+	<categories>
+		<category>Building</category>
+        <category>Others</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="Small Simple Shed" i3dFilename="SmallSimpleShed.i3d" />
+    </prefabs>
+</prefabDesc>

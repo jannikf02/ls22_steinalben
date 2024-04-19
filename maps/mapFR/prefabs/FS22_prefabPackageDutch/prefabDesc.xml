@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>[DMI]20mmNormandy</author>
+    <version>2.0.0.0</version>
+	<title>
+        <en>Big Prefab Package</en>
+    </title>
+	<iconFilename>icon_prefabPackage.dds</iconFilename>
+<description>
+<en><![CDATA[With this prefab pack you can decorate your map
+
+NB: Don't forget to remove unused textures out of your files when you're ready!
+
+Changelog 2.0.0.0
+- Added multiple buildings
+]]></en>
+<de><![CDATA[Mit diesem Prefab Pack könnt Ihr Eure Map verschönern und gestalten.
+
+Changelog 2.0.0.0
+- Mehrere Gebäude hinzugefügt 
+INFO: Vergessen Sie nicht, unbenutzte Texturen aus Ihren Dateien zu entfernen, wenn Sie fertig sind!]]></de>
+</description>
+	<categories>
+        <category>Other</category>
+        <category>Static</category>
+    </categories>
+
+	<prefabs>
+		<prefab name="Big prefab package" i3dFilename="prefabPackage.i3d" />
+    </prefabs>
+</prefabDesc>

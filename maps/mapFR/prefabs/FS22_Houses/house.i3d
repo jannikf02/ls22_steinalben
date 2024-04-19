@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="house.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="21" filename="textures/03_specular.dds"/>
+    <File fileId="32" filename="textures/05_specular.dds"/>
+    <File fileId="163" filename="textures/HMHouseStelarz_diffuse.dds"/>
+    <File fileId="164" filename="textures/HMHouseStelarz_specular.dds"/>
+    <File fileId="35" filename="textures/Kable_diffuse.dds"/>
+    <File fileId="2" filename="textures/SzpakowoDom50_diffuse.dds"/>
+    <File fileId="10" filename="textures/SzpakowoDom50_height.dds"/>
+    <File fileId="6" filename="textures/SzpakowoDom50_mask.dds"/>
+    <File fileId="3" filename="textures/SzpakowoDom50_normal.dds"/>
+    <File fileId="4" filename="textures/SzpakowoDom50_specular.dds"/>
+    <File fileId="23" filename="textures/firankaRajotowa2.dds"/>
+    <File fileId="24" filename="textures/firankaRajotowa2_normal.dds"/>
+    <File fileId="33" filename="textures/lampColor2.dds"/>
+    <File fileId="165" filename="textures/solar_diffuse.dds"/>
+    <File fileId="166" filename="textures/solar_normal.dds"/>
+    <File fileId="167" filename="textures/solar_specular.dds"/>
+    <File fileId="19" filename="textures/wzorBalkon2_albedo.dds"/>
+    <File fileId="20" filename="textures/wzorBalkon_normal.dds"/>
+    <File fileId="75" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_diffuse.png"/>
+    <File fileId="76" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_normal.png"/>
+    <File fileId="77" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_specular.png"/>
+    <File fileId="129" filename="$data/maps/mapFR/textures/props/bakeryGoodsFood_diffuse.png"/>
+    <File fileId="130" filename="$data/maps/mapFR/textures/props/bakeryGoodsFood_normal.png"/>
+    <File fileId="131" filename="$data/maps/mapFR/textures/props/bakeryGoodsFood_specular.png"/>
+    <File fileId="126" filename="$data/maps/mapFR/textures/props/bakeryGoodsTray_diffuse.png"/>
+    <File fileId="127" filename="$data/maps/mapFR/textures/props/bakeryGoodsTray_normal.png"/>
+    <File fileId="128" filename="$data/maps/mapFR/textures/props/bakeryGoodsTray_specular.png"/>
+    <File fileId="112" filename="$data/maps/mapFR/textures/props/vehicleShopLobby_diffuse.png"/>
+    <File fileId="113" filename="$data/maps/mapFR/textures/props/vehicleShopLobby_normal.png"/>
+    <File fileId="114" filename="$data/maps/mapFR/textures/props/vehicleShopLobby_specular.png"/>
+    <File fileId="28" filename="$data/maps/mapFR/textures/windowsCurtains01_diffuse.dds"/>
+    <File fileId="29" filename="$data/maps/mapFR/textures/windowsCurtains01_normal.dds"/>
+    <File fileId="30" filename="$data/maps/mapFR/textures/windowsCurtains01_specular.dds"/>
+    <File fileId="26" filename="$data/maps/mapFR/textures/windowsRoomInteriorsDay_diffuse.dds"/>
+    <File fileId="81" filename="$data/maps/mapUS/textures/props/airConditionUSA_alpha_diffuse.png"/>
+    <File fileId="82" filename="$data/maps/mapUS/textures/props/airConditionUSA_alpha_normal.png"/>
+    <File fileId="83" filename="$data/maps/mapUS/textures/props/airConditionUSA_alpha_specular.png"/>
+    <File fileId="78" filename="$data/maps/mapUS/textures/props/airConditionUSA_b_diffuse.png"/>
+    <File fileId="79" filename="$data/maps/mapUS/textures/props/airConditionUSA_b_normal.png"/>
+    <File fileId="80" filename="$data/maps/mapUS/textures/props/airConditionUSA_b_specular.png"/>
+    <File fileId="95" filename="$data/maps/mapUS/textures/props/beachAndElectricityDecals_diffuse.png"/>
+    <File fileId="96" filename="$data/maps/mapUS/textures/props/crossConnectBoxUS_diffuse.png"/>
+    <File fileId="97" filename="$data/maps/mapUS/textures/props/crossConnectBoxUS_normal.png"/>
+    <File fileId="98" filename="$data/maps/mapUS/textures/props/crossConnectBoxUS_specular.png"/>
+    <File fileId="90" filename="$data/maps/mapUS/textures/props/electricalMeter_diffuse.png"/>
+    <File fileId="91" filename="$data/maps/mapUS/textures/props/electricalMeter_normal.png"/>
+    <File fileId="92" filename="$data/maps/mapUS/textures/props/electricalMeter_specular.png"/>
+    <File fileId="60" filename="$data/maps/mapUS/textures/props/faucet_diffuse.png"/>
+    <File fileId="61" filename="$data/maps/mapUS/textures/props/faucet_normal.png"/>
+    <File fileId="62" filename="$data/maps/mapUS/textures/props/faucet_specular.png"/>
+    <File fileId="125" filename="$data/maps/mapUS/textures/props/garbageCartBlackDecal_diffuse.png"/>
+    <File fileId="122" filename="$data/maps/mapUS/textures/props/garbageCartBlack_diffuse.png"/>
+    <File fileId="123" filename="$data/maps/mapUS/textures/props/garbageCartBlack_normal.png"/>
+    <File fileId="124" filename="$data/maps/mapUS/textures/props/garbageCartBlack_specular.png"/>
+    <File fileId="121" filename="$data/maps/mapUS/textures/props/garbageCartGreenDecal_diffuse.png"/>
+    <File fileId="118" filename="$data/maps/mapUS/textures/props/garbageCartGreen_diffuse.png"/>
+    <File fileId="119" filename="$data/maps/mapUS/textures/props/garbageCartGreen_normal.png"/>
+    <File fileId="120" filename="$data/maps/mapUS/textures/props/garbageCartGreen_specular.png"/>
+    <File fileId="100" filename="$data/maps/mapUS/textures/props/gasbox01_diffuse.png"/>
+    <File fileId="101" filename="$data/maps/mapUS/textures/props/gasbox01_normal.png"/>
+    <File fileId="102" filename="$data/maps/mapUS/textures/props/gasbox01_specular.png"/>
+    <File fileId="85" filename="$data/maps/mapUS/textures/props/gasmeterUS_diffuse.png"/>
+    <File fileId="86" filename="$data/maps/mapUS/textures/props/gasmeterUS_normal.png"/>
+    <File fileId="87" filename="$data/maps/mapUS/textures/props/gasmeterUS_specular.png"/>
+    <File fileId="103" filename="$data/maps/mapUS/textures/props/hangingFlowerPots_diffuse.png"/>
+    <File fileId="104" filename="$data/maps/mapUS/textures/props/hangingFlowerPots_normal.png"/>
+    <File fileId="105" filename="$data/maps/mapUS/textures/props/hangingFlowerPots_specular.png"/>
+    <File fileId="157" filename="$data/maps/mapUS/textures/props/industrialWallLight_diffuse.png"/>
+    <File fileId="158" filename="$data/maps/mapUS/textures/props/industrialWallLight_normal.png"/>
+    <File fileId="159" filename="$data/maps/mapUS/textures/props/industrialWallLight_specular.png"/>
+    <File fileId="156" filename="$data/maps/mapUS/textures/props/lightWarm_emissive.png"/>
+    <File fileId="138" filename="$data/maps/mapUS/textures/props/logBench02_diffuse.png"/>
+    <File fileId="139" filename="$data/maps/mapUS/textures/props/logBench02_normal.png"/>
+    <File fileId="140" filename="$data/maps/mapUS/textures/props/logBench02_specular.png"/>
+    <File fileId="84" filename="$data/maps/mapUS/textures/props/propsDecalsUS_diffuse.png"/>
+    <File fileId="153" filename="$data/maps/mapUS/textures/props/stormLampsGlass_diffuse.png"/>
+    <File fileId="154" filename="$data/maps/mapUS/textures/props/stormLampsGlass_normal.png"/>
+    <File fileId="155" filename="$data/maps/mapUS/textures/props/stormLampsGlass_specular.png"/>
+    <File fileId="150" filename="$data/maps/mapUS/textures/props/stormLamps_diffuse.png"/>
+    <File fileId="151" filename="$data/maps/mapUS/textures/props/stormLamps_normal.png"/>
+    <File fileId="152" filename="$data/maps/mapUS/textures/props/stormLamps_specular.png"/>
+    <File fileId="93" filename="$data/maps/textures/shared/glass_diffuse.png"/>
+    <File fileId="36" filename="$data/maps/textures/shared/props/antennaSet_diffuse.png"/>
+    <File fileId="37" filename="$data/maps/textures/shared/props/antennaSet_normal.png"/>
+    <File fileId="38" filename="$data/maps/textures/shared/props/antennaSet_specular.png"/>
+    <File fileId="147" filename="$data/maps/textures/shared/props/basketChairAndTable_diffuse.png"/>
+    <File fileId="148" filename="$data/maps/textures/shared/props/basketChairAndTable_normal.png"/>
+    <File fileId="149" filename="$data/maps/textures/shared/props/basketChairAndTable_specular.png"/>
+    <File fileId="115" filename="$data/maps/textures/shared/props/basketTable_diffuse.png"/>
+    <File fileId="116" filename="$data/maps/textures/shared/props/basketTable_normal.png"/>
+    <File fileId="117" filename="$data/maps/textures/shared/props/basketTable_specular.png"/>
+    <File fileId="135" filename="$data/maps/textures/shared/props/bikeAntiqueDEWheels_diffuse.png"/>
+    <File fileId="136" filename="$data/maps/textures/shared/props/bikeAntiqueDEWheels_normal.png"/>
+    <File fileId="137" filename="$data/maps/textures/shared/props/bikeAntiqueDEWheels_specular.png"/>
+    <File fileId="132" filename="$data/maps/textures/shared/props/bikeAntiqueDE_diffuse.png"/>
+    <File fileId="133" filename="$data/maps/textures/shared/props/bikeAntiqueDE_normal.png"/>
+    <File fileId="134" filename="$data/maps/textures/shared/props/bikeAntiqueDE_specular.png"/>
+    <File fileId="54" filename="$data/maps/textures/shared/props/bucketGalvanized_diffuse.png"/>
+    <File fileId="55" filename="$data/maps/textures/shared/props/bucketGalvanized_normal.png"/>
+    <File fileId="56" filename="$data/maps/textures/shared/props/bucketGalvanized_specular.png"/>
+    <File fileId="57" filename="$data/maps/textures/shared/props/bucketPlasticBlack_diffuse.png"/>
+    <File fileId="58" filename="$data/maps/textures/shared/props/bucketPlasticBlack_normal.png"/>
+    <File fileId="59" filename="$data/maps/textures/shared/props/bucketPlasticBlack_specular.png"/>
+    <File fileId="63" filename="$data/maps/textures/shared/props/gardenHoseHolder02_diffuse.png"/>
+    <File fileId="64" filename="$data/maps/textures/shared/props/gardenHoseHolder02_normal.png"/>
+    <File fileId="65" filename="$data/maps/textures/shared/props/gardenHoseHolder02_specular.png"/>
+    <File fileId="66" filename="$data/maps/textures/shared/props/gardenHoseRoll01_diffuse.png"/>
+    <File fileId="67" filename="$data/maps/textures/shared/props/gardenHoseRoll01_normal.png"/>
+    <File fileId="68" filename="$data/maps/textures/shared/props/gardenHoseRoll01_specular.png"/>
+    <File fileId="39" filename="$data/maps/textures/shared/props/interiorPropsUS_diffuse.png"/>
+    <File fileId="40" filename="$data/maps/textures/shared/props/interiorPropsUS_normal.png"/>
+    <File fileId="41" filename="$data/maps/textures/shared/props/interiorPropsUS_specular.png"/>
+    <File fileId="51" filename="$data/maps/textures/shared/props/ladder_diffuse.png"/>
+    <File fileId="52" filename="$data/maps/textures/shared/props/ladder_normal.png"/>
+    <File fileId="53" filename="$data/maps/textures/shared/props/ladder_specular.png"/>
+    <File fileId="42" filename="$data/maps/textures/shared/props/lawnmower_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/textures/shared/props/lawnmower_normal.png"/>
+    <File fileId="44" filename="$data/maps/textures/shared/props/lawnmower_specular.png"/>
+    <File fileId="45" filename="$data/maps/textures/shared/props/leafBlower_diffuse.png"/>
+    <File fileId="46" filename="$data/maps/textures/shared/props/leafBlower_normal.png"/>
+    <File fileId="47" filename="$data/maps/textures/shared/props/leafBlower_specular.png"/>
+    <File fileId="141" filename="$data/maps/textures/shared/props/pottedPlantAlpha_diffuse.png"/>
+    <File fileId="142" filename="$data/maps/textures/shared/props/pottedPlantAlpha_normal.png"/>
+    <File fileId="143" filename="$data/maps/textures/shared/props/pottedPlantAlpha_specular.png"/>
+    <File fileId="144" filename="$data/maps/textures/shared/props/pottedPlant_diffuse.png"/>
+    <File fileId="145" filename="$data/maps/textures/shared/props/pottedPlant_normal.png"/>
+    <File fileId="146" filename="$data/maps/textures/shared/props/pottedPlant_specular.png"/>
+    <File fileId="48" filename="$data/maps/textures/shared/props/shovelGreen_diffuse.png"/>
+    <File fileId="49" filename="$data/maps/textures/shared/props/shovelGreen_normal.png"/>
+    <File fileId="50" filename="$data/maps/textures/shared/props/shovelGreen_specular.png"/>
+    <File fileId="109" filename="$data/maps/textures/shared/props/townPlantsAlpha_diffuse.png"/>
+    <File fileId="110" filename="$data/maps/textures/shared/props/townPlantsAlpha_normal.png"/>
+    <File fileId="111" filename="$data/maps/textures/shared/props/townPlantsAlpha_specular.png"/>
+    <File fileId="106" filename="$data/maps/textures/shared/props/townPlants_diffuse.png"/>
+    <File fileId="107" filename="$data/maps/textures/shared/props/townPlants_normal.png"/>
+    <File fileId="108" filename="$data/maps/textures/shared/props/townPlants_specular.png"/>
+    <File fileId="72" filename="$data/maps/textures/shared/props/wateringCanIron_diffuse.png"/>
+    <File fileId="73" filename="$data/maps/textures/shared/props/wateringCanIron_normal.png"/>
+    <File fileId="74" filename="$data/maps/textures/shared/props/wateringCanIron_specular.png"/>
+    <File fileId="69" filename="$data/maps/textures/shared/props/wateringCanPlastic_diffuse.png"/>
+    <File fileId="70" filename="$data/maps/textures/shared/props/wateringCanPlastic_normal.png"/>
+    <File fileId="71" filename="$data/maps/textures/shared/props/wateringCanPlastic_specular.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="16" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="9" filename="$data/maps/textures/shared/snow_specular.dds"/>
+    <File fileId="88" filename="$data/maps/textures/shared/window_diffuse.png"/>
+    <File fileId="94" filename="$data/maps/textures/shared/window_specular.png"/>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="160" filename="$data/shaders/colorShader.xml"/>
+    <File fileId="22" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="34" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="99" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="17" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="27" filename="$data/shared/default_normal.dds"/>
+    <File fileId="25" filename="$data/shared/default_specular.dds"/>
+    <File fileId="31" filename="$data/shared/window02_diffuse.dds"/>
+    <File fileId="161" filename="$data/shared/window02_specular.png"/>
+    <File fileId="89" filename="$data/shared/window_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="airConditionUSA_alpha_mat" materialId="5" alphaBlending="true" customShaderId="22">
+      <Texture fileId="81"/>
+      <Normalmap fileId="82"/>
+      <Glossmap fileId="83"/>
+    </Material>
+    <Material name="airConditionUSA_b_mat" materialId="6">
+      <Texture fileId="78"/>
+      <Normalmap fileId="79"/>
+      <Glossmap fileId="80"/>
+    </Material>
+    <Material name="antennaSet_mat" materialId="7">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="bakeryGoodsFood_mat" materialId="8">
+      <Texture fileId="129"/>
+      <Normalmap fileId="130"/>
+      <Glossmap fileId="131"/>
+    </Material>
+    <Material name="bakeryGoodsTray_mat" materialId="9">
+      <Texture fileId="126"/>
+      <Normalmap fileId="127"/>
+      <Glossmap fileId="128"/>
+    </Material>
+    <Material name="basketChairAndTable_material" materialId="10">
+      <Texture fileId="147"/>
+      <Normalmap fileId="148"/>
+      <Glossmap fileId="149"/>
+    </Material>
+    <Material name="basketTable_material" materialId="11">
+      <Texture fileId="115"/>
+      <Normalmap fileId="116"/>
+      <Glossmap fileId="117"/>
+    </Material>
+    <Material name="beachAndElectricityDecals_mat" materialId="12" alphaBlending="true">
+      <Texture fileId="95"/>
+      <Normalmap fileId="27"/>
+    </Material>
+    <Material name="bikeAntiqueDE_mat" materialId="13">
+      <Texture fileId="132"/>
+      <Normalmap fileId="133"/>
+      <Glossmap fileId="134"/>
+    </Material>
+    <Material name="bikeAntiqueDEWheels_mat" materialId="14" alphaBlending="true" customShaderId="22">
+      <Texture fileId="135"/>
+      <Normalmap fileId="136"/>
+      <Glossmap fileId="137"/>
+    </Material>
+    <Material name="bucketGalvanized_mat" materialId="15">
+      <Texture fileId="54"/>
+      <Normalmap fileId="55"/>
+      <Glossmap fileId="56"/>
+    </Material>
+    <Material name="bucketPlasticBlack_mat" materialId="16">
+      <Texture fileId="57"/>
+      <Normalmap fileId="58"/>
+      <Glossmap fileId="59"/>
+    </Material>
+    <Material name="clearGlass_mat" materialId="17" alphaBlending="true">
+      <Texture fileId="93"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="94"/>
+    </Material>
+    <Material name="crossConnectBoxUS_mat" materialId="18" customShaderId="99">
+      <Texture fileId="96"/>
+      <Normalmap fileId="97"/>
+      <Glossmap fileId="98"/>
+      <Custommap name="mSnowSpecular" fileId="9"/>
+    </Material>
+    <Material name="dom50_collision" materialId="19" diffuseColor="0.8 0.00392157 0 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="dom50_occluder" materialId="20" diffuseColor="0 0.403922 0.8 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="electricalMeter_mat" materialId="21">
+      <Texture fileId="90"/>
+      <Normalmap fileId="91"/>
+      <Glossmap fileId="92"/>
+    </Material>
+    <Material name="faucet_material" materialId="22">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
+    </Material>
+    <Material name="garbageCartBlack_mat" materialId="23">
+      <Texture fileId="122"/>
+      <Normalmap fileId="123"/>
+      <Glossmap fileId="124"/>
+    </Material>
+    <Material name="garbageCartBlackDecals_mat" materialId="24" alphaBlending="true">
+      <Texture fileId="125"/>
+    </Material>
+    <Material name="garbageCartGreen_mat" materialId="25" customShaderId="99">
+      <Texture fileId="118"/>
+      <Normalmap fileId="119"/>
+      <Glossmap fileId="120"/>
+      <Custommap name="mSnowSpecular" fileId="9"/>
+    </Material>
+    <Material name="garbageCartGreenDecals_mat" materialId="26">
+      <Texture fileId="121"/>
+    </Material>
+    <Material name="gardenHoseHolder02_mat" materialId="27">
+      <Texture fileId="63"/>
+      <Normalmap fileId="64"/>
+      <Glossmap fileId="65"/>
+    </Material>
+    <Material name="gardenHoseRoll01_mat" materialId="28">
+      <Texture fileId="66"/>
+      <Normalmap fileId="67"/>
+      <Glossmap fileId="68"/>
+    </Material>
+    <Material name="gasbox01_mat" materialId="29">
+      <Texture fileId="100"/>
+      <Normalmap fileId="101"/>
+      <Glossmap fileId="102"/>
+    </Material>
+    <Material name="gasmeterUS_mat" materialId="30">
+      <Texture fileId="85"/>
+      <Normalmap fileId="86"/>
+      <Glossmap fileId="87"/>
+    </Material>
+    <Material name="hangingFlowerPots_mat" materialId="31">
+      <Texture fileId="103"/>
+      <Normalmap fileId="104"/>
+      <Glossmap fileId="105"/>
+    </Material>
+    <Material name="HMHouseStelarz_mat" materialId="32">
+      <Texture fileId="163"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="164"/>
+    </Material>
+    <Material name="industrialWallLight_mat" materialId="33" customShaderId="160">
+      <Texture fileId="157"/>
+      <Normalmap fileId="158"/>
+      <Glossmap fileId="159"/>
+      <CustomParameter name="color" value="0.1 0.1 0.1 0"/>
+    </Material>
+    <Material name="interiorPropsUS_mat" materialId="34">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+    </Material>
+    <Material name="ladder_mat" materialId="35">
+      <Texture fileId="51"/>
+      <Normalmap fileId="52"/>
+      <Glossmap fileId="53"/>
+    </Material>
+    <Material name="lambert1" materialId="36" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="37" diffuseColor="0.494118 0.494118 0.494118 1" shadingRate="1x2">
+    </Material>
+    <Material name="lampColor_Mat" materialId="38" alphaBlending="true" customShaderId="34" customShaderVariation="baseMap_colorScale_blink">
+      <Texture fileId="33"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="21"/>
+      <CustomParameter name="blinkSpeed" value="5 0 0 0"/>
+    </Material>
+    <Material name="lawnmower_mat" materialId="39">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="44"/>
+    </Material>
+    <Material name="leafBlower_mat" materialId="40">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <Glossmap fileId="47"/>
+    </Material>
+    <Material name="logBench02_mat" materialId="41">
+      <Texture fileId="138"/>
+      <Normalmap fileId="139"/>
+      <Glossmap fileId="140"/>
+    </Material>
+    <Material name="oknoSrodek" materialId="42">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="plasticBoxes01_mat" materialId="43">
+      <Texture fileId="75"/>
+      <Normalmap fileId="76"/>
+      <Glossmap fileId="77"/>
+    </Material>
+    <Material name="pottedPlant_mat" materialId="45">
+      <Texture fileId="144"/>
+      <Normalmap fileId="145"/>
+      <Glossmap fileId="146"/>
+    </Material>
+    <Material name="pottedPlantAlpha_mat" materialId="46">
+      <Texture fileId="141"/>
+      <Normalmap fileId="142"/>
+      <Glossmap fileId="143"/>
+    </Material>
+    <Material name="propsDecalsUS_mat" materialId="47" alphaBlending="true" customShaderId="22">
+      <Texture fileId="84"/>
+    </Material>
+    <Material name="propsDecalsUS_mat" materialId="48" alphaBlending="true" customShaderId="22">
+      <Texture fileId="84"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="rolety" materialId="49" alphaBlending="true" customShaderId="22">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="shovelGreen_mat" materialId="50">
+      <Texture fileId="48"/>
+      <Normalmap fileId="49"/>
+      <Glossmap fileId="50"/>
+    </Material>
+    <Material name="snow_Mat" materialId="51" customShaderId="17">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="stormLamps_mat" materialId="52">
+      <Texture fileId="150"/>
+      <Normalmap fileId="151" bumpDepth="0.3"/>
+      <Glossmap fileId="152"/>
+    </Material>
+    <Material name="stormLampsGlass_mat" materialId="53" alphaBlending="true">
+      <Texture fileId="153"/>
+      <Normalmap fileId="154"/>
+      <Glossmap fileId="155"/>
+    </Material>
+    <Material name="stormLampsLit_mat" materialId="54" customShaderId="34" customShaderVariation="customEmissiveMap">
+      <Texture fileId="150"/>
+      <Normalmap fileId="151" bumpDepth="0.3"/>
+      <Glossmap fileId="152"/>
+      <Custommap name="mEmissiveMap" fileId="156"/>
+      <CustomParameter name="lightControl" value="70 0 0 0"/>
+    </Material>
+    <Material name="SzpakowoBalustarda_Mat" materialId="55" alphaBlending="true" customShaderId="22">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="SzpakowoDom50_Mat" materialId="56" customShaderId="5" customShaderVariation="customParallax">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mMaskMap" fileId="6"/>
+      <Custommap name="mSnowSpecular" fileId="9"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+      <CustomParameter name="dirtMossMix" value="0.6 0.8 0 0"/>
+    </Material>
+    <Material name="SzpakowoDom50_Mat" materialId="57" customShaderId="5" customShaderVariation="customParallax">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mSnowSpecular" fileId="9"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+      <CustomParameter name="dirtMossMix" value="0.82 0.75 0 0"/>
+    </Material>
+    <Material name="SzpakowoFiranki_Mat" materialId="58" alphaBlending="true" customShaderId="22">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="SzpakowoKabel_mat" materialId="586">
+      <Texture fileId="35"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="SzpakowoSolar_Mat" materialId="59">
+      <Texture fileId="165"/>
+      <Normalmap fileId="166"/>
+      <Glossmap fileId="167"/>
+    </Material>
+    <Material name="SzpakowoSzyba_Mat" materialId="60" alphaBlending="true">
+      <Texture fileId="31"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="32"/>
+    </Material>
+    <Material name="townPlants_mat" materialId="61">
+      <Texture fileId="106"/>
+      <Normalmap fileId="107"/>
+      <Glossmap fileId="108"/>
+    </Material>
+    <Material name="townPlantsAlpha_mat" materialId="62">
+      <Texture fileId="109"/>
+      <Normalmap fileId="110"/>
+      <Glossmap fileId="111"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="63" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="vehicleShopLobby_mat" materialId="64">
+      <Texture fileId="112"/>
+      <Normalmap fileId="113"/>
+      <Glossmap fileId="114"/>
+    </Material>
+    <Material name="wateringCanIron_mat" materialId="65">
+      <Texture fileId="72"/>
+      <Normalmap fileId="73"/>
+      <Glossmap fileId="74"/>
+    </Material>
+    <Material name="wateringCanPlastic_mat" materialId="66">
+      <Texture fileId="69"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+    </Material>
+    <Material name="window02_mat" materialId="67" alphaBlending="true">
+      <Texture fileId="88"/>
+      <Glossmap fileId="89"/>
+    </Material>
+    <Material name="window02_mat" materialId="68" alphaBlending="true" customShaderId="34">
+      <Texture fileId="31"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="161"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="house.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="BigHouse" lockedgroup="true" clipDistance="600" nodeId="195">
+        <TransformGroup name="clearAreas" translation="-7.17319 0 -3.48652" nodeId="196">
+          <TransformGroup name="clearArea1Start" translation="0.679766 9.53674e-07 -6.10479" nodeId="197">
+            <TransformGroup name="clearArea1Width" translation="16.4752 -1.43051e-06 0" nodeId="198"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 19.8806" nodeId="199"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="200">
+          <TransformGroup name="levelArea1Start" translation="-7.12412 0 -9.93073" nodeId="201">
+            <TransformGroup name="levelArea1Width" translation="0 0 20.2237" nodeId="202"/>
+            <TransformGroup name="levelArea1Height" translation="16.7801 0 -4.54747e-15" nodeId="203"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="204">
+          <TransformGroup name="testArea1Start" translation="-6.54636 4.76837e-07 -9.63487" nodeId="205">
+            <TransformGroup name="testArea1End" translation="16.3386 10.4134 19.8899" nodeId="206"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreaStart" translation="-6.35406 0 -9.31652" nodeId="207">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd" translation="16.2289 11.0775 19.1338" nodeId="208"/>
+        </TransformGroup>
+        <TransformGroup name="lights" nodeId="209">
+          <TransformGroup name="realLights" nodeId="210">
+            <TransformGroup name="realLights" nodeId="211" weatherPreventMask="0">
+              <Light name="pointLightYellow" translation="5.75781 4.64473 -1.45774" clipDistance="75" nodeId="212" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="0.667744 1.97834 -8.59432" clipDistance="75" nodeId="213" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightYellow" translation="5.61165 4.61266 -6.36163" clipDistance="75" nodeId="214" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightYellow" translation="5.52966 1.95176 1.45436" clipDistance="75" nodeId="215" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightYellow" translation="5.57206 4.65038 6.36535" clipDistance="75" nodeId="216" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightYellow" translation="-3.61021 1.91778 -8.62026" clipDistance="75" nodeId="217" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightYellow" translation="-5.72725 1.99069 3.95921" clipDistance="75" nodeId="218" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightYellow" translation="-3.62733 1.97074 8.68079" clipDistance="75" nodeId="219" type="point" color="0.8 0.6 0.1" emitDiffuse="true" emitSpecular="true" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="0.662347 4.66366 8.66581" clipDistance="75" nodeId="220" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="3.61163 1.92705 8.69977" clipDistance="75" nodeId="221" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="5.62781 1.94173 6.37428" clipDistance="75" nodeId="222" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="5.5461 4.69781 1.48261" clipDistance="75" nodeId="223" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="3.62086 4.59704 -8.59208" clipDistance="75" nodeId="224" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="-5.6796 4.6499 -6.36032" clipDistance="75" nodeId="225" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+              <Light name="pointLightWhite" translation="-5.66981 4.61122 6.34862" clipDistance="75" nodeId="226" type="point" color="0.65 0.65 0.6" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="2" minuteOfDayStart="1140" minuteOfDayEnd="300"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="farmhouseFeatures" translation="5.29447 0.178449 0" nodeId="227">
+          <Camera name="sleepCamera" translation="18.2329 7.31576 13.5258" rotation="-10.5575 54.9342 6.58285e-06" visibility="false" nodeId="228" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+          <TransformGroup name="sleepTriggerMarker" translation="3.02446 0.30696 4.75388" scale="0.5 0.5 0.5" nodeId="229"/>
+          <Shape shapeId="1" name="sleepingTrigger" translation="4.3089 1.01286 4.26468" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="230" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="spawnPoint" translation="4.25161 0.30696 4.60533" rotation="180 -5.00896e-06 180" nodeId="231"/>
+        </TransformGroup>
+        <TransformGroup name="linked" nodeId="232">
+          <TransformGroup name="propsLinkNode" clipDistance="150" nodeId="233"/>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="234">
+          <TransformGroup name="indoorArea1Start" translation="-5.89547 -2.38419e-07 -8.89445" nodeId="235">
+            <TransformGroup name="indoorArea1Width" translation="11.797 0 0" nodeId="236"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 17.818" nodeId="237"/>
+          </TransformGroup>
+          <TransformGroup name="indoorArea2Start" translation="5.61533 0 -5.51713" nodeId="238">
+            <TransformGroup name="indoorArea2Width" translation="3.47955 0 0" nodeId="239"/>
+            <TransformGroup name="indoorArea2Height" translation="0 0 2.73935" nodeId="240"/>
+          </TransformGroup>
+          <TransformGroup name="indoorArea3Start" translation="5.64003 0 2.64784" nodeId="241">
+            <TransformGroup name="indoorArea3Width" translation="3.45592 0 0" nodeId="242"/>
+            <TransformGroup name="indoorArea3Height" translation="0 0 3.02088" nodeId="243"/>
+          </TransformGroup>
+          <TransformGroup name="indoorArea4Start" translation="5.64003 0 -2.99787" nodeId="244">
+            <TransformGroup name="indoorArea4Width" translation="2.21817 0 0" nodeId="245"/>
+            <TransformGroup name="indoorArea4Height" translation="0 0 5.89324" nodeId="246"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visual" translation="0 0.199805 0" nodeId="247">
+          <TransformGroup name="House" lockedgroup="true" translation="2.56687 2.37469 -0.244549" nodeId="248">
+            <Shape shapeId="2" name="dom50" translation="-2.567 -2.82867 0.244549" nodeId="249" materialIds="56" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="dom50_detal" translation="-2.96459 2.18737 -8.89173" rotation="-0 -90 0" clipDistance="300" nodeId="250" materialIds="57" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="dom50_collision" translation="-1.16185 -2.90086 6.15926" static="true" clipDistance="100" nodeId="251" materialIds="19" nonRenderable="true"/>
+            <Shape shapeId="5" name="dom50_occluder" translation="-2.84162 1.4302 6.15926" clipDistance="500" nodeId="252" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+            <Shape shapeId="6" name="dom50_snow" translation="-2.56687 -2.82867 0.244549" clipDistance="500" nodeId="253" materialIds="51" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="dom50_balustrada" translation="4.58243 1.68542 5.79918" rotation="90 -0 0" clipDistance="250" nodeId="254" materialIds="55" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="dom50_firanki" translation="3.3702 -0.590772 -6.10841" clipDistance="250" nodeId="255" materialIds="58" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="dom50_interior" translation="-2.28809 3.30067 -1.61626" rotation="0 -0 -90" scale="1 1.10105 1" clipDistance="500" nodeId="256" materialIds="42" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="dom50_rolety" translation="3.06708 1.1361 4.11802" rotation="-0 -90 0" clipDistance="250" nodeId="257" materialIds="49" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="dom50_szyby" translation="3.3702 -0.590772 -6.10841" clipDistance="300" nodeId="258" materialIds="60" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="winter_lamp_Group" lockedgroup="true" nodeId="259" weatherRequiredMask="1024">
+            <TransformGroup name="winter_lamp" translation="-5.10965 6.28652 9.22631" rotation="0 -90 0" scale="1 1 1.1" nodeId="260">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="261" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="262" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="263" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="264" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="265" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="266" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="594" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-1.04714 6.28652 9.22631" rotation="0 -90 0" scale="1 1 1.1" nodeId="268">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="269" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="270" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="271" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="272" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="273" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="274" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="599" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="3.04784 6.28652 9.22631" rotation="0 -90 0" scale="1 1 1.1" nodeId="276">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="277" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="278" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="279" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="280" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="281" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="282" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="598" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="5.17766 6.28487 -9.25889" rotation="-0 90 0" scale="1 1 1.1" nodeId="284">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="285" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="286" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="287" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="288" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="289" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="290" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="601" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="1.09251 6.28487 -9.25889" rotation="-0 90 0" scale="1 1 1.1" nodeId="292">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="293" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="294" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="295" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="296" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="297" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="298" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="600" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-2.98247 6.28487 -9.25889" rotation="-0 90 0" scale="1 1 1.1" nodeId="300">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="301" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="302" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="303" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="304" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="305" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="306" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="602" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-6.25428 6.28487 -7.9893" rotation="-180 0 -180" nodeId="308">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="309" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="310" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="311" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="312" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="313" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="314" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="596" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-6.25428 6.28487 -4.3216" rotation="-180 0 -180" nodeId="316">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="317" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="318" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="319" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="320" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="321" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="322" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="603" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-6.25428 6.28487 -0.681403" rotation="-180 0 -180" scale="1 1 0.881324" nodeId="324">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="325" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="326" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="327" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="328" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="329" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="330" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="605" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-6.25428 6.28487 2.5446" rotation="-180 0 -180" scale="1 1 0.94727" nodeId="332">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="333" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="334" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="335" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="336" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="337" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="338" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="590" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="-6.25428 6.28487 6.01948" rotation="-180 0 -180" scale="1 1 0.934434" nodeId="340">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="341" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="342" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="343" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="344" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="345" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="346" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="604" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="6.24697 6.17613 8.18212" rotation="-14.3685 5.26214 -1.40182" scale="1 1 0.850357" nodeId="348">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="349" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="350" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="351" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="352" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="353" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="354" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="591" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="8.2835 5.05546 4.84045" rotation="-1.25897e-06 1.62938e-07 7.37436" nodeId="356">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="357" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="358" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="359" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="360" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="361" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="362" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="592" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="8.2835 5.05546 1.16773" rotation="-1.25897e-06 1.62938e-07 7.37436" scale="1 1 1.05819" nodeId="364">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="365" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="366" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="367" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="368" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="369" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="370" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="593" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="8.2835 5.05546 -2.74786" rotation="-1.25897e-06 1.62938e-07 7.37436" nodeId="372">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="373" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="374" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="375" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="376" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="377" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="378" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="595" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="7.74406 5.18452 -5.78642" rotation="13.3402 90 0" scale="1 0.710066 0.62143" nodeId="380">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="381" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="382" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="383" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="384" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="385" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="386" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="597" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="6.45259 5.49077 5.79947" rotation="1.2031e-05 -90 -13.3402" scale="1 0.710066 0.62143" nodeId="388">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="389" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="390" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="391" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="392" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="393" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="394" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="609" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="7.84459 2.66803 2.13041" rotation="-1.25897e-06 1.62938e-07 0" scale="1 0.862782 0.734214" nodeId="396">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="397" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="398" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="399" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="400" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="401" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="402" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="606" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="7.84459 2.66803 -0.591788" rotation="-1.25897e-06 1.62938e-07 0" scale="1 0.862782 0.734214" nodeId="404">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="405" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="406" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="407" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="408" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="409" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="410" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="607" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter_lamp" translation="6.09066 5.74279 -6.48776" rotation="13.764 -4.38657 1.98738" scale="1 1 0.850357" nodeId="412">
+              <Shape shapeId="12" name="lampki" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="413" materialIds="38" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024">
+                <TransformGroup name="lamp" translation="0.0269241 -0.276608 -2.14971" nodeId="414" weatherPreventMask="0">
+                  <Light name="lightRed" translation="0.000489235 0.118852 2.0334" rotation="-90 3.29861e-06 -20.2307" nodeId="415" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844959 0.311373 1.24524" rotation="-90 5.09152e-06 -0.129811" nodeId="416" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightRed" translation="-0.0173893 0.238432 0.246996" rotation="-90 4.84765e-06 -2.87082" nodeId="417" type="spot" color="1 0.1 0.1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                  <Light name="lightYellow" translation="0.00844961 0.341926 -0.862319" rotation="-90 5.1087e-06 0" nodeId="418" type="spot" color="0.7 0.7 0.03" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="60" dropOff="5" minuteOfDayStart="1140" minuteOfDayEnd="300" weatherRequiredMask="1024"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="13" name="kabelek" translation="-0.00897503 0.0922022 0.716569" clipDistance="150" nodeId="608" materialIds="586" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="dom_detale" nodeId="420">
+            <Shape shapeId="14" name="antennaSatelliteTV" translation="1.95442 2.87841 -8.65627" rotation="-22.4851 9.04088 -3.61406" clipDistance="120" nodeId="421" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="antennaSatelliteTV" translation="8.2036 3.46188 -5.44408" rotation="-13.7145 13.4029 -1.1242" scale="0.779765 0.779765 0.779765" clipDistance="120" nodeId="422" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="sofa" lockedgroup="true" translation="6.62988 2.85251 -1.13365" scale="0.92736 0.92736 0.645103" nodeId="423">
+              <Shape shapeId="15" name="sofaRightCornerSeat" lockedgroup="true" translation="-0.217293 0 -0.325548" rotation="-0 90 0" static="true" clipDistance="30" nodeId="424" materialIds="34" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="16" name="sofaLeftCornerSeat" lockedgroup="true" translation="-0.217293 0 0.158584" rotation="-0 90 0" static="true" clipDistance="30" nodeId="425" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Shape shapeId="17" name="doormat" translation="8.37123 0.280082 -4.64741" rotation="180 89.2199 -180" clipDistance="70" nodeId="426" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="18" name="boot01b" lockedgroup="true" translation="8.56727 0.280082 -5.27752" rotation="-180 -4.05607 -180" static="true" nodeId="427" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="19" name="boot01b_vis" clipDistance="30" nodeId="428" materialIds="34" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="20" name="boot01a" lockedgroup="true" translation="0.25 0 0" static="true" nodeId="429" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="21" name="boot01a_vis" clipDistance="30" nodeId="430" materialIds="34" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="22" name="shoe02" lockedgroup="true" translation="8.43815 0.280082 5.31252" rotation="0 -12.6335 0" static="true" nodeId="431" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="23" name="shoe02_vis" clipDistance="30" nodeId="432" materialIds="34" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="23" name="shoe02_vis" translation="-0.18491 0 0" clipDistance="30" nodeId="433" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="24" name="lawnmower" lockedgroup="true" translation="6.53133 -0.199805 5.91533" rotation="180 11.0915 180" static="true" density="0.0001" nodeId="434" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="25" name="lawnmower_vis" clipDistance="80" nodeId="435" materialIds="39" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="26" name="leafBlower" lockedgroup="true" translation="6.24681 0.127097 6.72225" rotation="-180 6.44914 -180" static="true" density="0.0001" nodeId="436" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="27" name="visual" clipDistance="80" nodeId="437" materialIds="40" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="28" name="broom02_vis" translation="8.36172 -0.207861 3.35746" rotation="-9.93575 90 0" static="true" clipDistance="20" nodeId="438" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="29" name="shovelGreen01" lockedgroup="true" translation="7.64401 -0.199805 5.67754" rotation="-3.82477 -0 1.36357e-05" static="true" nodeId="439" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="30" name="shovelGreen01_vis" clipDistance="30" nodeId="440" materialIds="50" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="31" name="shovelGreen02" lockedgroup="true" translation="6.20247 -0.199804 -2.4935" rotation="-5.66987 90 0" static="true" nodeId="441" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="32" name="shovelGreen02_vis" clipDistance="30" nodeId="442" materialIds="50" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="33" name="ladderFoldable02" lockedgroup="true" translation="6.47592 -0.199805 2.11329" rotation="-180 3.20383 180" static="true" density="0.25" nodeId="443" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="34" name="ladderFoldable02_vis" translation="0 0 0.000341816" clipDistance="40" nodeId="444" materialIds="35" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="35" name="bucketGalvanized" lockedgroup="true" translation="6.89566 -0.199805 6.78956" rotation="0 -0 2.91022e-05" static="true" density="0.25" nodeId="445" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="36" name="bucketGalvanized_vis" translation="0 2.84217e-16 0" clipDistance="20" nodeId="446" materialIds="15" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="37" name="bucketPlasticBlack" lockedgroup="true" translation="8.3958 -0.199805 -3.29286" rotation="180 -1.86693e-05 -180" dynamic="true" density="0.25" nodeId="447" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="38" name="bucketPlasticBlack_vis" translation="0 2.84217e-16 0" clipDistance="20" nodeId="448" materialIds="16" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="39" name="faucet01" lockedgroup="true" translation="7.35773 0.371914 2.70379" rotation="-180 -5.00896e-06 -180" static="true" nodeId="449" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="40" name="faucet01_vis" clipDistance="30" nodeId="450" materialIds="22" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="37" name="bucketPlasticBlack" lockedgroup="true" translation="-0.0390625 -0.573288 0.291473" rotation="-1.1763e-05 -75.542 -3.59003e-05" dynamic="true" density="0.25" nodeId="451" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="38" name="bucketPlasticBlack_vis" translation="0 2.84217e-16 0" clipDistance="20" nodeId="452" materialIds="16" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="41" name="gardenHoseHolder02" lockedgroup="true" translation="7.0691 0.720058 -2.70295" rotation="-2.85355e-07 0 -5.05561e-08" clipDistance="100" nodeId="453" materialIds="27" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="42" name="gardenHoseRoll" clipDistance="100" nodeId="454" materialIds="28" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="43" name="wateringCanPlastic" lockedgroup="true" translation="7.72803 -0.199805 -5.74942" rotation="-6.25649e-09 -3.42039 1.00183e-05" static="true" density="0.5" nodeId="455" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="44" name="wateringCanPlastic_vis" clipDistance="40" nodeId="456" materialIds="66" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="45" name="wateringCanIron" lockedgroup="true" translation="6.23263 -0.199805 -1.77178" rotation="-180 71.4994 -180" static="true" density="0.5" nodeId="457" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="46" name="wateringCanIron_vis" clipDistance="40" nodeId="458" materialIds="65" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="47" name="plasticBoxes01" lockedgroup="true" translation="7.58552 -0.199805 -2.33218" rotation="0 85.5204 0" static="true" density="0.0001" nodeId="459" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="48" name="plasticBoxes01Vis" clipDistance="40" nodeId="460" materialIds="43" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="49" name="airConditionWall" lockedgroup="true" translation="-1.17267 4.42985 8.99712" rotation="-6.5239e-07 -0 1.20918e-07" clipDistance="90" nodeId="461" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="50" name="rotor" translation="0 0 0.203397" clipDistance="30" nodeId="462" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="51" name="alpha" translation="0 0 0.203397" clipDistance="50" nodeId="463" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="52" name="decals" translation="0 0 0.203397" clipDistance="40" nodeId="464" materialIds="47" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="53" name="col" translation="0.172867 -0.0164132 0.128737" visibility="false" static="true" nodeId="465" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="54" name="gasmeterSmallUS" lockedgroup="true" translation="1.92298 -0.199805 9.06635" rotation="-5.06292e-07 -0 -1.07876e-07" clipDistance="90" nodeId="466" materialIds="30" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="55" name="glass" clipDistance="20" nodeId="467" materialIds="67" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="56" name="decal" static="true" density="0.0001" nodeId="468" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true" decalLayer="1"/>
+              <Shape shapeId="57" name="col" translation="0.00353397 0.749263 0.0250696" visibility="false" static="true" density="0.0001" nodeId="469" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="58" name="electricalMeterGround01" lockedgroup="true" translation="-5.28959 -0.199805 -8.99051" rotation="-180 8.53774e-06 180" clipDistance="90" nodeId="470" materialIds="21" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="59" name="electricalMeterGroundUSGlass" clipDistance="20" nodeId="471" materialIds="17" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="60" name="decal" clipDistance="10" nodeId="472" materialIds="12" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="61" name="electricalMeterGround01" clipDistance="40" nodeId="473" materialIds="21" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="62" name="electricalMeterGroundPole02" translation="-0.125 0 0.0625" clipDistance="90" nodeId="474" materialIds="21" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="63" name="electricalMeterGroundPole03" translation="0 1.0625 0.0625" clipDistance="50" nodeId="475" materialIds="21" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="64" name="electricalMeterGroundPole04" translation="0.0625 -7.10543e-17 0.0624117" clipDistance="70" nodeId="476" materialIds="21" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="65" name="crossConnectBoxUS" lockedgroup="true" translation="2.91383 0.0640002 -6.87024" rotation="-180 2.36783e-05 -180" static="true" nodeId="477" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="66" name="crossConnectBoxUS_vis" clipDistance="110" nodeId="478" materialIds="18" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="67" name="electricalMeterRoof01" lockedgroup="true" translation="-6.01503 0.132467 7.97955" rotation="-2.07511e-05 -90 4.80691e-05" clipDistance="50" nodeId="479" materialIds="21" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="68" name="electricalMeterCable04" translation="0.125 0 6.93889e-18" clipDistance="100" nodeId="480" materialIds="21" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="69" name="glass" clipDistance="20" nodeId="481" materialIds="17" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="70" name="decal" clipDistance="30" nodeId="482" materialIds="12" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="71" name="electricalMeterWallBox02" lockedgroup="true" translation="4.56685 0.278013 8.99581" rotation="2.09686e-07 0 2.63038e-08" clipDistance="70" nodeId="483" materialIds="21" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="72" name="gasbox01" lockedgroup="true" translation="5.41989 1.61033 -9.00016" rotation="-180 -0 -180" clipDistance="70" nodeId="484" materialIds="29" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="73" name="glass" clipDistance="20" nodeId="485" materialIds="67" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="74" name="decal" static="true" density="0.0001" clipDistance="20" nodeId="486" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true" decalLayer="1"/>
+              <Shape shapeId="75" name="col" translation="4.52509e-08 0.00450008 0.107035" visibility="false" static="true" density="0.0001" nodeId="487" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="76" name="hangingFlowerPot03" lockedgroup="true" translation="8.22424 5.11575 4.15355" rotation="-7.95133e-12 -23.2791 1.76927e-11" clipDistance="60" nodeId="488" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="77" name="hangingFlowerPot02" lockedgroup="true" translation="8.20416 5.11575 -4.07654" rotation="0 -62.8288 -2.36453e-37" clipDistance="40" nodeId="489" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="78" name="hangingFlowerPot01" lockedgroup="true" translation="8.21481 5.11575 -1.13501" rotation="-7.3368e-12 5.41774 1.38575e-11" clipDistance="40" nodeId="490" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="79" name="townPlant04" lockedgroup="true" translation="6.2617 2.85751 5.35097" dynamic="true" clipDistance="60" nodeId="491" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="80" name="townPlant04_vis" clipDistance="60" nodeId="492" materialIds="61" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="81" name="townPlant04Alpha" clipDistance="60" nodeId="493" materialIds="62" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="82" name="townPlant03" lockedgroup="true" translation="7.95545 2.85751 -5.36017" dynamic="true" clipDistance="60" nodeId="494" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="83" name="townPlant03_vis" clipDistance="60" nodeId="495" materialIds="61" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="84" name="townPlant03Alpha" clipDistance="60" nodeId="496" materialIds="62" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="85" name="townPlant01" lockedgroup="true" translation="6.34852 2.85751 -5.24597" dynamic="true" clipDistance="60" nodeId="497" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="86" name="townPlant01_vis" clipDistance="60" nodeId="498" materialIds="61" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="87" name="townPlant01Alpha" clipDistance="60" nodeId="499" materialIds="62" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="88" name="lobbyTable" translation="6.4797 2.85125 -2.07833" rotation="180 0 -180" scale="0.456541 1.58451 0.795212" clipDistance="150" nodeId="500" materialIds="64" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="89" name="fancyTable" lockedgroup="true" translation="6.6388 2.85751 1.98256" rotation="-180 0 -180" scale="0.560531 0.75 0.75" static="true" density="0.5" clipDistance="150" nodeId="501" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="90" name="fancyTable_vis" rotation="2.78842e-05 0 2.05756e-05" clipDistance="150" nodeId="502" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="91" name="garbageCartUSGreen" lockedgroup="true" translation="6.47688 -0.199805 -6.07992" rotation="180 4.48241 180" static="true" nodeId="503" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="92" name="garbageCartGreenBase_vis" clipDistance="100" nodeId="504" materialIds="25" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="93" name="garbageCartGreenBag_vis" clipDistance="100" nodeId="505" materialIds="25" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="94" name="decal" clipDistance="100" nodeId="506" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="95" name="garbageCartGreenCover_vis" translation="0 0.95018 -0.425122" rotation="90 0 0" clipDistance="100" nodeId="507" materialIds="25" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="96" name="decal" translation="0.00484051 0.698482 -0.0825602" clipDistance="100" nodeId="508" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </Shape>
+            </Shape>
+            <Shape shapeId="97" name="garbageCartUSBlack" lockedgroup="true" translation="5.4743 -0.199935 9.34032" rotation="180 89.7161 -179.954" static="true" nodeId="509" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="98" name="garbageCartBlackBase_vis" clipDistance="80" nodeId="510" materialIds="23" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="99" name="garbageCartBlackBag_vis" clipDistance="60" nodeId="511" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="100" name="decal" clipDistance="40" nodeId="512" materialIds="24" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="101" name="garbageCartBlackCover_vis" translation="0 0.95018 -0.425122" rotation="90 0 0" clipDistance="60" nodeId="513" materialIds="23" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="102" name="decal" translation="0.00484051 0.698482 -0.0825602" clipDistance="20" nodeId="514" materialIds="24" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </Shape>
+            </Shape>
+            <Shape shapeId="103" name="bakeryTraySilver" translation="6.64562 3.6827 2.00323" clipDistance="50" nodeId="515" materialIds="9" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="104" name="bakeryGoodsTraySilver01" clipDistance="50" nodeId="516" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="105" name="bikeAntique" lockedgroup="true" translation="3.89061 -0.201574 -9.28698" rotation="5.95668 -0 0" static="true" nodeId="517" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="106" name="bikeAntique_vis" clipDistance="40" nodeId="518" materialIds="13" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="107" name="decal" clipDistance="30" nodeId="519" materialIds="14" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="108" name="chainDecal" translation="0 0 0.000966685" clipDistance="30" nodeId="520" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="109" name="tableLampe" lockedgroup="true" translation="6.36821 3.48506 -2.20741" rotation="-0 90 0" static="true" clipDistance="30" nodeId="521" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="17" name="doormat" translation="8.3212 0.276843 4.70608" rotation="180 90 -180" scale="1 1.60589 1" clipDistance="70" nodeId="522" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="sofa" lockedgroup="true" translation="6.62988 2.85251 -2.91074" scale="0.92736 0.92736 0.645103" nodeId="523">
+              <Shape shapeId="15" name="sofaRightCornerSeat" lockedgroup="true" translation="-0.217293 0 -0.325548" rotation="-0 90 0" static="true" clipDistance="30" nodeId="524" materialIds="34" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="16" name="sofaLeftCornerSeat" lockedgroup="true" translation="-0.217293 0 0.158584" rotation="-0 90 0" static="true" clipDistance="30" nodeId="525" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Shape shapeId="110" name="logBench02" lockedgroup="true" translation="6.20377 -0.212051 7.47458" rotation="2.66924 90 0" scale="0.721299 1 1" clipDistance="100" nodeId="526" materialIds="41" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="111" name="col" visibility="false" static="true" density="0.0001" nodeId="527" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="77" name="hangingFlowerPot02" lockedgroup="true" translation="8.21424 5.11575 1.31829" rotation="0 25.1497 -2.36454e-37" clipDistance="40" nodeId="528" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="82" name="townPlant03" lockedgroup="true" translation="7.97279 2.85751 -2.91144" rotation="0 307.72 0" dynamic="true" clipDistance="60" nodeId="529" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="83" name="townPlant03_vis" clipDistance="60" nodeId="530" materialIds="61" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="84" name="townPlant03Alpha" clipDistance="60" nodeId="531" materialIds="62" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="112" name="pottedPlantAlpha" translation="6.84903 -0.629419 -0.519263" clipDistance="75" nodeId="532" materialIds="46" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="113" name="pottedPlant_vis" translation="8.169 2.85751 5.18239" scale="0.373815 0.532507 0.373815" clipDistance="75" nodeId="533" materialIds="45" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="113" name="pottedPlant_vis" translation="7.57512 2.85751 5.36299" rotation="0 -1.00608 0" scale="0.581689 0.564705 0.581689" clipDistance="75" nodeId="534" materialIds="45" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="113" name="pottedPlant_vis" translation="7.97273 2.85751 5.40609" rotation="0 -27.5891 0" scale="0.581689 0.822629 0.581689" clipDistance="75" nodeId="535" materialIds="45" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="112" name="pottedPlantAlpha" translation="6.98052 -0.629419 0.970914" rotation="0 -28.2338 0" clipDistance="75" nodeId="536" materialIds="46" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="114" name="basketChair_vis" translation="6.48354 2.85751 2.96478" rotation="-180 76.2739 -180" scale="0.799903 0.799903 0.887411" clipDistance="150" nodeId="537" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="114" name="basketChair_vis" translation="6.49983 2.85751 0.990208" rotation="0 72.3308 0" scale="0.799903 0.799903 0.887411" clipDistance="150" nodeId="538" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="115" name="Zolty" lockedgroup="true" translation="6.16292 3.48506 -1.85673" static="true" density="0.0001" nodeId="539" materialIds="37" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="116" name="stormLampOld01_vis" clipDistance="100" nodeId="540" materialIds="52" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="117" name="glass" clipDistance="100" nodeId="541" materialIds="53" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="Illum" nodeId="542">
+                  <Shape shapeId="118" name="bulb" clipDistance="70" nodeId="543" materialIds="54" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="10"/>
+                  <Light name="pointLight" translation="0 0.25 0" clipDistance="100" nodeId="544" type="point" color="0.673 0.318071 0.096239" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1" weatherRequiredMask="64" renderInvisible="true"/>
+                  <Light name="spotLight" translation="-2.18557e-08 0.625 1.91069e-15" rotation="-90 90 0" clipDistance="300" nodeId="545" type="spot" color="0.673 0.318071 0.096239" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1" coneAngle="160" dropOff="5" weatherRequiredMask="64" renderInvisible="true"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="119" name="lanternHandle" translation="0 0.336998 0" rotation="-158.525 -4.60802 -3.20816e-14" clipDistance="20" nodeId="546" materialIds="52" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <TransformGroup name="industrialWallLight" translation="8.11265 2.5971 4.72206" rotation="-90.0001 0 -90.0001" static="true" clipDistance="50" nodeId="547">
+              <Light name="spotLight1" translation="0 3.97141e-08 0.1318" clipDistance="300" nodeId="548" type="point" color="0.5 0.4 0.2" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1" weatherRequiredMask="64"/>
+              <Shape shapeId="120" name="industrialWallLight" clipDistance="50" nodeId="549" materialIds="33" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="121" name="glass" clipDistance="40" nodeId="550" materialIds="68" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                <Shape shapeId="122" name="col" visibility="false" static="true" density="0.0001" nodeId="551" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="123" name="backPlate" rotation="-90 -0 0" scale="0.155781 1 0.291568" nodeId="552" materialIds="63" distanceBlending="false"/>
+              <TransformGroup name="aiArea" nodeId="553">
+                <TransformGroup name="start" translation="0.087 0.154 0" nodeId="554"/>
+                <TransformGroup name="end" translation="-0.087 -0.154 0.112638" nodeId="555"/>
+              </TransformGroup>
+            </TransformGroup>
+            <Shape shapeId="115" name="Zolty" lockedgroup="true" translation="7.06669 3.6827 1.77206" rotation="0 29.7791 0" static="true" density="0.0001" nodeId="556" materialIds="37" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="116" name="stormLampOld01_vis" clipDistance="100" nodeId="557" materialIds="52" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="117" name="glass" clipDistance="100" nodeId="558" materialIds="53" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="Illum" nodeId="559">
+                  <Shape shapeId="118" name="bulb" clipDistance="70" nodeId="560" materialIds="54" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="10"/>
+                  <Light name="pointLight" translation="0 0.25 0" clipDistance="100" nodeId="561" type="point" color="0.673 0.318071 0.096239" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1" weatherRequiredMask="64" renderInvisible="true"/>
+                  <Light name="spotLight" translation="-2.18557e-08 0.625 1.91069e-15" rotation="-90 90 0" clipDistance="300" nodeId="562" type="spot" color="0.673 0.318071 0.096239" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1" coneAngle="160" dropOff="5" weatherRequiredMask="64" renderInvisible="true"/>
+                </TransformGroup>
+              </Shape>
+              <Shape shapeId="119" name="lanternHandle" translation="0 0.336998 0" rotation="-158.525 -4.60802 -3.20816e-14" clipDistance="20" nodeId="563" materialIds="52" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <TransformGroup name="industrialWallLight" translation="8.11265 2.5971 -4.65404" rotation="-90.0001 0 -90.0001" static="true" clipDistance="50" nodeId="564">
+              <Light name="spotLight1" translation="0 3.97141e-08 0.1318" clipDistance="300" nodeId="565" type="point" color="0.5 0.4 0.2" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1" weatherRequiredMask="64"/>
+              <Shape shapeId="120" name="industrialWallLight" clipDistance="50" nodeId="566" materialIds="33" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="121" name="glass" clipDistance="40" nodeId="567" materialIds="68" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                <Shape shapeId="122" name="col" visibility="false" static="true" density="0.0001" nodeId="568" materialIds="36" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="123" name="backPlate" rotation="-90 -0 0" scale="0.155781 1 0.291568" nodeId="569" materialIds="63" distanceBlending="false"/>
+              <TransformGroup name="aiArea" nodeId="570">
+                <TransformGroup name="start" translation="0.087 0.154 0" nodeId="571"/>
+                <TransformGroup name="end" translation="-0.087 -0.154 0.112638" nodeId="572"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="panel_pelny" lockedgroup="true" translation="1.68036 7.40847 -7.86005" rotation="-90.0001 57.0317 -90.0001" scale="1.30698 1.20139 0.947006" nodeId="573">
+              <Shape shapeId="124" name="stelarz" translation="0 0.0144679 0" rotation="90 0 0" nodeId="574" materialIds="32" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="125" name="panel" translation="0 -0.0144679 0" clipDistance="400" nodeId="575" materialIds="59" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="panel_pelny" lockedgroup="true" translation="0.659522 7.40847 -7.86005" rotation="-90.0001 57.0317 -90.0001" scale="1.30698 1.20139 0.947006" nodeId="576">
+              <Shape shapeId="124" name="stelarz" translation="0 0.0144679 0" rotation="90 0 0" nodeId="577" materialIds="32" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="125" name="panel" translation="0 -0.0144679 0" clipDistance="400" nodeId="578" materialIds="59" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="panel_pelny" lockedgroup="true" translation="-0.64277 7.40847 -7.86005" rotation="-90.0001 57.0317 -90.0001" scale="1.30698 1.20139 0.947006" nodeId="579">
+              <Shape shapeId="124" name="stelarz" translation="0 0.0144679 0" rotation="90 0 0" nodeId="580" materialIds="32" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="125" name="panel" translation="0 -0.0144679 0" clipDistance="400" nodeId="581" materialIds="59" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="panel_pelny" lockedgroup="true" translation="-1.66777 7.40847 -7.86005" rotation="-90.0001 57.0317 -90.0001" scale="1.30698 1.20139 0.947006" nodeId="582">
+              <Shape shapeId="124" name="stelarz" translation="0 0.0144679 0" rotation="90 0 0" nodeId="583" materialIds="32" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="125" name="panel" translation="0 -0.0144679 0" clipDistance="400" nodeId="584" materialIds="59" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

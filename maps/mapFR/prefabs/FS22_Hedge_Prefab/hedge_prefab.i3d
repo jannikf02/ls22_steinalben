@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/foliage/hedge/hedge01LOD1_diffuse.png"/>
+    <File fileId="8" filename="$data/foliage/hedge/hedge01LOD1_mask.png"/>
+    <File fileId="7" filename="$data/foliage/hedge/hedge01LOD1_normal.png"/>
+    <File fileId="1" filename="$data/foliage/hedge/hedge_diffuse.png"/>
+    <File fileId="4" filename="$data/foliage/hedge/hedge_mask.png"/>
+    <File fileId="2" filename="$data/foliage/hedge/hedge_normal.png"/>
+    <File fileId="3" filename="$data/shaders/treeBranchShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hedge_mat" materialId="4" customShaderId="3" customShaderVariation="SEASONAL">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mMaskMap" fileId="4"/>
+      <CustomParameter name="windSnowLeafScale" value="1 1 1 0"/>
+    </Material>
+    <Material name="hedgeLOD1_mat" materialId="5" customShaderId="3" customShaderVariation="SEASONAL">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Custommap name="mMaskMap" fileId="8"/>
+      <CustomParameter name="windSnowLeafScale" value="1 1 1 0"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hedge_prefab.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="hedge prefab" nodeId="43">
+        <TransformGroup name="hedge big" translation="-6 0 0" nodeId="44">
+          <TransformGroup name="b1mCorner" clipDistance="300" nodeId="45" lodDistance="0 25">
+            <Shape shapeId="1" name="LOD0" clipDistance="300" nodeId="46" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="2" name="collision" static="true" clipDistance="300" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="3" name="LOD1" clipDistance="300" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="b1m" translation="-1 0 0" clipDistance="300" nodeId="49" lodDistance="0 25">
+            <Shape shapeId="4" name="LOD0" clipDistance="300" nodeId="50" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="collision" static="true" clipDistance="300" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="6" name="LOD1" clipDistance="300" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="b2m" translation="-2 0 0" clipDistance="300" nodeId="53" lodDistance="0 25">
+            <Shape shapeId="7" name="LOD0" clipDistance="300" nodeId="54" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="collision" static="true" clipDistance="300" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="9" name="LOD1" clipDistance="300" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="b3m" translation="-3 0 0" rotation="1.70081e-05 0 0" clipDistance="300" nodeId="57" lodDistance="0 25">
+            <Shape shapeId="10" name="LOD0" clipDistance="300" nodeId="58" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="11" name="collision" static="true" clipDistance="300" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="12" name="LOD1" clipDistance="300" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="b4m" translation="-4 0 0" clipDistance="300" nodeId="61" lodDistance="0 35">
+            <Shape shapeId="13" name="LOD0" clipDistance="300" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="14" name="collision" static="true" clipDistance="300" nodeId="63" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="15" name="LOD1" clipDistance="300" nodeId="64" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="hedge medium" nodeId="65">
+          <TransformGroup name="m1mCorner" clipDistance="300" nodeId="66" lodDistance="0 25">
+            <Shape shapeId="16" name="LOD0" clipDistance="300" nodeId="67" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="2" name="collision" static="true" clipDistance="300" nodeId="68" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="17" name="LOD1" clipDistance="300" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="m1m" translation="-1 0 0" rotation="1.70081e-05 0 0" clipDistance="300" nodeId="70" lodDistance="0 25">
+            <Shape shapeId="18" name="LOD0" translation="0 1.42109e-16 0" clipDistance="300" nodeId="71" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="collision" translation="0 -1.42109e-16 0" static="true" clipDistance="300" nodeId="72" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="19" name="LOD1" clipDistance="300" nodeId="73" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="m2m" translation="-2 0 0" clipDistance="300" nodeId="74" lodDistance="0 25">
+            <Shape shapeId="20" name="LOD0" translation="0 1.42109e-16 0" clipDistance="300" nodeId="75" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="collision" translation="0 -1.42109e-16 0" static="true" clipDistance="300" nodeId="76" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="21" name="LOD1" clipDistance="300" nodeId="77" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="m3m" translation="-3 0 0" clipDistance="300" nodeId="78" lodDistance="0 25">
+            <Shape shapeId="22" name="LOD0" translation="0 1.42109e-16 0" clipDistance="300" nodeId="79" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="11" name="collision" translation="0 -1.42109e-16 0" static="true" clipDistance="300" nodeId="80" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="23" name="LOD1" clipDistance="300" nodeId="81" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="m4m" translation="-4 0 0" rotation="3.09632e-05 0 0" clipDistance="300" nodeId="82" lodDistance="0 25">
+            <Shape shapeId="24" name="LOD0" translation="0 1.42109e-16 0" clipDistance="300" nodeId="83" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="14" name="collision" translation="0 -1.42109e-16 0" static="true" clipDistance="300" nodeId="84" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="25" name="LOD1" clipDistance="300" nodeId="85" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="hedge small" translation="6 0 0" nodeId="86">
+          <TransformGroup name="s1mCorner" rotation="7.60259e-07 0 0" clipDistance="300" nodeId="87" lodDistance="0 25">
+            <Shape shapeId="26" name="LOD0" clipDistance="300" nodeId="88" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="2" name="collision" static="true" clipDistance="300" nodeId="89" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="27" name="LOD1" clipDistance="300" nodeId="90" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="s1m" translation="-1 0 0" rotation="0 0 -1.87e-06" clipDistance="300" nodeId="91" lodDistance="0 25">
+            <Shape shapeId="28" name="LOD0" clipDistance="300" nodeId="92" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="collision" static="true" clipDistance="300" nodeId="93" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="29" name="LOD1" clipDistance="300" nodeId="94" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="s2m" translation="-2 0 0" rotation="0 3.41509e-06 0" clipDistance="300" nodeId="95" lodDistance="0 25">
+            <Shape shapeId="30" name="LOD0" clipDistance="300" nodeId="96" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="collision" static="true" clipDistance="300" nodeId="97" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="31" name="LOD1" clipDistance="300" nodeId="98" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="s3m" translation="-3 0 0" rotation="-1.27926e-06 0 -1.28979e-06" clipDistance="300" nodeId="99" lodDistance="0 25">
+            <Shape shapeId="32" name="LOD0" clipDistance="300" nodeId="100" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="11" name="collision" static="true" clipDistance="300" nodeId="101" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="33" name="LOD1" clipDistance="300" nodeId="102" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="s4m" translation="-4 0 0" rotation="2.9479e-07 0 0" clipDistance="300" nodeId="103" lodDistance="0 25">
+            <Shape shapeId="34" name="LOD0" clipDistance="300" nodeId="104" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="14" name="collision" static="true" clipDistance="300" nodeId="105" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="35" name="LOD1" clipDistance="300" nodeId="106" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="47">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="55">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="59">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="63">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="68">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="72">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="76">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="80">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="84">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="89">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="97">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="101">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="105">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

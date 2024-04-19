@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+
+    <author>ETA Gillois</author>
+
+    <version>1.0.0.0</version>
+
+	<title>
+        <en>Big Deco Pack</en>
+    </title>
+
+	<description>
+		<en><![CDATA[In this package you will find decorative objects from the basegame for your farm and your village. Several tools, plants and various objects are available. Beautify your card with these decorative objects from the FR, Alpine and US map!]]></en>
+		<de><![CDATA[In diesem Paket finden Sie dekorative Objekte aus dem Basegame für Ihren Bauernhof und Ihrem Dorf. Mehrere Werkzeuge, Pflanzen sowie verschiedene Objekte sind vorhanden. Verschönern Sie Ihre Karte mit diesen Deko-Objekten von der FR, Alpine und US-Karte!]]></de>
+        <fr><![CDATA[Dans ce pack, vous trouverez des objets de décoration du jeu de base pour votre ferme et votre village. Plusieurs outils, plantes et objets divers sont disponibles. Embellissez votre carte avec ces objets déco de la map FR, Alpine et US!]]></fr>
+    </description>
+
+	<categories>
+        <category>Static</category>
+    </categories>
+
+	<prefabs>
+		<prefab name="FS22_DecoPack_prefab" i3dFilename="DecoPack.i3d" />
+    </prefabs>
+</prefabDesc>

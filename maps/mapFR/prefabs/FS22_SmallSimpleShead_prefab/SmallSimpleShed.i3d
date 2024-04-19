@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SmallSimpleShed.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+    </Asset>
+    <Files>
+        <File fileId="19" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+        <File fileId="20" filename="$data/maps/textures/shared/snow_normal.dds"/>
+        <File fileId="21" filename="$data/maps/textures/shared/snow_specular.dds"/>
+        <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+        <File fileId="22" filename="$data/shaders/snowHeapShader.xml"/>
+        <File fileId="1" filename="Textures/Concrete  albedo.dds"/>
+        <File fileId="2" filename="Textures/Concrete normal.dds"/>
+        <File fileId="13" filename="Textures/Metal albedo.dds"/>
+        <File fileId="14" filename="Textures/Metal normal.dds"/>
+        <File fileId="16" filename="Textures/Wall_Brick albedo.dds"/>
+        <File fileId="17" filename="Textures/Wall_Brick normal.dds"/>
+        <File fileId="10" filename="Textures/Wood_Log albedo.dds"/>
+        <File fileId="11" filename="Textures/Wood_Log normal.dds"/>
+        <File fileId="9" filename="Textures/Concrete height.dds"/>
+        <File fileId="15" filename="Textures/Metal height.dds"/>
+        <File fileId="18" filename="Textures/Wall_Brick height.dds"/>
+        <File fileId="12" filename="Textures/Wood_Log height.dds"/>
+    </Files>
+    <Materials>
+        <Material name="BrickWall" materialId="5" specularColor="0.494118 1 0" customShaderId="4" customShaderVariation="customParallax">
+            <Texture fileId="16"/>
+            <Normalmap fileId="17"/>
+            <Custommap name="mParallaxMap" fileId="18"/>
+        </Material>
+        <Material name="Concrete" materialId="6" specularColor="0.494118 1 0" customShaderId="4" customShaderVariation="customParallax">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Custommap name="mParallaxMap" fileId="9"/>
+        </Material>
+        <Material name="Metall" materialId="7" specularColor="0.494118 1 0" customShaderId="4" customShaderVariation="customParallax">
+            <Texture fileId="13"/>
+            <Normalmap fileId="14"/>
+            <Custommap name="mParallaxMap" fileId="15"/>
+        </Material>
+        <Material name="snow" materialId="8" customShaderId="22">
+            <Texture fileId="19"/>
+            <Normalmap fileId="20"/>
+            <Glossmap fileId="21"/>
+        </Material>
+        <Material name="Wood" materialId="9" specularColor="0.494118 1 0" customShaderId="4" customShaderVariation="customParallax">
+            <Texture fileId="10"/>
+            <Normalmap fileId="11"/>
+            <Custommap name="mParallaxMap" fileId="12"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="SmallSimpleShed.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="shed" clipDistance="600" nodeId="21" lodDistance="0 100" lodBlending="false">
+            <Shape shapeId="1" name="LOD0" rotation="-6.83019e-06 -0 0" clipDistance="300" nodeId="14" materialIds="6,9,7,5" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="winter" rotation="6.83019e-06 -0 0" nodeId="18">
+                    <Shape shapeId="2" name="Snow" translation="-0.132592 3.39211 0.0129619" rotation="-1.36604e-05 -0 0" nodeId="15" materialIds="8" weatherRequiredMask="1024" receiveShadows="true"/>
+                </TransformGroup>
+            </Shape>
+            <Shape shapeId="3" name="LOD1" rotation="-6.83019e-06 -0 0" static="true" clipDistance="600" nodeId="16" materialIds="6,9,7,5" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

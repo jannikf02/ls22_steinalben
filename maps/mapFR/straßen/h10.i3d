@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="h10.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="../Prefab22_Stra__enBauPack/textures/a/spline.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grau" materialId="1416139" diffuseColor="0.164706 0.164706 0.164706 1">
+    </Material>
+    <Material name="schild" materialId="1416288" specularColor="0.0941177 1 0.0941177">
+      <Texture fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="h10.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Hermersberg_10" nodeId="1516240">
+        <Shape shapeId="1" name="Spline_23" translation="-873.837 99.93 -985.858" rotation="0 -90 0" static="true" nodeId="1516247" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-949.039 99.93 -985.858" rotation="0 -90 0" static="true" nodeId="1516248" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-963.839 99.93 -968.338" static="true" nodeId="1516249" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-963.839 99.93 -809.754" static="true" nodeId="1516250" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-944.731 99.93 -792.652" rotation="0 90 0" static="true" nodeId="1516252" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="Spline_23" translation="-900.327 99.93 -792.652" rotation="0 90 0" static="true" nodeId="1516253" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

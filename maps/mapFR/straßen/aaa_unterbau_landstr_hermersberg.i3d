@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="aaa_unterbau_landstr_hermersberg.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="../Prefab22_Stra__enBauPack/textures/a/spline.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grau" materialId="1416139" diffuseColor="0.164706 0.164706 0.164706 1">
+    </Material>
+    <Material name="schild" materialId="1416288" specularColor="0.0941177 1 0.0941177">
+      <Texture fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="aaa_unterbau_landstr_hermersberg.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="Spline_6" translation="-348.241 18.6477 202.919" rotation="-7.75664e-11 -140 3.09599e-05" static="true" nodeId="1484515" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_7" translation="-363.612 18.7495 174.976" rotation="-7.75664e-11 -150 3.09599e-05" static="true" nodeId="1484516" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_8" translation="-381.38 20.2138 140.201" rotation="-7.75664e-11 -150 3.09599e-05" static="true" nodeId="1484517" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_9" translation="-420.848 21.8868 106.822" rotation="-7 -100 3.09599e-05" static="true" nodeId="1484518" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_11" translation="-479.619 28.8812 103.366" rotation="-5.17156e-11 -120 3.09599e-05" static="true" nodeId="1484520" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_12" translation="-501.332 28.9415 76.9736" rotation="-5.17156e-11 -170 3.09599e-05" static="true" nodeId="1484521" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_13" translation="-491.943 28.9415 43.8398" rotation="-5.17156e-11 -210 3.09599e-05" static="true" nodeId="1484522" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_14" translation="-477.273 28.9415 8.43086" rotation="-5.17156e-11 -180 3.09599e-05" static="true" nodeId="1484523" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_15" translation="-480.273 30.9415 -17.5691" rotation="-5.17156e-11 -155 3.09599e-05" static="true" nodeId="1484524" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_16" translation="-492.528 31.9194 -43.8521" rotation="-5.17156e-11 -155 3.09599e-05" static="true" nodeId="1484525" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_17" translation="-508.612 33.639 -79.8038" rotation="-7 200 0" static="true" nodeId="1484526" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_19" translation="-543.14 44.5126 -145.372" rotation="-7 -150 3.09599e-05" static="true" nodeId="1484527" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_23" translation="-692.293 99.6793 -347.925" rotation="-5.17156e-11 -120 3.09599e-05" static="true" nodeId="1484531" materialIds="1416139,1416288" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

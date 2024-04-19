@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>wtorek</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>Glass Bus Stop Prefab</en>
+		<de>Bushaltestelle Aus Glas Prefab</de>
+		<fr>Arrêt De Bus En Verre Prefab</fr>
+    </title>
+	
+	<iconFilename>icon_BusStop.dds</iconFilename>
+	
+	<description>
+        <en><![CDATA[A glass bus stop to make your map more attractive.]]></en>
+		<de><![CDATA[Eine Bushaltestelle aus Glas, um Ihre Karte attraktiver zu machen.]]></de>
+		<fr><![CDATA[Un arrêt de bus en verre pour rendre votre plan plus attractif.]]></fr>
+    </description>
+	
+	<categories>
+        <category>Others</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="Bus Stop" i3dFilename="BusStop.i3d" />
+    </prefabs>
+</prefabDesc>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>Piesel</author>
+    <version>1.0.0.2</version>
+	
+	<title>
+        <en>Decoration Package</en>
+		<de>Dekorationspaket</de>
+		<pl>Paczka Dekoracji</pl>		
+    </title>
+	
+	<iconFilename>icon.dds</iconFilename>
+
+	<description>
+        <en>
+            <![CDATA[
+Mega large package of objects for the map
+
+Change Log v1.0.0.1
+- New objects
+- Improved height of objects
+
+Change Log v1.0.0.2
+- Minor i3D adjustments
+]]>
+        </en>
+        <de>
+            <![CDATA[
+Mega großes Paket an Objekten für die Map
+
+Änderungsprotokoll v1.0.0.1
+- Neue Einrichtungen
+- Verbesserte Höhe von Objekten
+
+Änderungsprotokoll v1.0.0.2
+- Kleinere i3D Anpassungen
+]]>
+        </de>
+        <pl>
+            <![CDATA[
+Mega duży pakiet obiektów na mapę
+
+Dziennik zmian v1.0.0.1
+- Nowe obiekty
+- Poprawiona wysokość obiektów
+
+Dziennik zmian v1.0.0.2
+- Drobne poprawki i3D
+]]>
+        </pl>		
+		
+    </description>
+	
+	<categories>
+        <category>others</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="1" i3dFilename="1.i3d" />
+		<prefab name="2" i3dFilename="2.i3d" />		
+		<prefab name="3" i3dFilename="3.i3d" />		
+		<prefab name="4" i3dFilename="4.i3d" />
+		<prefab name="5" i3dFilename="5.i3d" />		
+    </prefabs>
+</prefabDesc>

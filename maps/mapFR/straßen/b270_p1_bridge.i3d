@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="b270_p1_bridge.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="../Prefab22_Stra__enBauPack/textures/a/spline.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grau" materialId="109397" diffuseColor="0.164706 0.164706 0.164706 1">
+    </Material>
+    <Material name="schild" materialId="109469" specularColor="0.0941177 1 0.0941177">
+      <Texture fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="b270_p1_bridge.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="Spline_1" translation="-20 0 0" rotation="0 160 0" static="true" nodeId="115091" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_2" translation="6.06079 0 -68.5214" rotation="0 150 0" static="true" nodeId="115092" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_3" translation="293.852 0 -422.574" rotation="0 140 0" static="true" nodeId="115093" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_4" translation="383.164 0 -571.556" rotation="0 160 0" static="true" nodeId="115094" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_5" translation="393.043 0 -714.438" rotation="0 190 0" static="true" nodeId="115095" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_6" translation="316.117 0 -848.046" rotation="0 235 0" static="true" nodeId="115096" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_7" translation="143.099 11 -920.122" rotation="0 -95 0" static="true" nodeId="115097" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="Spline_8" translation="-140.361 13 -883.851" rotation="0 -75 0" static="true" nodeId="115098" materialIds="109397,109469" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>
