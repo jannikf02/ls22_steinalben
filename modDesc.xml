@@ -27,5 +27,7 @@
     </maps>
     <storeItems>
         <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationKiebitzMarkt.xml"/>
+        <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationAldi.xml"/>
+        <storeItem xmlFilename="maps/mapFR/sellingPoints/sellingStationLidl.xml"/>
     </storeItems>
 </modDesc>

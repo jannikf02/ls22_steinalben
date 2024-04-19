@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/maps/mapAlpine/textures/infrastructureMargins_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapAlpine/textures/infrastructureMargins_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapAlpine/textures/infrastructureMargins_specular.png"/>
+    <File fileId="30" filename="$data/maps/mapAlpine/textures/props/roadSignsSETDecals_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapAlpine/textures/props/roadSignsSET_diffuse.png"/>
+    <File fileId="28" filename="$data/maps/mapAlpine/textures/props/roadSignsSET_normal.png"/>
+    <File fileId="29" filename="$data/maps/mapAlpine/textures/props/roadSignsSET_specular.png"/>
+    <File fileId="49" filename="$data/maps/mapAlpine/textures/props/sidewalkElementsSET_diffuse.png"/>
+    <File fileId="50" filename="$data/maps/mapAlpine/textures/props/sidewalkElementsSET_normal.png"/>
+    <File fileId="51" filename="$data/maps/mapAlpine/textures/props/sidewalkElementsSET_specular.png"/>
+    <File fileId="22" filename="$data/maps/mapAlpine/textures/props/trashBinMedium01_diffuse.png"/>
+    <File fileId="23" filename="$data/maps/mapAlpine/textures/props/trashBinMedium01_normal.png"/>
+    <File fileId="24" filename="$data/maps/mapAlpine/textures/props/trashBinMedium01_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapFR/textures/groundStain01_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/mapFR/textures/groundStain02_diffuse.png"/>
+    <File fileId="19" filename="$data/maps/mapFR/textures/groundStain03_diffuse.png"/>
+    <File fileId="38" filename="$data/maps/mapFR/textures/props/lightWarm_emissive.png"/>
+    <File fileId="31" filename="$data/maps/mapFR/textures/props/oldStreetLamp_diffuse.png"/>
+    <File fileId="32" filename="$data/maps/mapFR/textures/props/oldStreetLamp_normal.png"/>
+    <File fileId="33" filename="$data/maps/mapFR/textures/props/oldStreetLamp_specular.png"/>
+    <File fileId="58" filename="$data/maps/mapFR/textures/props/townDecorationAlpha_diffuse.png"/>
+    <File fileId="59" filename="$data/maps/mapFR/textures/props/townDecorationAlpha_normal.png"/>
+    <File fileId="60" filename="$data/maps/mapFR/textures/props/townDecorationAlpha_specular.png"/>
+    <File fileId="55" filename="$data/maps/mapFR/textures/props/townDecoration_diffuse.png"/>
+    <File fileId="56" filename="$data/maps/mapFR/textures/props/townDecoration_normal.png"/>
+    <File fileId="57" filename="$data/maps/mapFR/textures/props/townDecoration_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/asphaltRoads_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/asphaltRoads_specular.dds"/>
+    <File fileId="16" filename="$data/maps/mapUS/textures/props/concreteWheelStopper_diffuse.png"/>
+    <File fileId="17" filename="$data/maps/mapUS/textures/props/concreteWheelStopper_normal.png"/>
+    <File fileId="18" filename="$data/maps/mapUS/textures/props/concreteWheelStopper_specular.png"/>
+    <File fileId="52" filename="$data/maps/mapUS/textures/props/tireHuge_diffuse.png"/>
+    <File fileId="53" filename="$data/maps/mapUS/textures/props/tireHuge_normal.png"/>
+    <File fileId="54" filename="$data/maps/mapUS/textures/props/tireHuge_specular.png"/>
+    <File fileId="46" filename="$data/maps/mapUS/textures/props/trafficCone_diffuse.png"/>
+    <File fileId="47" filename="$data/maps/mapUS/textures/props/trafficCone_normal.png"/>
+    <File fileId="48" filename="$data/maps/mapUS/textures/props/trafficCone_specular.png"/>
+    <File fileId="39" filename="$data/maps/mapUS/textures/roadBridge02_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/mapUS/textures/roadBridge02_mask.png"/>
+    <File fileId="40" filename="$data/maps/mapUS/textures/roadBridge02_normal.png"/>
+    <File fileId="41" filename="$data/maps/mapUS/textures/roadBridge02_specular.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/terrain/mainRoadUS01_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/mapUS/textures/terrain/mainRoadUS01_normal.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="35" filename="$data/maps/textures/shared/default_specular.png"/>
+    <File fileId="64" filename="$data/maps/textures/shared/props/snowman01_diffuse.png"/>
+    <File fileId="65" filename="$data/maps/textures/shared/props/snowman01_normal.png"/>
+    <File fileId="66" filename="$data/maps/textures/shared/props/snowman01_specular.png"/>
+    <File fileId="61" filename="$data/maps/textures/shared/props/transportBarrow_diffuse.png"/>
+    <File fileId="62" filename="$data/maps/textures/shared/props/transportBarrow_normal.png"/>
+    <File fileId="63" filename="$data/maps/textures/shared/props/transportBarrow_specular.png"/>
+    <File fileId="34" filename="$data/maps/textures/shared/window_diffuse.png"/>
+    <File fileId="36" filename="$data/maps/textures/shared/window_specular.png"/>
+    <File fileId="42" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="15" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="37" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="25" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="4" filename="$data/shaders/vertexPaintShader.xml"/>
+    <File fileId="14" filename="$data/shared/default_normal.png"/>
+    <File fileId="7" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="asphaltRoadsVP" materialId="4" customShaderId="4" customShaderVariation="terrainFormat_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mBlendedDiffuse" fileId="5"/>
+      <Custommap name="mBlendedNormal" fileId="6"/>
+      <CustomParameter name="uvScale" value="0.2 0.2 0.2 0.2"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+    <Material name="bgaBox_mat" materialId="5">
+    </Material>
+    <Material name="concreteWheelStopper_mat" materialId="6">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="groundStain01_mat" materialId="7" alphaBlending="true" customShaderId="15">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="groundStain02_mat" materialId="8" alphaBlending="true" customShaderId="15">
+      <Texture fileId="20"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="groundStain03_mat" materialId="9" alphaBlending="true" customShaderId="15">
+      <Texture fileId="19"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="infrastructureMargins_mat" materialId="10">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="lambert1" materialId="11" diffuseColor="0.494118 0.494118 0.494118 0.694118">
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="oldStreetLamp_mat" materialId="13" customShaderId="25">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="oldStreetLampLight_mat" materialId="14" customShaderId="37" customShaderVariation="customEmissiveMap">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+      <Custommap name="mEmissiveMap" fileId="38"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+    </Material>
+    <Material name="roadBridge02_mat" materialId="16" customShaderId="42">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+      <Custommap name="mMaskMap" fileId="43"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="0.25 0.25 0.12 0.12"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="roadBridge02_mat" materialId="17" customShaderId="42">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0.12 0.12"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="roadSignsSET_mat" materialId="18">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="roadSignsSETDecals_mat" materialId="19">
+      <Texture fileId="30"/>
+    </Material>
+    <Material name="sidewalkElementsSET_mat" materialId="20">
+      <Texture fileId="49"/>
+      <Normalmap fileId="50"/>
+      <Glossmap fileId="51"/>
+    </Material>
+    <Material name="snowman01_mat" materialId="21">
+      <Texture fileId="64"/>
+      <Normalmap fileId="65"/>
+      <Glossmap fileId="66"/>
+    </Material>
+    <Material name="tireHuge_mat" materialId="22" customShaderId="25">
+      <Texture fileId="52"/>
+      <Normalmap fileId="53"/>
+      <Glossmap fileId="54"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="townDecoration_mat" materialId="23" customShaderId="25">
+      <Texture fileId="55"/>
+      <Normalmap fileId="56"/>
+      <Glossmap fileId="57"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="townDecorationAlpha_mat" materialId="24">
+      <Texture fileId="58"/>
+      <Normalmap fileId="59"/>
+      <Glossmap fileId="60"/>
+    </Material>
+    <Material name="trafficCone_mat" materialId="25" customShaderId="25">
+      <Texture fileId="46"/>
+      <Normalmap fileId="47"/>
+      <Glossmap fileId="48"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="transportBarrow_mat" materialId="26">
+      <Texture fileId="61"/>
+      <Normalmap fileId="62"/>
+      <Glossmap fileId="63"/>
+    </Material>
+    <Material name="trashBinMedium01_mat" materialId="27" customShaderId="25">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="windowGlass_mat" materialId="28" alphaBlending="true">
+      <Texture fileId="34"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="36"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ParkingLotLong6.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="parkingLot" translation="-4.104 3.21724e-09 -3.286" rotation="-4.492e-08 -90 0" nodeId="68">
+        <TransformGroup name="clearAreas" nodeId="69">
+          <TransformGroup name="clearArea1Start" translation="-2 0 10" scale="8.10212 8.10212 -4.5321" nodeId="70">
+            <TransformGroup name="clearArea1Width" translation="2.6 0 0" scale="-33.0279 448.539 626.592" nodeId="71"/>
+            <TransformGroup name="clearArea1Height" translation="0 0.000485459 6.3" rotation="0 0 -180" scale="0.0103721 -3.89032 -4.37519" nodeId="72"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" translation="-2.72 0 6.899" nodeId="73">
+          <TransformGroup name="levelArea1Start" translation="0 0 4" scale="1 1 -5.14393" nodeId="74">
+            <TransformGroup name="levelArea1Width" translation="23 0 0" scale="-7.06088 1 1" nodeId="75"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 5.9" scale="-10.4422 1 -5.64699" nodeId="76"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="77">
+          <TransformGroup name="testArea1Start" translation="-2.5 0 11" nodeId="78">
+            <TransformGroup name="testArea1End" translation="23 0 -30" nodeId="79"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="80">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2.5 0 11" nodeId="81">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="22 1.90735e-05 -30" scale="0.884826 0.884826 0.884826" nodeId="82"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" rotation="7.51362e-19 0 8.59802e-12" clipDistance="3000" nodeId="83">
+          <TransformGroup name="Bays" nodeId="84">
+            <Shape shapeId="1" name="decalParkLine" clipDistance="20" nodeId="85" materialIds="4" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="Bay1" nodeId="86">
+              <Shape shapeId="2" name="decalParkLine" clipDistance="20" nodeId="87" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <TransformGroup name="Drain" lockedgroup="true" nodeId="88">
+                <Shape shapeId="3" name="cobbleStone_2M" static="true" clipDistance="120" nodeId="89" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="waterGate01_2M" static="true" clipDistance="120" nodeId="90" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <Shape shapeId="5" name="groundStain01" clipDistance="300" nodeId="91" materialIds="7" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="concreteWheelStopper" static="true" clipDistance="30" nodeId="92" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="Bay2" nodeId="93">
+              <Shape shapeId="7" name="decalParkLine" clipDistance="20" nodeId="94" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <TransformGroup name="Drain" lockedgroup="true" nodeId="95">
+                <Shape shapeId="8" name="cobbleStone_2M" static="true" clipDistance="120" nodeId="96" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="9" name="waterGate01_2M" static="true" clipDistance="120" nodeId="97" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <Shape shapeId="10" name="groundStain01" clipDistance="300" nodeId="98" materialIds="7" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="11" name="concreteWheelStopper" static="true" clipDistance="30" nodeId="99" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="Bay3" nodeId="100">
+              <Shape shapeId="12" name="decalParkLine" clipDistance="20" nodeId="101" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <TransformGroup name="Drain" lockedgroup="true" nodeId="102">
+                <Shape shapeId="13" name="cobbleStone_2M" static="true" clipDistance="120" nodeId="103" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="14" name="waterGate01_2M" static="true" clipDistance="120" nodeId="104" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <Shape shapeId="15" name="groundStain03" clipDistance="300" nodeId="105" materialIds="9" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="16" name="concreteWheelStopper" static="true" clipDistance="30" nodeId="106" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="Bay4" nodeId="107">
+              <Shape shapeId="17" name="decalParkLine" clipDistance="20" nodeId="108" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <TransformGroup name="Drain" lockedgroup="true" nodeId="109">
+                <Shape shapeId="18" name="waterGate01_2M" static="true" clipDistance="120" nodeId="110" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="19" name="cobbleStone_2M" static="true" clipDistance="120" nodeId="111" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <Shape shapeId="20" name="concreteWheelStopper" static="true" clipDistance="30" nodeId="112" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="21" name="groundStain03" clipDistance="300" nodeId="113" materialIds="9" receiveShadows="true" decalLayer="1"/>
+            </TransformGroup>
+            <TransformGroup name="Bay5" nodeId="114">
+              <Shape shapeId="22" name="decalParkLine" clipDistance="20" nodeId="115" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <TransformGroup name="Drain" lockedgroup="true" nodeId="116">
+                <Shape shapeId="23" name="waterGate01_2M" static="true" clipDistance="120" nodeId="117" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="24" name="cobbleStone_2M" static="true" clipDistance="120" nodeId="118" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <Shape shapeId="25" name="concreteWheelStopper" static="true" clipDistance="30" nodeId="119" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="Bay6" nodeId="120">
+              <Shape shapeId="26" name="decalParkLine" clipDistance="20" nodeId="121" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="27" name="decalParkLine" clipDistance="20" nodeId="122" materialIds="4" receiveShadows="true" decalLayer="1"/>
+              <TransformGroup name="Drain" lockedgroup="true" nodeId="123">
+                <Shape shapeId="28" name="waterGate01_2M" static="true" clipDistance="120" nodeId="124" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="29" name="cobbleStone_2M" static="true" clipDistance="120" nodeId="125" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <Shape shapeId="30" name="groundStain02" clipDistance="300" nodeId="126" materialIds="8" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="31" name="concreteWheelStopper" static="true" clipDistance="30" nodeId="127" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Shape shapeId="32" name="decalParkLine" visibility="false" clipDistance="20" nodeId="128" materialIds="4" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="Props" nodeId="129">
+            <Shape shapeId="33" name="trashBinMedium01" lockedgroup="true" static="true" density="0.0001" nodeId="130" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="34" name="trashBinMedium01Vis" clipDistance="80" nodeId="131" materialIds="27" castsShadows="true" receiveShadows="true" weatherPreventMask="0"/>
+            </Shape>
+            <TransformGroup name="parkingsign" lockedgroup="true" nodeId="132">
+              <TransformGroup name="joint" joint="true" breakableJoint="true" jointBreakForce="25" jointBreakTorque="25" rotMinX="0" rotMaxX="0" transMinX="0" transMaxX="0" rotMinY="0" rotMaxY="0" transMinY="0" transMaxY="0" rotMinZ="0" rotMaxZ="0" transMinZ="0" transMaxZ="0" nodeId="133">
+                <Shape shapeId="35" name="colMain" dynamic="true" compound="true" linearDamping="0.1" angularDamping="0.5" density="4" clipDistance="120" nodeId="134" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                  <Shape shapeId="36" name="col1" compoundChild="true" linearDamping="0.1" angularDamping="0.5" density="0.25" clipDistance="120" nodeId="135" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                  <Shape shapeId="37" name="squareSign" clipDistance="80" nodeId="136" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="38" name="bluedecal" clipDistance="50" nodeId="137" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="39" name="whitedecal" clipDistance="30" nodeId="138" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="2"/>
+                </Shape>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="Lights" translation="-1.72041 -3.9185e-08 -4.104" rotation="8.59409e-12 90 0" nodeId="139">
+            <Shape shapeId="40" name="oldStreetLamp" translation="-5.99508 3.90327e-08 0.00375938" rotation="-1.61964e-07 1.36604e-05 -4.492e-08" static="true" clipDistance="300" nodeId="140" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="41" name="oldStreetLampGlass" static="true" clipDistance="50" nodeId="141" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="illum" nodeId="142">
+                <Shape shapeId="42" name="lamp" clipDistance="300" nodeId="143" materialIds="14" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                <Light name="pointLight1" translation="0 3.7 0.94" rotation="-100 -0 -4.18799" clipDistance="300" nodeId="144" type="point" color="0.3 0.4 0.2" emitDiffuse="true" emitSpecular="true" range="10" weatherRequiredMask="64"/>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="40" name="oldStreetLamp" translation="5.99508 -3.90327e-08 -0.00375938" rotation="-6.05989e-09 1.36604e-05 -4.4914e-08" static="true" clipDistance="300" nodeId="145" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="41" name="oldStreetLampGlass" static="true" clipDistance="50" nodeId="146" materialIds="28" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="illum" nodeId="147">
+                <Shape shapeId="42" name="lamp" clipDistance="300" nodeId="148" materialIds="14" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                <Light name="pointLight1" translation="0 3.7 0.951" rotation="-100 -0 1.44479e-15" clipDistance="300" nodeId="149" type="point" color="0.3 0.4 0.2" emitDiffuse="true" emitSpecular="true" range="10" weatherRequiredMask="64"/>
+              </TransformGroup>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="Fence" nodeId="150">
+            <Shape shapeId="43" name="steelWGuardrail6m-" lockedgroup="true" static="true" clipDistance="350" nodeId="151" materialIds="16" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="44" name="steelStand01" static="true" clipDistance="100" nodeId="152" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="45" name="screws" static="true" collision="false" clipDistance="30" nodeId="153" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="46" name="steelBase" static="true" clipDistance="30" nodeId="154" materialIds="16" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="47" name="steelStand01" static="true" clipDistance="100" nodeId="155" materialIds="17" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="48" name="screws" static="true" collision="false" clipDistance="30" nodeId="156" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="49" name="steelBase" static="true" clipDistance="30" nodeId="157" materialIds="17" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="50" name="steelWGuardrail6m-" lockedgroup="true" static="true" clipDistance="350" nodeId="160" materialIds="16" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="51" name="steelStand01" static="true" clipDistance="100" nodeId="161" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="52" name="screws" static="true" collision="false" clipDistance="30" nodeId="162" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="53" name="steelBase" static="true" clipDistance="30" nodeId="163" materialIds="16" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="54" name="steelWGuardrail6m-" lockedgroup="true" static="true" clipDistance="350" nodeId="164" materialIds="16" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="55" name="steelStand01" static="true" clipDistance="100" nodeId="165" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="56" name="screws" static="true" collision="false" clipDistance="30" nodeId="166" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="57" name="steelBase" static="true" clipDistance="30" nodeId="167" materialIds="16" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="58" name="steelWGuardrail6m-" lockedgroup="true" static="true" clipDistance="350" nodeId="170" materialIds="16" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="59" name="steelStand01" static="true" clipDistance="100" nodeId="171" materialIds="16" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="60" name="screws" static="true" collision="false" clipDistance="30" nodeId="172" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="61" name="steelBase" static="true" clipDistance="30" nodeId="173" materialIds="16" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="Barrier" nodeId="174">
+            <Shape shapeId="62" name="trafficCone" lockedgroup="true" dynamic="true" density="0.5" nodeId="175" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="63" name="trafficCone_vis" clipDistance="50" nodeId="176" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="64" name="trafficCone" lockedgroup="true" dynamic="true" density="0.5" nodeId="177" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="65" name="trafficCone_vis" clipDistance="50" nodeId="178" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="66" name="trafficCone" lockedgroup="true" dynamic="true" density="0.5" nodeId="179" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="67" name="trafficCone_vis" clipDistance="50" nodeId="180" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="68" name="trafficCone" lockedgroup="true" dynamic="true" density="0.5" nodeId="181" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="69" name="trafficCone_vis" clipDistance="50" nodeId="182" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="70" name="trafficCone" lockedgroup="true" dynamic="true" density="0.5" nodeId="183" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="71" name="trafficCone_vis" clipDistance="50" nodeId="184" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="72" name="trafficCone" lockedgroup="true" dynamic="true" density="0.5" nodeId="185" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="73" name="trafficCone_vis" clipDistance="50" nodeId="186" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="74" name="sidewalkElementPole" lockedgroup="true" static="true" density="0.0001" nodeId="187" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="75" name="sidewalkElementPoleVis" clipDistance="60" nodeId="188" materialIds="20" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="76" name="sidewalkElementPole" lockedgroup="true" static="true" density="0.0001" nodeId="191" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="77" name="sidewalkElementPoleVis" clipDistance="60" nodeId="192" materialIds="20" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="78" name="sidewalkElementPole" lockedgroup="true" static="true" density="0.0001" nodeId="193" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="79" name="sidewalkElementPoleVis" clipDistance="60" nodeId="194" materialIds="20" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <TransformGroup name="tireLine" lockedgroup="true" nodeId="197">
+              <Shape shapeId="80" name="tireHuge" lockedgroup="true" clipDistance="40" nodeId="198" materialIds="22" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="81" name="col" visibility="false" static="true" density="0.0001" nodeId="199" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="82" name="tireHuge" lockedgroup="true" clipDistance="40" nodeId="202" materialIds="22" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="83" name="col" visibility="false" static="true" density="0.0001" nodeId="203" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="84" name="tireHuge" lockedgroup="true" clipDistance="40" nodeId="204" materialIds="22" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="85" name="col" visibility="false" static="true" density="0.0001" nodeId="205" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="86" name="tireHuge" lockedgroup="true" clipDistance="40" nodeId="208" materialIds="22" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="87" name="col" visibility="false" static="true" density="0.0001" nodeId="209" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="88" name="tireHuge" lockedgroup="true" clipDistance="40" nodeId="212" materialIds="22" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="89" name="col" visibility="false" static="true" density="0.0001" nodeId="213" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+              <Shape shapeId="90" name="tireHuge" lockedgroup="true" clipDistance="40" nodeId="214" materialIds="22" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="91" name="col" visibility="false" static="true" density="0.0001" nodeId="215" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="seasons" nodeId="218">
+          <TransformGroup name="spring" nodeId="219" weatherRequiredMask="128">
+            <Shape shapeId="92" name="townDecoration02" lockedgroup="true" static="true" clipDistance="300" nodeId="220" materialIds="23" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="93" name="townDecoration02Chains" clipDistance="200" nodeId="221" materialIds="24" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="94" name="townDecoration02Flowers" clipDistance="200" nodeId="222" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="95" name="transportBarrow" lockedgroup="true" nodeId="223" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="96" name="transportBarrow_vis" clipDistance="50" nodeId="224" materialIds="26" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="collision" nodeId="225">
+                <Shape shapeId="97" name="col01" compoundChild="true" density="0.8" nodeId="226" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="98" name="townDecoration06" lockedgroup="true" static="true" clipDistance="200" nodeId="227" materialIds="23" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="99" name="townDecoration06Alpha" clipDistance="200" nodeId="228" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="summer" nodeId="229" weatherRequiredMask="256">
+            <Shape shapeId="100" name="townDecoration02" lockedgroup="true" static="true" clipDistance="300" nodeId="230" materialIds="23" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="93" name="townDecoration02Chains" clipDistance="200" nodeId="231" materialIds="24" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="94" name="townDecoration02Flowers" clipDistance="200" nodeId="232" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="101" name="townDecoration06" lockedgroup="true" static="true" clipDistance="200" nodeId="233" materialIds="23" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="99" name="townDecoration06Alpha" clipDistance="200" nodeId="234" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="autumn" nodeId="235" weatherRequiredMask="512">
+            <Shape shapeId="100" name="townDecoration02" lockedgroup="true" static="true" clipDistance="300" nodeId="236" materialIds="23" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="102" name="townDecoration02Chains" clipDistance="200" nodeId="237" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="103" name="transportBarrow" lockedgroup="true" nodeId="238" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="104" name="transportBarrow_vis" clipDistance="50" nodeId="239" materialIds="26" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="collision" nodeId="240">
+                <Shape shapeId="105" name="col01" compoundChild="true" density="0.8" nodeId="241" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="106" name="townDecoration06" lockedgroup="true" static="true" clipDistance="200" nodeId="242" materialIds="23" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="winter" nodeId="243" weatherRequiredMask="1024">
+            <Shape shapeId="107" name="snowman01_vis" static="true" clipDistance="120" nodeId="244" materialIds="21" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="108" name="townDecoration02" lockedgroup="true" static="true" clipDistance="300" nodeId="245" materialIds="23" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="109" name="townDecoration02Chains" clipDistance="200" nodeId="246" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

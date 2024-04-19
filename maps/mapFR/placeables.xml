@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeables>
     <placeable mapBoundId="sellingPointKiebitzMarkt" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationKiebitzMarkt.xml" position="-272.824 18.669 111.494" rotation="0 -19.864 0" />  
-    <placeable mapBoundId="sellingPointLidl" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationLidl.xml" position="-847.137 99.93 -663.682" rotation="0 0 0" />  
-    <placeable mapBoundId="sellingPointAldi" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationAldi.xml" position="-904.842 99.93 -709.687" rotation="0 0 0" />  
+    <placeable mapBoundId="sellingPointLidl" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationLidl.xml" position="-883.219 100.163 -698.4" rotation="0 270 0" />  
+    <placeable mapBoundId="sellingPointAldi" filename="$mapdir$/maps/mapFR/sellingPoints/sellingStationAldi.xml" position="-868.431 100.163 -678.661" rotation="0 90 0" />  
 </placeables>
+ 
